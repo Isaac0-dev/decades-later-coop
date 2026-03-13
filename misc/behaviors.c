@@ -1,0 +1,2154 @@
+const BehaviorScript bhvMenuButtonManager[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x0821),
+    CALL_NATIVE(NULL),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvYellowBackgroundInMenu[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x0001),
+    CALL_NATIVE(NULL),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvActSelector[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, 0x0001),
+    CALL_NATIVE(NULL),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSwimmingWarp[] = {
+    BREAK(),
+};
+
+
+const BehaviorScript bhvBBHTumblingBridge[] = {
+    BEGIN(OBJ_LIST_SPAWNER),
+    OR_INT(oFlags, 0x00C1),
+    SET_HOME(),
+    SET_INT(oBhvParams2ndByte, 1),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_tumbling_bridge_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBBHTiltingTrapPlatform[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x2041),
+    LOAD_COLLISION_DATA(0x07026A98),
+    SET_HOME(),
+    SET_INT(oRoom, 2),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_bbh_tilting_trap_platform_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvExitPodiumWarp[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    SET_HOME(),
+    LOAD_COLLISION_DATA(0x04072430),
+    SCALE(oUkikiCageNextAction, 100),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvMerryGoRound[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0041),
+    LOAD_COLLISION_DATA(0x07026C1C),
+    SET_FLOAT(oCollisionDistance, 2000),
+    SET_INT(oRoom, 10),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_merry_go_round_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvGhostHuntBigBoo[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2049),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(30, 0, -50, 1000, 1000, 200, 0, 0),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_boo_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_big_boo_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvCoinInsideBoo[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    SET_HITBOX(100, 64),
+    SET_INT(oInteractType, 16),
+    OR_INT(oFlags, 0x0081),
+    SET_OBJ_PHYSICS(30, -400, -70, 1000, 1000, 200, 0, 0),
+    BILLBOARD(),
+    CALL_NATIVE(bhv_init_room),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_coin_inside_boo_loop),
+    ADD_INT(oAnimState, 1),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_13002804[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2049),
+    SET_INT(oIntangibleTimer, 0),
+    SET_HOME(),
+    SET_INT(oDamageOrCoinValue, 2),
+    SET_HITBOX(140, 80),
+    SET_HURTBOX(40, 60),
+    SET_FLOAT(oGraphYOffset, 30),
+    CALL_NATIVE(bhv_init_room),
+    SPAWN_CHILD(0x74, bhvCoinInsideBoo),
+    SET_OBJ_PHYSICS(30, 0, -50, 1000, 1000, 200, 0, 0),
+    CALL_NATIVE(bhv_boo_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_boo_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvExclamationBox[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0009),
+    LOAD_COLLISION_DATA(0x08025F78),
+    OR_INT(oFlags, 0x0001),
+    SET_FLOAT(oCollisionDistance, 300),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_exclamation_box_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvFireSpitter[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2041),
+    BILLBOARD(),
+    SCALE(oUkikiCageNextAction, 40),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_fire_spitter_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBobombBuddy[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2449),
+    LOAD_ANIMATIONS(oAnimations, 0x0802396C),
+    SET_INTERACT_TYPE(0x00800000),
+    DROP_TO_FLOOR(),
+    SET_HITBOX(100, 60),
+    ANIMATE(0),
+    SET_INT(oYoshiChosenHome, 0),
+    SET_HOME(),
+    CALL_NATIVE(bhv_bobomb_buddy_init),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_bobomb_buddy_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvStar[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x0001),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(NULL),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_collect_star_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvHiddenRedCoinStar[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x4001),
+    CALL_NATIVE(bhv_hidden_red_coin_star_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_13000B14[] = {
+    OR_INT(oFlags, 0x00C9),
+    LOAD_ANIMATIONS(oAnimations, 0x030156C0),
+    ANIMATE(0),
+    LOAD_COLLISION_DATA(0x0301CE78),
+    SET_HITBOX(80, 100),
+    SET_INT(oIntangibleTimer, 0),
+    SET_FLOAT(oCollisionDistance, 1000),
+    SET_HOME(),
+    CALL_NATIVE(bhv_door_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_door_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvDoorWarp[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    SET_INT(oInteractType, 2048),
+    GOTO(bhv_unknown_13000B14),
+};
+
+
+const BehaviorScript bhvWarpPipe[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0009),
+    SET_INT(oInteractType, 8192),
+    LOAD_COLLISION_DATA(0x03009AC8),
+    SET_FLOAT(oDrawingDistance, 16000),
+    SET_INT(oIntangibleTimer, 0),
+    SET_HITBOX(70, 50),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_warp_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvRedCoin[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x0001),
+    BILLBOARD(),
+    SET_INT(oIntangibleTimer, 0),
+    SET_INT(oAnimState, -1),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_red_coin_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_red_coin_loop),
+    ADD_INT(oAnimState, 1),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvMadPiano[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2041),
+    DROP_TO_FLOOR(),
+    LOAD_ANIMATIONS(oAnimations, 0x05009B14),
+    SET_OBJ_PHYSICS(40, 0, -50, 1000, 1000, 200, 0, 0),
+    SET_HOME(),
+    ADD_INT(0x10, 16384),
+    CALL_NATIVE(bhv_init_room),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_mad_piano_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvDoor[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    SET_INT(oInteractType, 4),
+    OR_INT(oFlags, 0x00C9),
+    LOAD_ANIMATIONS(oAnimations, 0x030156C0),
+    ANIMATE(0),
+    LOAD_COLLISION_DATA(0x0301CE78),
+    SET_HITBOX(80, 100),
+    SET_INT(oIntangibleTimer, 0),
+    SET_FLOAT(oCollisionDistance, 1000),
+    SET_HOME(),
+    CALL_NATIVE(bhv_door_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_door_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTHIHugeIslandTop[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x08000E98),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvHiddenBlueCoin[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    SET_INT(oInteractType, 16),
+    OR_INT(oFlags, 0x00C1),
+    BILLBOARD(),
+    SET_HITBOX(100, 64),
+    SET_INT(oDamageOrCoinValue, 5),
+    SET_INT(oIntangibleTimer, 0),
+    SET_INT(oAnimState, -1),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    ADD_INT(oAnimState, 1),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_13002808[] = {
+    OR_INT(oFlags, 0x2049),
+    SET_INT(oIntangibleTimer, 0),
+    SET_HOME(),
+    SET_INT(oDamageOrCoinValue, 2),
+    SET_HITBOX(140, 80),
+    SET_HURTBOX(40, 60),
+    SET_FLOAT(oGraphYOffset, 30),
+    CALL_NATIVE(bhv_init_room),
+    SPAWN_CHILD(0x74, bhvCoinInsideBoo),
+    SET_OBJ_PHYSICS(30, 0, -50, 1000, 1000, 200, 0, 0),
+    CALL_NATIVE(bhv_boo_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_boo_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBoo[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    SET_INT(oBhvParams2ndByte, 1),
+    GOTO(bhv_unknown_13002808),
+};
+
+
+const BehaviorScript bhvMrIBody[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, 0x0001),
+    CALL_NATIVE(bhv_init_room),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_mr_i_body_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvMrI[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x004B),
+    SET_HOME(),
+    SPAWN_CHILD(0x66, bhvMrIBody),
+    SET_MODEL(0x67),
+    BILLBOARD(),
+    CALL_NATIVE(bhv_init_room),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_mr_i_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvFlyingBookend[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2049),
+    LOAD_ANIMATIONS(oAnimations, 0x05002540),
+    ANIMATE(0),
+    SET_OBJ_PHYSICS(60, 0, -50, 1000, 1000, 200, 0, 0),
+    SET_INT(oMoveFlags, 0),
+    SCALE(oUkikiCageNextAction, 70),
+    CALL_NATIVE(bhv_init_room),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_flying_bookend_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvMessagePanel[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x0302DD80),
+    SET_INTERACT_TYPE(0x00800000),
+    SET_INT(oInteractionSubtype, 4096),
+    DROP_TO_FLOOR(),
+    SET_HITBOX(150, 80),
+    SET_INT(oYoshiBlinkTimer, 0),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(NULL),
+    SET_INT(oInteractStatus, 0),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvScuttlebug[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0049),
+    LOAD_ANIMATIONS(oAnimations, 0x06015064),
+    ANIMATE(0),
+    SET_OBJ_PHYSICS(80, -400, -50, 0, 0, 200, 0, 0),
+    SET_HOME(),
+    CALL_NATIVE(bhv_init_room),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_scuttlebug_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSwimmingWarp[] = {
+    BREAK(),
+};
+
+
+const BehaviorScript bhvStarDoor[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    SET_INT(oInteractType, 4),
+    LOAD_COLLISION_DATA(0x07078E14),
+    SET_INT(oInteractionSubtype, 32),
+    OR_INT(oFlags, 0x00C1),
+    SET_HITBOX(80, 100),
+    SET_HOME(),
+    SET_FLOAT(oDrawingDistance, 20000),
+    CALL_NATIVE(bhv_door_init),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_star_door_loop),
+    CALL_NATIVE(bhv_star_door_loop_2),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript editor_Scroll_Texture[] = {
+};
+
+
+const BehaviorScript bhvWFBreakableWallRight[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x040700D0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_13002794[] = {
+    OR_INT(oFlags, 0x2049),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(30, 0, -50, 1000, 1000, 200, 0, 0),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_boo_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_big_boo_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBalconyBigBoo[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    SET_INT(oBhvParams2ndByte, 2),
+    SET_INT(oWigglerTextStatus, 10),
+    GOTO(bhv_unknown_13002794),
+};
+
+
+const BehaviorScript bhvGoombaTripletSpawner[] = {
+    BEGIN(OBJ_LIST_PUSHABLE),
+    OR_INT(oFlags, 0x0041),
+    DROP_TO_FLOOR(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_goomba_triplet_spawner_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvCoinFormation[] = {
+    BEGIN(OBJ_LIST_SPAWNER),
+    OR_INT(oFlags, 0x0041),
+    CALL_NATIVE(bhv_coin_formation_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_coin_formation_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_130005B4[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    SET_HITBOX(160, 160),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(NULL),
+    SET_INT(oInteractStatus, 0),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTHIHugeIslandTop[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x04060D20),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTHIHugeIslandTop[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x04063570),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBobombBuddyOpensCannon[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x6449),
+    LOAD_ANIMATIONS(oAnimations, 0x0802396C),
+    SET_INTERACT_TYPE(0x00800000),
+    DROP_TO_FLOOR(),
+    SET_HITBOX(100, 60),
+    ANIMATE(0),
+    SET_INT(oYoshiChosenHome, 1),
+    SET_HOME(),
+    CALL_NATIVE(bhv_bobomb_buddy_init),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_bobomb_buddy_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvCannonClosed[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x4001),
+    LOAD_COLLISION_DATA(0x08004950),
+    SET_HOME(),
+    CALL_NATIVE(bhv_cannon_closed_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_cannon_closed_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWarp[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x0009),
+    SET_INT(oInteractType, 8192),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_warp_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvMrBlizzard[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2049),
+    DROP_TO_FLOOR(),
+    LOAD_ANIMATIONS(oAnimations, 0x0500D118),
+    ANIMATE(0),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(30, -400, 0, 1000, 1000, 200, 0, 0),
+    CALL_NATIVE(bhv_mr_blizzard_init),
+    SET_FLOAT(oYoshiBlinkTimer, 1),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_mr_blizzard_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_13002088[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2049),
+    LOAD_ANIMATIONS(oAnimations, 0x05008B74),
+    ANIMATE(3),
+    SET_OBJ_PHYSICS(30, -400, -50, 0, 0, 0, 0, 0),
+    SET_HOME(),
+    SET_INTERACT_TYPE(0x00800000),
+    SET_HITBOX(200, 300),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_tuxies_mother_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWFRotatingWoodenPlatform[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x0406AE00),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSmallPenguin[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2449),
+    DROP_TO_FLOOR(),
+    LOAD_ANIMATIONS(oAnimations, 0x05008B74),
+    ANIMATE(0),
+    SET_OBJ_PHYSICS(30, -400, -50, 0, 0, 200, 0, 0),
+    SET_INT(oInteractType, 2),
+    SET_INT(oInteractionSubtype, 16),
+    SET_INT(oIntangibleTimer, 0),
+    SET_HITBOX(40, 40),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_small_penguin_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSpindrift[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0049),
+    LOAD_ANIMATIONS(oAnimations, 0x05002D68),
+    ANIMATE(0),
+    SET_OBJ_PHYSICS(30, -400, 0, 0, 0, 200, 0, 0),
+    SET_HOME(),
+    SET_INT(oInteractionSubtype, 128),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_spindrift_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvFadingWarp[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    SET_INT(oInteractionSubtype, 1),
+    OR_INT(oFlags, 0x0009),
+    SET_INT(oInteractType, 8192),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_fading_warp_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_13000920[] = {
+    BILLBOARD(),
+    OR_INT(oFlags, 0x0041),
+    CALL_NATIVE(bhv_yellow_coin_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_yellow_coin_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_1300090C[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    SET_INT(oBhvParams2ndByte, 1),
+    GOTO(bhv_unknown_13000920),
+};
+
+
+const BehaviorScript bhvMovingBlueCoin[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x0001),
+    BILLBOARD(),
+    SET_INT(oIntangibleTimer, 0),
+    SET_INT(oAnimState, -1),
+    CALL_NATIVE(bhv_moving_blue_coin_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_moving_blue_coin_loop),
+    ADD_INT(oAnimState, 1),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv1Up[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x0001),
+    BILLBOARD(),
+    SET_HITBOX_WITH_OFFSET(30, 30, 0),
+    SET_FLOAT(oGraphYOffset, 30),
+    CALL_NATIVE(bhv_1up_init),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_1up_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSwimmingWarp[] = {
+    BREAK(),
+};
+
+
+const BehaviorScript bhvPoleGrabbing[] = {
+    BEGIN(OBJ_LIST_POLELIKE),
+    OR_INT(oFlags, 0x0001),
+    SET_INT(oInteractType, 64),
+    SET_HITBOX(80, 1500),
+    CALL_NATIVE(bhv_pole_init),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_pole_base_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvRecoveryHeart[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x2041),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_recovery_heart_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvToadMessage[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x4049),
+    LOAD_ANIMATIONS(oAnimations, 0x0600FC48),
+    ANIMATE(6),
+    SET_INTERACT_TYPE(0x00800000),
+    SET_HITBOX(80, 100),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_toad_message_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_toad_message_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvUkikiCageStar[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, 0x0001),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWFSolidTowerPlatform[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0041),
+    SET_INT(oInteractType, 64),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_001CE0B0[] = {
+};
+
+
+const BehaviorScript bhvSwimmingWarp[] = {
+    BREAK(),
+};
+
+
+const BehaviorScript bhvDorrie[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(0x0600F644),
+    OR_INT(oFlags, 0x2049),
+    LOAD_ANIMATIONS(oAnimations, 0x0600F638),
+    SET_HOME(),
+    SET_FLOAT(oCollisionDistance, 30000),
+    ADD_FLOAT(oPosX, 2000),
+    CALL_NATIVE(bhv_init_room),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_dorrie_update),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_13001488[] = {
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x0800C7A8),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_purple_switch_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvFloorSwitchGrills[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    GOTO(bhv_unknown_13001488),
+};
+
+
+const BehaviorScript bhvHiddenObject[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x08012D70),
+    SET_FLOAT(oCollisionDistance, 300),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_hidden_object_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvFloorSwitchHiddenObjects[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    SET_INT(oBhvParams2ndByte, 2),
+    GOTO(bhv_unknown_13001488),
+};
+
+
+const BehaviorScript bhvWFRotatingWoodenPlatform[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x0406D130),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTHIHugeIslandTop[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x08024C28),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvScuttlebugSpawn[] = {
+    BEGIN(OBJ_LIST_SPAWNER),
+    OR_INT(oFlags, 0x0041),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_scuttlebug_spawn_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvMontyMoleHole[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, 0x2041),
+    DROP_TO_FLOOR(),
+    SCALE(oUkikiCageNextAction, 150),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_monty_mole_hole_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvMontyMole[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2049),
+    DROP_TO_FLOOR(),
+    LOAD_ANIMATIONS(oAnimations, 0x05007248),
+    ANIMATE(3),
+    SET_OBJ_PHYSICS(30, 0, -50, 1000, 1000, 200, 0, 0),
+    HIDE(),
+    SET_INT(oIntangibleTimer, -1),
+    SET_FLOAT(oGraphYOffset, 65476),
+    SCALE(oUkikiCageNextAction, 150),
+    DELAY(1),
+    CALL_NATIVE(bhv_monty_mole_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_monty_mole_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvFlamethrower[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, 0x0049),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_flamethrower_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSwoop[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2049),
+    LOAD_ANIMATIONS(oAnimations, 0x060070D0),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(50, 0, -50, 0, 0, 0, 0, 0),
+    CALL_NATIVE(bhv_init_room),
+    SCALE(oUkikiCageNextAction, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_swoop_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSnufit[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2049),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(30, 0, -50, 0, 0, 0, 0, 0),
+    CALL_NATIVE(bhv_init_room),
+    BEGIN_LOOP(),
+    SET_INT(oYoshiBlinkTimer, 0),
+    CALL_NATIVE(bhv_snufit_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvFishSpawner[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    DISABLE_RENDERING(),
+    OR_INT(oFlags, 0x0049),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_fish_spawner_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_001CE050[] = {
+    CMD_NOP_1(0xA1),
+};
+
+
+const BehaviorScript bhvKlepto[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x20C9),
+    LOAD_ANIMATIONS(oAnimations, 0x05008CFC),
+    ANIMATE(0),
+    SET_OBJ_PHYSICS(100, 0, -20, 1000, 1000, 200, 0, 0),
+    SET_HOME(),
+    CALL_NATIVE(bhv_klepto_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvChuckyaAnchorMario[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0009),
+    BILLBOARD(),
+    SET_FLOAT(oParentRelativePosY, 65476),
+    SET_FLOAT(oParentRelativePosZ, 150),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_chuckya_anchor_mario_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvChuckya[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0449),
+    LOAD_ANIMATIONS(oAnimations, 0x0800C070),
+    ANIMATE(5),
+    SET_INT(oInteractType, 2),
+    SET_HITBOX(150, 100),
+    SET_OBJ_PHYSICS(30, -400, -50, 1000, 1000, 200, 0, 0),
+    SPAWN_OBJ(0x00, bhvChuckyaAnchorMario),
+    SET_INT(oNumLootCoins, 5),
+    SET_INT(oIntangibleTimer, 0),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_chuckya_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBobomb[] = {
+    BEGIN(OBJ_LIST_DESTRUCTIVE),
+    OR_INT(oFlags, 0x6449),
+    LOAD_ANIMATIONS(oAnimations, 0x0802396C),
+    DROP_TO_FLOOR(),
+    ANIMATE(0),
+    SET_INT(oIntangibleTimer, 0),
+    SET_HOME(),
+    CALL_NATIVE(bhv_bobomb_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_bobomb_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvPokey[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2041),
+    DROP_TO_FLOOR(),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(60, -400, 0, 1000, 1000, 200, 0, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_pokey_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_130002A0[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_130005D8[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x040753A0),
+    SET_FLOAT(oCollisionDistance, 1024),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvToxBox[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0049),
+    LOAD_COLLISION_DATA(0x07012644),
+    ADD_FLOAT(oPosY, 256),
+    SET_FLOAT(oDrawingDistance, 8000),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_tox_box_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTweester[] = {
+    BEGIN(OBJ_LIST_POLELIKE),
+    OR_INT(oFlags, 0x20C1),
+    SET_OBJ_PHYSICS(30, -400, 0, 0, 0, 200, 0, 0),
+    DROP_TO_FLOOR(),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_tweester_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvGoomba[] = {
+    BEGIN(OBJ_LIST_PUSHABLE),
+    OR_INT(oFlags, 0x2049),
+    DROP_TO_FLOOR(),
+    LOAD_ANIMATIONS(oAnimations, 0x0801DA4C),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(40, -400, -50, 1000, 1000, 0, 0, 0),
+    CALL_NATIVE(bhv_goomba_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_goomba_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvPyramidElevator[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x07028110),
+    SET_HOME(),
+    SET_FLOAT(oCollisionDistance, 20000),
+    CALL_NATIVE(bhv_pyramid_elevator_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_pyramid_elevator_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvGrindel[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0049),
+    LOAD_COLLISION_DATA(0x07027ED0),
+    DROP_TO_FLOOR(),
+    ADD_FLOAT(oPosY, 1),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_grindel_thwomp_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvHorizontalGrindel[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(0x07027ED0),
+    OR_INT(oFlags, 0x0001),
+    DROP_TO_FLOOR(),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(40, -400, 0, 1000, 1000, 200, 0, 0),
+    SCALE(oUkikiCageNextAction, 90),
+    CALL_NATIVE(bhv_horizontal_grindel_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(cur_obj_update_floor_and_walls),
+    CALL_NATIVE(bhv_horizontal_grindel_update),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSpindel[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0011),
+    LOAD_COLLISION_DATA(0x07027F54),
+    CALL_NATIVE(bhv_spindel_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_spindel_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSSLMovingPyramidWall[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0011),
+    LOAD_COLLISION_DATA(0x0702808C),
+    CALL_NATIVE(bhv_ssl_moving_pyramid_wall_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_ssl_moving_pyramid_wall_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvHomingAmp[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x204B),
+    LOAD_ANIMATIONS(oAnimations, 0x08004034),
+    ANIMATE(0),
+    SET_FLOAT(oGraphYOffset, 40),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_homing_amp_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_homing_amp_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvEyerokBoss[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2041),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_eyerok_boss_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_001CE064[] = {
+};
+
+
+const BehaviorScript bhv_unknown_13005104[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x6449),
+    SET_HITBOX(256, 256),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    SET_INT(oInteractStatus, 0),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWoodenPost[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(0x06002490),
+    OR_INT(oFlags, 0x2041),
+    SET_OBJ_PHYSICS(0, -400, -50, 1000, 1000, 200, 0, 0),
+    SET_INT(oNumLootCoins, 5),
+    DROP_TO_FLOOR(),
+    SET_HOME(),
+    SCALE(oUkikiCageNextAction, 50),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_wooden_post_update),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_1300478C[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x20C9),
+    DROP_TO_FLOOR(),
+    LOAD_ANIMATIONS(oAnimations, 0x06025178),
+    ANIMATE(0),
+    SET_OBJ_PHYSICS(0, -400, -50, 0, 1000, 200, 0, 0),
+    HIDE(),
+    SET_HOME(),
+    SET_FLOAT(oGraphYOffset, 240),
+    SCALE(oUkikiCageNextAction, 200),
+    SPAWN_CHILD_WITH_PARAM(0, 0x6B, bhvWoodenPost),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_chain_chomp_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvChainChompGate[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(0x070113C0),
+    OR_INT(oFlags, 0x0041),
+    CALL_NATIVE(bhv_chain_chomp_gate_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_chain_chomp_gate_update),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_130045F8[] = {
+    BEGIN(OBJ_LIST_POLELIKE),
+    SET_INTERACT_TYPE(0x00000040),
+    SET_HITBOX(80, 700),
+    SET_INT(oIntangibleTimer, 0),
+    OR_INT(oFlags, 0x0001),
+    DROP_TO_FLOOR(),
+    LOAD_ANIMATIONS(oAnimations, 0x06001028),
+    ANIMATE(0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_pole_base_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvKoopaRaceEndpoint[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, 0x0041),
+    DROP_TO_FLOOR(),
+    SPAWN_CHILD_WITH_PARAM(0, 0x6A, bhv_unknown_130045F8),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_koopa_race_endpoint_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvHiddenStar[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x4001),
+    CALL_NATIVE(bhv_hidden_star_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_hidden_star_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvOpenableGrill[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, 0x0009),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_openable_grill_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvPitBowlingBall[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0001),
+    BILLBOARD(),
+    SET_FLOAT(oGraphYOffset, 130),
+    CALL_NATIVE(bhv_bob_pit_bowling_ball_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_bob_pit_bowling_ball_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvHiddenStarTrigger[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x0001),
+    SET_HITBOX(100, 100),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_hidden_star_trigger_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvPushableMetalBox[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x08024C28),
+    SET_FLOAT(oCollisionDistance, 500),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_pushable_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWaterBombCannon[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, 0x0041),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_water_bomb_cannon_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvKoopa[] = {
+    BEGIN(OBJ_LIST_PUSHABLE),
+    OR_INT(oFlags, 0x2041),
+    DROP_TO_FLOOR(),
+    LOAD_ANIMATIONS(oAnimations, 0x06011364),
+    ANIMATE(9),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(50, -400, 0, 0, 1000, 200, 0, 0),
+    SCALE(oUkikiCageNextAction, 150),
+    SET_FLOAT(oYoshiBlinkTimer, 1),
+    CALL_NATIVE(bhv_koopa_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_koopa_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWaterBombSpawner[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0041),
+    DROP_TO_FLOOR(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_water_bomb_spawner_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBoBBowlingBallSpawner[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0001),
+    SET_INT(oYoshiChosenHome, 127),
+    CALL_NATIVE(bhv_generic_bowling_ball_spawner_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_generic_bowling_ball_spawner_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvCirclingAmp[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2043),
+    LOAD_ANIMATIONS(oAnimations, 0x08004034),
+    ANIMATE(0),
+    SET_FLOAT(oGraphYOffset, 40),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_circling_amp_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_circling_amp_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBigChillBully[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0009),
+    LOAD_ANIMATIONS(oAnimations, 0x06003994),
+    DROP_TO_FLOOR(),
+    SET_HOME(),
+    SET_INT(oYoshiBlinkTimer, 16),
+    CALL_NATIVE(bhv_big_bully_init),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_bully_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSnowMoundSpawn[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_snow_mound_spawn_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_001CE040[] = {
+    BEGIN(OBJ_LIST_PUSHABLE),
+    SET_RANDOM_FLOAT(oUkikiCageNextAction, 9215, 65045),
+    DEACTIVATE(),
+};
+
+
+const BehaviorScript bhvWaterLevelDiamond[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    SET_HITBOX(70, 30),
+    SET_FLOAT(oCollisionDistance, 200),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_water_level_diamond_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWDWExpressElevator[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0041),
+    LOAD_COLLISION_DATA(0x070185AC),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_wdw_express_elevator_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWDWExpressElevatorPlatform[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0041),
+    LOAD_COLLISION_DATA(0x070185AC),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_130014E0[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x08012D70),
+    SET_FLOAT(oCollisionDistance, 500),
+    CALL_NATIVE(bhv_init_room),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_breakable_box_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvInitializeChangingWaterLevel[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_init_changing_water_level_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWDWSquareFloatingPlatform[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0009),
+    LOAD_COLLISION_DATA(0x070183C0),
+    SET_FLOAT(oYoshiChosenHome, 64),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_floating_platform_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvHeaveHoThrowMario[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0009),
+    BILLBOARD(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_heave_ho_throw_mario_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvHeaveHo[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2449),
+    LOAD_ANIMATIONS(oAnimations, 0x0501534C),
+    ANIMATE(0),
+    SET_OBJ_PHYSICS(200, -400, -50, 1000, 1000, 600, 0, 0),
+    SPAWN_OBJ(0x00, bhvHeaveHoThrowMario),
+    SET_INT(oInteractType, 2),
+    SET_INT(oInteractionSubtype, 516),
+    SET_HITBOX(120, 100),
+    SET_HOME(),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_heave_ho_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWDWSquareFloatingPlatform[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0009),
+    LOAD_COLLISION_DATA(0x07018630),
+    SET_FLOAT(oYoshiChosenHome, 64),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_floating_platform_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSkeeter[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2049),
+    LOAD_ANIMATIONS(oAnimations, 0x06007DE0),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(180, -400, -50, 1000, 1000, 1200, 0, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_skeeter_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvFallingPillar[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2001),
+    SET_HOME(),
+    CALL_NATIVE(bhv_falling_pillar_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_falling_pillar_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWhirlpool[] = {
+    BEGIN(OBJ_LIST_POLELIKE),
+    OR_INT(oFlags, 0x0041),
+    CALL_NATIVE(bhv_whirlpool_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_whirlpool_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvFirePiranhaPlant[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2049),
+    DROP_TO_FLOOR(),
+    LOAD_ANIMATIONS(oAnimations, 0x0601C31C),
+    ANIMATE(0),
+    SET_HOME(),
+    HIDE(),
+    CALL_NATIVE(bhv_fire_piranha_plant_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_fire_piranha_plant_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTTMBowlingBallSpawner[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0001),
+    SET_INT(oYoshiChosenHome, 63),
+    CALL_NATIVE(bhv_generic_bowling_ball_spawner_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_generic_bowling_ball_spawner_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvEnemyLakitu[] = {
+    BEGIN(OBJ_LIST_PUSHABLE),
+    OR_INT(oFlags, 0x2041),
+    LOAD_ANIMATIONS(oAnimations, 0x050144D4),
+    ANIMATE(0),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(40, 0, -50, 0, 0, 200, 0, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_enemy_lakitu_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTTCPendulum[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(0x0701508C),
+    OR_INT(oFlags, 0x2041),
+    SET_FLOAT(oCollisionDistance, 1500),
+    CALL_NATIVE(bhv_ttc_pendulum_init),
+    SET_FLOAT(oYoshiBlinkTimer, 1),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_ttc_pendulum_update),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTTCPitBlock[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0041),
+    SET_HOME(),
+    SET_FLOAT(oCollisionDistance, 350),
+    CALL_NATIVE(bhv_ttc_pit_block_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_ttc_pit_block_update),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTTCRotatingSolid[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0041),
+    SET_HOME(),
+    SET_FLOAT(oCollisionDistance, 450),
+    CALL_NATIVE(bhv_ttc_rotating_solid_init),
+    SET_INT(oYoshiBlinkTimer, 1),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_ttc_rotating_solid_update),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTTC2DRotator[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(0x070158E0),
+    OR_INT(oFlags, 0x0001),
+    SET_FLOAT(oCollisionDistance, 1800),
+    CALL_NATIVE(bhv_ttc_2d_rotator_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_ttc_2d_rotator_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTTCMovingBar[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(0x0701550C),
+    OR_INT(oFlags, 0x0041),
+    SET_HOME(),
+    SET_FLOAT(oCollisionDistance, 550),
+    CALL_NATIVE(bhv_ttc_moving_bar_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_ttc_moving_bar_update),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTTCCog[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0041),
+    SET_FLOAT(oCollisionDistance, 400),
+    CALL_NATIVE(bhv_ttc_cog_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_ttc_cog_update),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvTTCSpinner[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(0x070159D0),
+    OR_INT(oFlags, 0x0001),
+    SET_FLOAT(oCollisionDistance, 450),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_ttc_spinner_update),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSeesawPlatform[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x2049),
+    CALL_NATIVE(bhv_seesaw_platform_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_seesaw_platform_update),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvOctagonalPlatformRotating[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    CALL_NATIVE(bhv_rotating_octagonal_plat_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_rotating_octagonal_plat_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSlidingPlatform2[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0041),
+    SET_HOME(),
+    CALL_NATIVE(bhv_sliding_plat_2_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_sliding_plat_2_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvHiddenStar[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x4001),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_hidden_red_coin_star_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWaterfallSoundLoop[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_waterfall_sound_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_00402780[] = {
+};
+
+
+const BehaviorScript bhvFerrisWheelAxle[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    ADD_INT(0x10, 16384),
+    CALL_NATIVE(bhv_ferris_wheel_axle_init),
+    BEGIN_LOOP(),
+    ADD_INT(0x14, 400),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvFloorSwitchAnimatesObject[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    SET_INT(oBhvParams2ndByte, 1),
+    GOTO(bhv_unknown_13001488),
+};
+
+
+const BehaviorScript bhvSquarishPathMoving[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x0700F790),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_squarish_path_moving_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvFlyGuy[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2041),
+    LOAD_ANIMATIONS(oAnimations, 0x08011A64),
+    ANIMATE(0),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(50, 0, 0, 0, 1000, 600, 0, 0),
+    CALL_NATIVE(bhv_init_room),
+    SET_INT(oInteractionSubtype, 128),
+    SET_FLOAT(oGraphYOffset, 30),
+    SCALE(oUkikiCageNextAction, 150),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_fly_guy_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_001CE008[] = {
+    BEGIN(34),
+};
+
+
+const BehaviorScript bhvBowserBomb[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0001),
+    SET_INT(oIntangibleTimer, 0),
+    SET_HITBOX_WITH_OFFSET(40, 40, 40),
+    DELAY(1),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_bowser_bomb_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBubba[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2049),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(200, -400, -50, 1000, 1000, 0, 0, 0),
+    SCALE(oUkikiCageNextAction, 50),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_bubba_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSmallWhomp[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    SET_INT(oNumLootCoins, 5),
+    OR_INT(oFlags, 0x2049),
+    LOAD_ANIMATIONS(oAnimations, 0x06020A04),
+    LOAD_COLLISION_DATA(0x06020A0C),
+    ANIMATE(0),
+    SET_OBJ_PHYSICS(0, -400, -50, 0, 0, 200, 0, 0),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_whomp_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvLLLTiltingInvertedPyramid[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0049),
+    LOAD_COLLISION_DATA(0x0701D480),
+    ADD_FLOAT(oPosY, 5),
+    SET_HOME(),
+    CALL_NATIVE(bhv_platform_normals_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_tilting_inverted_pyramid_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvLLLSinkingRectangularPlatform[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0049),
+    LOAD_COLLISION_DATA(0x0701D378),
+    SET_FLOAT(oCollisionDistance, 2000),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_lll_sinking_rectangular_platform_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvLLLSinkingSquarePlatforms[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0049),
+    LOAD_COLLISION_DATA(0x0701D3C0),
+    ADD_FLOAT(oPosY, 5),
+    SET_FLOAT(oCollisionDistance, 2000),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_lll_sinking_square_platforms_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvLLLSinkingRockBlock[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0009),
+    LOAD_COLLISION_DATA(0x0701D500),
+    ADD_FLOAT(oPosY, 65486),
+    SET_HOME(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_lll_sinking_rock_block_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvLLLRotatingBlockWithFireBars[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0049),
+    LOAD_COLLISION_DATA(0x0701D0A8),
+    SET_FLOAT(oCollisionDistance, 4000),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_lll_rotating_block_fire_bars_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBigBullyWithMinions[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0009),
+    LOAD_ANIMATIONS(oAnimations, 0x0500470C),
+    SET_HOME(),
+    CALL_NATIVE(bhv_big_bully_init),
+    CALL_NATIVE(bhv_big_bully_with_minions_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBigBully[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0009),
+    LOAD_ANIMATIONS(oAnimations, 0x0500470C),
+    DROP_TO_FLOOR(),
+    SET_HOME(),
+    CALL_NATIVE(bhv_big_bully_init),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_bully_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvSmallBully[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0009),
+    LOAD_ANIMATIONS(oAnimations, 0x0500470C),
+    DROP_TO_FLOOR(),
+    SET_HOME(),
+    CALL_NATIVE(bhv_small_bully_init),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_bully_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBouncingFireball[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, 0x0041),
+    DISABLE_RENDERING(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_bouncing_fireball_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_130023D0[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x6449),
+    SET_INTERACT_TYPE(0x102A0080),
+    SET_HITBOX(216, 72),
+    SET_INT(oDamageOrCoinValue, 2),
+    BEGIN_LOOP(),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(NULL),
+    SET_INT(oInteractStatus, 0),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvLLLBowserPuzzle[] = {
+    BEGIN(OBJ_LIST_SPAWNER),
+    DISABLE_RENDERING(),
+    OR_INT(oFlags, 0x0041),
+    ADD_FLOAT(oPosZ, 65486),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_lll_bowser_puzzle_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvChirpChirpUnused[] = {
+    DISABLE_RENDERING(),
+    OR_INT(oFlags, 0x0049),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_fish_spawner_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvManyBlueFishSpawner[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    SET_INT(oBhvParams2ndByte, 0),
+    GOTO(bhvChirpChirpUnused),
+};
+
+
+const BehaviorScript bhvFewBlueFishSpawner[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    SET_INT(oBhvParams2ndByte, 1),
+    GOTO(bhvChirpChirpUnused),
+};
+
+
+const BehaviorScript bhv_unknown_1300179C[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x204B),
+    SET_HOME(),
+    SET_HITBOX_WITH_OFFSET(50, 50, 50),
+    SET_INTERACT_TYPE(0x00000008),
+    SET_INT(oDamageOrCoinValue, 3),
+    SCALE(oUkikiCageNextAction, 40),
+    SET_INT(oIntangibleTimer, 0),
+    SET_OBJ_PHYSICS(30, 0, 0, 0, 0, 0, 0, 0),
+    CALL_NATIVE(bhv_bullet_bill_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_bullet_bill_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvThwomp2[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(0x0500B7D0),
+    OR_INT(oFlags, 0x0049),
+    DROP_TO_FLOOR(),
+    ADD_FLOAT(oPosY, 1),
+    SCALE(oUkikiCageNextAction, 140),
+    SET_HOME(),
+    SET_FLOAT(oDrawingDistance, 4000),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_grindel_thwomp_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvGiantPole[] = {
+    BEGIN(OBJ_LIST_POLELIKE),
+    OR_INT(oFlags, 0x0001),
+    SET_INT(oInteractType, 64),
+    SET_HITBOX(80, 2100),
+    SET_HOME(),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_giant_pole_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvHidden1UpInPoleSpawner[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x0001),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_1up_hidden_in_pole_spawner_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvWFRotatingWoodenPlatform[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0001),
+    LOAD_COLLISION_DATA(0x0700FA00),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_wf_rotating_wooden_platform_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvThwomp[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(0x0500B92C),
+    OR_INT(oFlags, 0x0049),
+    DROP_TO_FLOOR(),
+    ADD_FLOAT(oPosY, 1),
+    SET_HOME(),
+    SCALE(oUkikiCageNextAction, 140),
+    SET_FLOAT(oDrawingDistance, 4000),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_grindel_thwomp_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvMips[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0409),
+    LOAD_ANIMATIONS(oAnimations, 0x06015724),
+    SET_INT(oInteractType, 2),
+    DROP_TO_FLOOR(),
+    SET_HITBOX(50, 75),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_mips_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_mips_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvCannonBarrel[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, 0x00C9),
+    DROP_TO_FLOOR(),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_cannon_barrel_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_130004A8[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, 0x00C9),
+    SPAWN_CHILD(0x7F, bhvCannonBarrel),
+    SET_INT(oInteractType, 16384),
+    ADD_FLOAT(oPosY, 65196),
+    SET_HOME(),
+    SET_HITBOX(150, 150),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_cannon_base_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvCapSwitch[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, 0x0009),
+    LOAD_COLLISION_DATA(0x050033D0),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_cap_switch_loop),
+    CALL_NATIVE(NULL),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvCheckerboardElevatorGroup[] = {
+    BEGIN(OBJ_LIST_SPAWNER),
+    OR_INT(oFlags, 0x0001),
+    CALL_NATIVE(bhv_checkerboard_elevator_group_init),
+    DELAY(1),
+    DEACTIVATE(),
+};
+
+
+const BehaviorScript bhvWigglerHead[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2041),
+    DROP_TO_FLOOR(),
+    LOAD_ANIMATIONS(oAnimations, 0x0500EC8C),
+    SET_HOME(),
+    SET_OBJ_PHYSICS(60, -400, 0, 1000, 1000, 200, 0, 0),
+    HIDE(),
+    SCALE(oUkikiCageNextAction, 400),
+    SET_FLOAT(oYoshiBlinkTimer, 5000),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_wiggler_update),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvBobombAnchorMario[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x0009),
+    BILLBOARD(),
+    SET_FLOAT(oParentRelativePosX, 100),
+    SET_FLOAT(oParentRelativePosZ, 150),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_bobomb_anchor_mario_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhvKingBobomb[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x20C9),
+    LOAD_ANIMATIONS(oAnimations, 0x0500FE30),
+    SET_INT(oInteractType, 2),
+    SET_HITBOX(100, 100),
+    SET_OBJ_PHYSICS(30, -400, -50, 1000, 1000, 200, 0, 0),
+    SET_INT(oIntangibleTimer, 0),
+    DROP_TO_FLOOR(),
+    SET_HOME(),
+    SPAWN_OBJ(0x00, bhvBobombAnchorMario),
+    SET_INT(oHealth, 3),
+    SET_INT(oDamageOrCoinValue, 1),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_king_bobomb_loop),
+    END_LOOP(),
+};
+
+
+const BehaviorScript bhv_unknown_001CE08C[] = {
+    BEGIN(131),
+};

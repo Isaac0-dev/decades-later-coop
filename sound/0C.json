@@ -1,0 +1,498 @@
+{
+    "date": "1996-03-19",
+    "sample_bank": "sample_bank0",
+    "envelopes": {
+        "envelope0": [
+            [2, 32700],
+            [1, 32700],
+            [32700, 29430],
+            "hang"
+        ],
+        "envelope1": [
+            [6, 32700],
+            [298, 0],
+            [1, 0],
+            "hang"
+        ],
+        "envelope2": [
+            [2, 32700],
+            [205, 0],
+            [1, 0],
+            "hang"
+        ],
+        "envelope3": [
+            [6, 32700],
+            [1, 32700],
+            [32700, 29430],
+            "hang"
+        ],
+        "envelope4": [
+            [2, 32700],
+            [103, 24112],
+            [409, 0],
+            "hang"
+        ],
+        "envelope5": [
+            [2, 32700],
+            [130, 4954],
+            [523, 0],
+            "hang"
+        ],
+        "envelope6": [
+            [2, 32700],
+            [55, 32700],
+            [127, 0],
+            "hang"
+        ],
+        "envelope7": [
+            [2, 32700],
+            [136, 0],
+            [32700, 0],
+            "hang"
+        ],
+        "envelope8": [
+            [2, 32700],
+            [205, 19818],
+            [535, 0],
+            "hang"
+        ],
+        "envelope9": [
+            [2, 32700],
+            [145, 7597],
+            [343, 0],
+            "hang"
+        ],
+        "envelope10": [
+            [2, 32700],
+            [187, 0],
+            [32700, 0],
+            "hang"
+        ],
+        "envelope11": [
+            [6, 32700],
+            [298, 32700],
+            [32700, 29430],
+            "hang"
+        ]
+    },
+    "instruments": {
+        "inst0": {
+            "release_rate": 19,
+            "envelope": "envelope0",
+            "sound": "95"
+        },
+        "inst1": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "96"
+        },
+        "inst2": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "97"
+        },
+        "inst3": {
+            "release_rate": 10,
+            "envelope": "envelope1",
+            "sound": "98"
+        },
+        "inst4": {
+            "release_rate": 34,
+            "envelope": "envelope2",
+            "sound": "99"
+        },
+        "inst5": {
+            "release_rate": 53,
+            "normal_range_hi": 50,
+            "envelope": "envelope0",
+            "sound": "91",
+            "sound_hi": "9A"
+        },
+        "inst6": {
+            "release_rate": 43,
+            "envelope": "envelope0",
+            "sound": "9B"
+        },
+        "inst7": {
+            "release_rate": 15,
+            "normal_range_lo": 27,
+            "normal_range_hi": 46,
+            "envelope": "envelope3",
+            "sound_lo": "9C",
+            "sound": "9D",
+            "sound_hi": "9E"
+        },
+        "inst8": {
+            "release_rate": 19,
+            "normal_range_lo": 29,
+            "normal_range_hi": 63,
+            "envelope": "envelope0",
+            "sound_lo": "8D",
+            "sound": "8E",
+            "sound_hi": "8F"
+        },
+        "inst9": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "94"
+        },
+        "inst10": {
+            "release_rate": 10,
+            "normal_range_lo": 24,
+            "envelope": "envelope0",
+            "sound_lo": "92",
+            "sound": "93"
+        },
+        "inst11": {
+            "release_rate": 10,
+            "normal_range_lo": 28,
+            "normal_range_hi": 28,
+            "envelope": "envelope0",
+            "sound_lo": "9F",
+            "sound": "A0",
+            "sound_hi": "9F"
+        },
+        "inst12": {
+            "release_rate": 208,
+            "normal_range_lo": 60,
+            "normal_range_hi": 60,
+            "envelope": "envelope0",
+            "sound_lo": "A1",
+            "sound": "A2",
+            "sound_hi": "A3"
+        },
+        "inst13": {
+            "release_rate": 10,
+            "envelope": "envelope4",
+            "sound": "A4"
+        },
+        "inst14": {
+            "release_rate": 100,
+            "normal_range_lo": 41,
+            "envelope": "envelope5",
+            "sound_lo": "A5",
+            "sound": "A6"
+        },
+        "inst15": {
+            "release_rate": 180,
+            "envelope": "envelope0",
+            "sound": "A7"
+        },
+        "inst16": {
+            "release_rate": 76,
+            "envelope": "envelope0",
+            "sound": "A8"
+        },
+        "inst17": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "A9"
+        },
+        "inst18": {
+            "release_rate": 10,
+            "normal_range_lo": 18,
+            "envelope": "envelope6",
+            "sound_lo": "AA",
+            "sound": "AB"
+        },
+        "inst19": {
+            "release_rate": 43,
+            "normal_range_hi": 47,
+            "envelope": "envelope7",
+            "sound": "AC",
+            "sound_hi": "AD"
+        },
+        "inst20": {
+            "release_rate": 119,
+            "envelope": "envelope0",
+            "sound": "AE"
+        },
+        "inst21": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "AF"
+        },
+        "inst22": {
+            "release_rate": 90,
+            "envelope": "envelope0",
+            "sound": "B0"
+        },
+        "inst23": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "B1"
+        },
+        "inst24": {
+            "release_rate": 10,
+            "normal_range_lo": 19,
+            "normal_range_hi": 19,
+            "envelope": "envelope0",
+            "sound_lo": "B2",
+            "sound": {"sample": "B3", "tuning": 2.121321},
+            "sound_hi": "B2"
+        },
+        "inst25": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "B4"
+        },
+        "inst26": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "B5"
+        },
+        "inst27": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "B6"
+        },
+        "inst28": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "B7"
+        },
+        "inst29": {
+            "release_rate": 128,
+            "envelope": "envelope8",
+            "sound": "B8"
+        },
+        "inst30": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "B9"
+        },
+        "inst31": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "BA"
+        },
+        "inst32": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "BB"
+        },
+        "inst33": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "BC"
+        },
+        "inst34": {
+            "release_rate": 114,
+            "envelope": "envelope0",
+            "sound": "BD"
+        },
+        "inst35": {
+            "release_rate": 10,
+            "normal_range_lo": 14,
+            "normal_range_hi": 15,
+            "envelope": "envelope0",
+            "sound_lo": {"sample": "BE", "tuning": 2.244924},
+            "sound": "BF",
+            "sound_hi": {"sample": "BE", "tuning": 2.828428}
+        },
+        "inst36": {
+            "release_rate": 10,
+            "envelope": "envelope9",
+            "sound": "C0"
+        },
+        "inst37": {
+            "release_rate": 34,
+            "envelope": "envelope0",
+            "sound": "C1"
+        },
+        "inst38": {
+            "release_rate": 53,
+            "envelope": "envelope2",
+            "sound": "C2"
+        },
+        "inst39": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "C3"
+        },
+        "inst40": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "C4"
+        },
+        "inst41": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "C5"
+        },
+        "inst42": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "C6"
+        },
+        "inst43": {
+            "release_rate": 10,
+            "normal_range_lo": 18,
+            "envelope": "envelope6",
+            "sound_lo": "C7",
+            "sound": "C8"
+        },
+        "inst44": {
+            "release_rate": 67,
+            "envelope": "envelope0",
+            "sound": "C9"
+        },
+        "inst45": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "CA"
+        },
+        "inst46": {
+            "release_rate": 100,
+            "normal_range_lo": 55,
+            "normal_range_hi": 56,
+            "envelope": "envelope10",
+            "sound_lo": "CB",
+            "sound": "CC",
+            "sound_hi": "CD"
+        },
+        "inst47": {
+            "release_rate": 24,
+            "normal_range_lo": 42,
+            "envelope": "envelope0",
+            "sound_lo": "CE",
+            "sound": "CF"
+        },
+        "inst48": {
+            "release_rate": 119,
+            "envelope": "envelope11",
+            "sound": "D0"
+        },
+        "inst49": {
+            "release_rate": 19,
+            "normal_range_hi": 50,
+            "envelope": "envelope0",
+            "sound": "D1",
+            "sound_hi": "D2"
+        },
+        "inst50": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "D3"
+        },
+        "percussion": [
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.210224}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.2227245}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.2359685}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.25}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.264866}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.2806155}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.297302}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.3149805}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.33371}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.3535535}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.374577}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.3968505}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.4204485}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.4454495}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.4719375}},
+            {"release_rate": 10, "pan": 62, "envelope": "envelope0", "sound": {"sample": "D4", "tuning": 0.5}},
+            {"release_rate": 10, "pan": 57, "envelope": "envelope0", "sound": "D5"},
+            {"release_rate": 10, "pan": 65, "envelope": "envelope0", "sound": {"sample": "B3", "tuning": 1.1905508}},
+            {"release_rate": 10, "pan": 66, "envelope": "envelope0", "sound": {"sample": "B3", "tuning": 0.8418465}},
+            {"release_rate": 10, "pan": 66, "envelope": "envelope0", "sound": {"sample": "B3", "tuning": 0.8919052}},
+            {"release_rate": 10, "pan": 6, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 0.471937}},
+            {"release_rate": 10, "pan": 6, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 0.5}},
+            {"release_rate": 10, "pan": 27, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 0.66742}},
+            {"release_rate": 10, "pan": 27, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 0.707107}},
+            {"release_rate": 10, "pan": 45, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 0.793701}},
+            {"release_rate": 10, "pan": 45, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 0.840897}},
+            {"release_rate": 10, "pan": 53, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 1.0}},
+            {"release_rate": 10, "pan": 53, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 1.059463}},
+            {"release_rate": 10, "pan": 83, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 1.189207}},
+            {"release_rate": 10, "pan": 83, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 1.259921}},
+            {"release_rate": 10, "pan": 83, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 1.33484}},
+            {"release_rate": 10, "pan": 83, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 1.414214}},
+            {"release_rate": 10, "pan": 83, "envelope": "envelope0", "sound": {"sample": "D6", "tuning": 1.498307}},
+            {"release_rate": 10, "pan": 35, "envelope": "envelope0", "sound": {"sample": "D7", "tuning": 1.189207}},
+            {"release_rate": 10, "pan": 35, "envelope": "envelope0", "sound": {"sample": "D7", "tuning": 1.259921}},
+            {"release_rate": 10, "pan": 35, "envelope": "envelope0", "sound": {"sample": "D7", "tuning": 1.33484}},
+            {"release_rate": 10, "pan": 35, "envelope": "envelope0", "sound": {"sample": "D7", "tuning": 1.414214}},
+            {"release_rate": 10, "pan": 35, "envelope": "envelope0", "sound": {"sample": "D7", "tuning": 1.498307}},
+            {"release_rate": 10, "pan": 35, "envelope": "envelope0", "sound": {"sample": "D7", "tuning": 1.587401}},
+            {"release_rate": 10, "pan": 35, "envelope": "envelope0", "sound": {"sample": "D7", "tuning": 1.681793}},
+            {"release_rate": 10, "pan": 35, "envelope": "envelope0", "sound": {"sample": "D7", "tuning": 1.781798}},
+            {"release_rate": 10, "pan": 54, "envelope": "envelope0", "sound": {"sample": "D8", "tuning": 0.5469096}},
+            {"release_rate": 10, "pan": 54, "envelope": "envelope0", "sound": {"sample": "D8", "tuning": 0.5794306}},
+            {"release_rate": 10, "pan": 54, "envelope": "envelope0", "sound": {"sample": "D8", "tuning": 0.61388505}},
+            {"release_rate": 10, "pan": 54, "envelope": "envelope0", "sound": {"sample": "D8", "tuning": 0.65038884}},
+            {"release_rate": 10, "pan": 54, "envelope": "envelope0", "sound": {"sample": "D8", "tuning": 0.6890625}},
+            {"release_rate": 10, "pan": 54, "envelope": "envelope0", "sound": {"sample": "D8", "tuning": 0.7300362}},
+            {"release_rate": 10, "pan": 54, "envelope": "envelope0", "sound": {"sample": "D8", "tuning": 0.77344644}},
+            {"release_rate": 10, "pan": 54, "envelope": "envelope0", "sound": {"sample": "D8", "tuning": 0.81943786}},
+            {"release_rate": 10, "pan": 70, "envelope": "envelope0", "sound": {"sample": "D8", "tuning": 1.5468929}},
+            {"release_rate": 10, "pan": 70, "envelope": "envelope0", "sound": {"sample": "D8", "tuning": 1.6388757}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 0.793701}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 0.840897}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 0.890899}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 0.943875}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 1.0}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 1.059463}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 1.122462}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 1.189207}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 1.259921}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 1.33484}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 1.414214}},
+            {"release_rate": 10, "pan": 82, "envelope": "envelope0", "sound": {"sample": "D9", "tuning": 1.498307}},
+            {"release_rate": 10, "pan": 128, "envelope": "envelope0", "sound": "DA"}
+        ]
+    },
+    "instrument_list": [
+        "inst0",
+        "inst1",
+        "inst2",
+        "inst3",
+        "inst4",
+        "inst5",
+        "inst6",
+        "inst7",
+        "inst8",
+        "inst9",
+        "inst10",
+        "inst11",
+        "inst12",
+        "inst13",
+        "inst14",
+        "inst15",
+        "inst16",
+        "inst17",
+        "inst18",
+        "inst19",
+        "inst20",
+        "inst21",
+        "inst22",
+        "inst23",
+        "inst24",
+        "inst25",
+        "inst26",
+        "inst27",
+        "inst28",
+        "inst29",
+        "inst30",
+        "inst31",
+        "inst32",
+        "inst33",
+        "inst34",
+        "inst35",
+        "inst36",
+        "inst37",
+        "inst38",
+        "inst39",
+        "inst40",
+        "inst41",
+        "inst42",
+        "inst43",
+        "inst44",
+        "inst45",
+        "inst46",
+        "inst47",
+        "inst48",
+        "inst49",
+        "inst50"
+    ]
+}

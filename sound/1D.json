@@ -1,0 +1,62 @@
+{
+    "date": "1996-03-19",
+    "sample_bank": "sample_bank0",
+    "envelopes": {
+        "envelope0": [
+            [2, 32700],
+            [1, 32700],
+            [32700, 29430],
+            "hang"
+        ]
+    },
+    "instruments": {
+        "inst0": {
+            "release_rate": 19,
+            "normal_range_hi": 50,
+            "envelope": "envelope0",
+            "sound": "E1",
+            "sound_hi": "E2"
+        },
+        "inst1": {
+            "release_rate": 19,
+            "normal_range_hi": 50,
+            "envelope": "envelope0",
+            "sound": "E1",
+            "sound_hi": "E2"
+        },
+        "inst2": {
+            "release_rate": 19,
+            "normal_range_hi": 50,
+            "envelope": "envelope0",
+            "sound": "E1",
+            "sound_hi": "E2"
+        },
+        "inst3": {
+            "release_rate": 19,
+            "normal_range_hi": 50,
+            "envelope": "envelope0",
+            "sound": "E1",
+            "sound_hi": "E2"
+        },
+        "inst4": {
+            "release_rate": 19,
+            "normal_range_hi": 50,
+            "envelope": "envelope0",
+            "sound": "E1",
+            "sound_hi": "E2"
+        },
+        "inst5": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "AF"
+        }
+    },
+    "instrument_list": [
+        "inst0",
+        "inst1",
+        "inst2",
+        "inst3",
+        "inst4",
+        "inst5"
+    ]
+}

@@ -1,0 +1,164 @@
+{
+    "date": "1996-02-14",
+    "sample_bank": "sample_bank0",
+    "envelopes": {
+        "envelope0": [
+            [2, 32700],
+            [1, 32700],
+            [32700, 29430],
+            "hang"
+        ]
+    },
+    "instruments": {
+        "inst0": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "76"
+        },
+        "inst1": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "77"
+        },
+        "inst2": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "78"
+        },
+        "inst3": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "79"
+        },
+        "inst4": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "7A"
+        },
+        "inst5": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "7B"
+        },
+        "inst6": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "7C"
+        },
+        "inst7": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "7D"
+        },
+        "inst8": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "7E"
+        },
+        "inst9": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "7F"
+        },
+        "inst10": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "80"
+        },
+        "inst11": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "81"
+        },
+        "inst12": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "82"
+        },
+        "inst13": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "83"
+        },
+        "inst14": {
+            "ifdef": ["VERSION_US", "VERSION_EU"],
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "84"
+        },
+        "inst15": {
+            "ifdef": ["VERSION_US", "VERSION_EU"],
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "85"
+        },
+        "inst16": {
+            "ifdef": ["VERSION_US", "VERSION_EU"],
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "86"
+        },
+        "inst17": {
+            "ifdef": ["VERSION_US", "VERSION_EU"],
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "87"
+        },
+        "inst18": {
+            "ifdef": ["VERSION_US", "VERSION_EU"],
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "88"
+        },
+        "inst19": {
+            "ifdef": ["VERSION_US", "VERSION_EU"],
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "89"
+        },
+        "inst20": {
+            "ifdef": ["VERSION_US", "VERSION_EU"],
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "8A"
+        },
+        "inst21": {
+            "ifdef": ["VERSION_US", "VERSION_EU"],
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "8B"
+        },
+        "inst22": {
+            "ifdef": ["VERSION_US", "VERSION_EU"],
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "8C"
+        }
+    },
+    "instrument_list": [
+        "inst0",
+        "inst1",
+        "inst2",
+        null,
+        "inst3",
+        "inst4",
+        "inst5",
+        "inst6",
+        "inst7",
+        "inst8",
+        "inst9",
+        "inst10",
+        "inst11",
+        "inst12",
+        "inst13",
+        "inst14",
+        "inst15",
+        "inst16",
+        "inst17",
+        "inst18",
+        "inst19",
+        "inst20",
+        "inst21",
+        "inst22"
+    ]
+}

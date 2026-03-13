@@ -1,0 +1,26 @@
+Movtex ssl_movtex_tris_07004930[] = {
+    MOV_TEX_SPD(10),
+    MOV_TEX_LIGHT_TRIS(0, -204, 0, 127, 0, 0),
+    MOV_TEX_LIGHT_TRIS(1024, 0, 0, 127, 2, 0),
+    MOV_TEX_LIGHT_TRIS(512, 0, -886, 127, 2, 1),
+    MOV_TEX_LIGHT_TRIS(-511, 0, -886, 127, 2, 2),
+    MOV_TEX_LIGHT_TRIS(-1023, 0, 0, 127, 2, 3),
+    MOV_TEX_LIGHT_TRIS(-511, 0, 887, 127, 2, 2),
+    MOV_TEX_LIGHT_TRIS(512, 0, 887, 127, 2, 1),
+    MOV_TEX_LIGHT_TRIS(1024, 0, 0, 127, 2, 0),
+    MOV_TEX_END(),
+};
+
+Movtex ssl_movtex_tris_070049B4[] = {
+    MOV_TEX_SPD(5),
+    MOV_TEX_LIGHT_TRIS(0, -204, 0, 127, 0, 0),
+    MOV_TEX_LIGHT_TRIS(1024, 0, 0, 127, 2, 0),
+    MOV_TEX_LIGHT_TRIS(512, 0, -886, 127, 2, 1),
+    MOV_TEX_LIGHT_TRIS(-511, 0, -886, 127, 2, 2),
+    MOV_TEX_LIGHT_TRIS(-1023, 0, 0, 127, 2, 3),
+    MOV_TEX_LIGHT_TRIS(-511, 0, 887, 127, 2, 2),
+    MOV_TEX_LIGHT_TRIS(512, 0, 887, 127, 2, 1),
+    MOV_TEX_LIGHT_TRIS(1024, 0, 0, 127, 2, 0),
+    MOV_TEX_END(),
+};
+
