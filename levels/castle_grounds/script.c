@@ -37,7 +37,7 @@ const LevelScript level_castle_grounds_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_1_STAR, bbh_geo_16000868),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_3_STARS, bbh_geo_1600091C),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_KEY_DOOR, bbh_geo_160009D0),
-    LOAD_MODEL_FROM_GEO(MODEL_CASTLE_GROUNDS_CASTLE_DOOR, bbh_geo_160003A8),
+    LOAD_MODEL_FROM_GEO(MODEL_CASTLE_GROUNDS_CASTLE_DOOR, castle_door_geo),
     AREA(1, castle_grounds_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 600, /* posZ */ 575, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_NONE, /* posX */ -7605, /* posY */ -1499, /* posZ */ -4138, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00010000, bhvOpenableGrill),
