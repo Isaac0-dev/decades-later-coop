@@ -65,7 +65,8 @@ const LevelScript level_ccm_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_1_STAR, bbh_geo_16000868),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_3_STARS, bbh_geo_1600091C),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_KEY_DOOR, bbh_geo_160009D0),
-    LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, bbh_geo_160003A8),
+    LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, castle_door_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_PENGUIN, penguin_geo)
     AREA(1, ccm_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ 843, /* posY */ 4985, /* posZ */ 6065, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_BOBOMB_BUDDY, /* posX */ 2588, /* posY */ -886, /* posZ */ 5089, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBobombBuddyOpensCannon),
@@ -109,6 +110,7 @@ const LevelScript level_ccm_entry[] = {
         OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ -3445, /* posY */ 6187, /* posZ */ 1385, /* angleX */ 0, /* angleY */ 345, /* angleZ */ 0, /* behParam */ 0x00000000, bhvWFRotatingWoodenPlatform),
         OBJECT(MODEL_YOSHI_EGG /* or MODEL_BULLY_BOSS, MODEL_DL_WHIRLPOOL, ... (8 total) */, /* posX */ -6209, /* posY */ -1955, /* posZ */ 4362, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSmallPenguin),
         OBJECT(MODEL_YOSHI_EGG /* or MODEL_BULLY_BOSS, MODEL_DL_WHIRLPOOL, ... (8 total) */, /* posX */ -2708, /* posY */ 5293, /* posZ */ 5265, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSmallPenguin),
+        OBJECT(MODEL_PENGUIN /* or MODEL_BULLY_BOSS, MODEL_DL_WHIRLPOOL, ... (8 total) */, /* posX */ 4643, /* posY */ -5840, /* posZ */ 8089, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTuxiesMother),
         OBJECT(MODEL_RED_COIN, /* posX */ -3634, /* posY */ 4755, /* posZ */ 4325, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ -4120, /* posY */ 3397, /* posZ */ -184, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ 2453, /* posY */ 1258, /* posZ */ -2459, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
