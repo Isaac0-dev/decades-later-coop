@@ -4,3 +4,4 @@ gLevelValues.exitCastleWarpNode = 16
 gLevelValues.pssSlideStarTime = 840
 vec3f_set(gLevelValues.starPositions.PssSlideStarPos, 15116, -7303, 200) --Pos may be slightly off but fixed
 vec3f_set(gLevelValues.starPositions.TuxieMotherStarPos, 358, -5329, 9375)
+vec3f_set(gLevelValues.starPositions.WigglerStarPos, 0, 400, 0) --slightly off possibly
