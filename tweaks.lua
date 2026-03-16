@@ -2,6 +2,8 @@ gLevelValues.entryLevel = LEVEL_CASTLE_GROUNDS
 gLevelValues.coinsRequiredForCoinStar = 80
 gLevelValues.exitCastleWarpNode = 16
 gLevelValues.pssSlideStarTime = 840
-vec3f_set(gLevelValues.starPositions.PssSlideStarPos, 15116, -7303, 200) --Pos may be slightly off but fixed
-vec3f_set(gLevelValues.starPositions.TuxieMotherStarPos, 358, -5329, 9375)
-vec3f_set(gLevelValues.starPositions.WigglerStarPos, 0, 400, 0) --slightly off possibly
+vec3f_set(gLevelValues.starPositions.KoopaBobStarPos, 4665, 4503, 11006)
+vec3f_set(gLevelValues.starPositions.PssSlideStarPos, 15118, -7303, 212)
+vec3f_set(gLevelValues.starPositions.TuxieMotherStarPos, 366, -5336, 9379)
+vec3f_set(gLevelValues.starPositions.WigglerStarPos, 0, 400, 0)
+gBehaviorValues.trajectories.KoopaBobTrajectory = get_trajectory('KoopaBoB_path')
