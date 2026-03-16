@@ -68,7 +68,7 @@ const LevelScript level_bitdw_entry[] = {
         OBJECT(MODEL_BITDW_SQUARE_PLATFORM, /* posX */ -1719, /* posY */ 3189, /* posZ */ -4985, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00020000, bhvSquarishPathMoving),
         OBJECT(MODEL_BITDW_SQUARE_PLATFORM, /* posX */ -981, /* posY */ 3189, /* posZ */ -4244, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSquarishPathMoving),
         OBJECT(MODEL_BITDW_SQUARE_PLATFORM, /* posX */ -365, /* posY */ 3189, /* posZ */ -3632, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00020000, bhvSquarishPathMoving),
-        OBJECT(MODEL_NONE, /* posX */ 8325, /* posY */ 5160, /* posZ */ -2287, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000000, bhvHiddenStar),
+        OBJECT(MODEL_NONE, /* posX */ 8325, /* posY */ 5160, /* posZ */ -2287, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000000, bhvBowserCourseRedCoinStar),
         OBJECT(MODEL_RED_COIN, /* posX */ -5798, /* posY */ -188, /* posZ */ 4135, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ -9719, /* posY */ 412, /* posZ */ 4889, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ -477, /* posY */ 1686, /* posZ */ 2113, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
