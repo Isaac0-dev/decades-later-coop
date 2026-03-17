@@ -40,6 +40,7 @@ const LevelScript level_jrb_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_KEY_DOOR, bbh_geo_160009D0),
     LOAD_MODEL_FROM_GEO(MODEL_JRB_FALLING_PILLAR, jrb_geo_12000900),
     LOAD_MODEL_FROM_GEO(MODEL_JRB_FALLING_PILLAR_BASE, jrb_geo_12000918),
+    LOAD_MODEL_FROM_GEO(MODEL_DL_CANNON_LID, cannon_lid_geo)
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, bbh_geo_160003A8),
     AREA(1, jrb_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ 3804, /* posY */ 654, /* posZ */ 6260, /* angleX */ 0, /* angleY */ 135, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
