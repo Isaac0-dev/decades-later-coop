@@ -75,6 +75,7 @@ const LevelScript level_totwc_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_3_STARS, bbh_geo_1600091C),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_KEY_DOOR, bbh_geo_160009D0),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, bbh_geo_160003A8),
+    LOAD_MODEL_FROM_GEO(MODEL_DL_CANNON_LID, cannon_lid_geo)
     AREA(1, totwc_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ -2771, /* posY */ 2770, /* posZ */ 4458, /* angleX */ 0, /* angleY */ 135, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_CANNON_BASE, /* posX */ -5369, /* posY */ -6453, /* posZ */ -5478, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_130004A8),
