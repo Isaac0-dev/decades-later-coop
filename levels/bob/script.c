@@ -33,6 +33,7 @@ const LevelScript level_bob_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_3_STARS, bbh_geo_1600091C),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_KEY_DOOR, bbh_geo_160009D0),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, bbh_geo_160003A8),
+    LOAD_MODEL_FROM_GEO(MODEL_DL_CANNON_LID, cannon_lid_geo)
     AREA(1, bob_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ -6926, /* posY */ -722, /* posZ */ -3167, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_BOWSER_SMOKE /* or MODEL_TREASURE_CHEST_LID, MODEL_CHAIN_CHOMP, ... (6 total) */, /* posX */ -1668, /* posY */ -899, /* posZ */ 5196, /* angleX */ 0, /* angleY */ -153, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_1300478C),
