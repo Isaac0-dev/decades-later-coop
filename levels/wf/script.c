@@ -63,6 +63,7 @@ const LevelScript level_wf_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_THWOMP, thwomp_geo),
     LOAD_MODEL_FROM_GEO(MODEL_BULLET_BILL, bullet_bill_geo),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, bbh_geo_160003A8),
+    LOAD_MODEL_FROM_GEO(MODEL_DL_CANNON_LID, cannon_lid_geo)
     AREA(1, wf_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ 3776, /* posY */ 330, /* posZ */ 5464, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_STAR, /* posX */ 0, /* posY */ 5892, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStar),
