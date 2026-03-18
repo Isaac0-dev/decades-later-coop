@@ -34,12 +34,12 @@ smlua_audio_utils_replace_sequence(0x1F, 0x1A, 75, 'seq_1F')
 smlua_audio_utils_replace_sequence(0x20, 0x23, 75, 'seq_20')
 smlua_audio_utils_replace_sequence(0x21, 0x0C, 75, 'seq_21')
 smlua_audio_utils_replace_sequence(0x22, 0x1B, 75, 'seq_22')
-smlua_audio_utils_replace_sequence(0x23, 0x2A, 75, 'SEQ_0x23 - Course 1')    -- COURSE 1        -- since Piano is broken in the 2A Bank it was replaced with the Nylon Guitar inst, after that all instruments are correct
-smlua_audio_utils_replace_sequence(0x24, 0x2A, 75, 'SEQ_0x24 - Course 2')    -- COURSE 2        -- same as SEQ_0x23 (COURSE 1)
+smlua_audio_utils_replace_sequence(0x23, 0x2A, 75, 'SEQ_0x23 - Course 1')     -- COURSE 1        -- since Piano is broken in the 2A Bank it was replaced with the Nylon Guitar inst, after that all instruments are correct
+smlua_audio_utils_replace_sequence(0x24, 0x2A, 75, 'SEQ_0x24 - Course 2')     -- COURSE 2        -- same as SEQ_0x23 (COURSE 1)
 smlua_audio_utils_replace_sequence(0x25, 0x0C, 75, 'seq_25')
-smlua_audio_utils_replace_sequence(0x26, 0x2A, 75, 'SEQ_0x26 - Overworld 1') -- OVERWORLD 1
+smlua_audio_utils_replace_sequence(0x26, 0x2A, 75, 'SEQ_0x26 - Overworld 1')  -- OVERWORLD 1
 smlua_audio_utils_replace_sequence(0x27, 0x25, 75, 'seq_27')
-smlua_audio_utils_replace_sequence(0x28, 0x0C, 75, 'seq_28')
+smlua_audio_utils_replace_sequence(0x28, 0x2A, 75, 'SEQ_0x28 - Course 3')     -- COURSE 3        -- same as SEQ_0x23 (COURSE 1)
 smlua_audio_utils_replace_sequence(0x29, 0x0C, 75, 'seq_29')
 smlua_audio_utils_replace_sequence(0x2A, 0x0C, 75, 'seq_2A')
 smlua_audio_utils_replace_sequence(0x2B, 0x0C, 75, 'seq_2B')
