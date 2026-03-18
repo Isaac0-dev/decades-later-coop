@@ -1,0 +1,7 @@
+extern const GeoLayout Flipswap_Platform_Border_MOP[];
+extern Lights1 Flipswap_Platform_Border_MOP_f3dlite_material_lights;
+extern u8 Flipswap_Platform_Border_MOP__0_rgba16[];
+extern Vtx Flipswap_Platform_Border_MOP_node_001_mesh_layer_1_vtx_0[118];
+extern Gfx Flipswap_Platform_Border_MOP_node_001_mesh_layer_1_tri_0[];
+extern Gfx mat_Flipswap_Platform_Border_MOP_f3dlite_material[];
+extern Gfx Flipswap_Platform_Border_MOP_node_001_mesh_layer_1[];

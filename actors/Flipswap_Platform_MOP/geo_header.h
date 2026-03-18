@@ -1,0 +1,12 @@
+extern const GeoLayout Flipswap_Platform_MOP[];
+extern Lights1 Flipswap_Platform_MOP_f3dlite_material_002_lights;
+extern Lights1 Flipswap_Platform_MOP_f3dlite_material_lights;
+extern u8 Flipswap_Platform_MOP__0_rgba16[];
+extern u8 Flipswap_Platform_MOP__1_rgba16[];
+extern Vtx Flipswap_Platform_MOP_node_mesh_layer_1_vtx_0[4];
+extern Gfx Flipswap_Platform_MOP_node_mesh_layer_1_tri_0[];
+extern Vtx Flipswap_Platform_MOP_node_mesh_layer_1_vtx_1[28];
+extern Gfx Flipswap_Platform_MOP_node_mesh_layer_1_tri_1[];
+extern Gfx mat_Flipswap_Platform_MOP_f3dlite_material_002[];
+extern Gfx mat_Flipswap_Platform_MOP_f3dlite_material[];
+extern Gfx Flipswap_Platform_MOP_node_mesh_layer_1[];
