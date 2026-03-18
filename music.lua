@@ -34,7 +34,7 @@ smlua_audio_utils_replace_sequence(0x1F, 0x1A, 75, 'seq_1F')
 smlua_audio_utils_replace_sequence(0x20, 0x23, 75, 'seq_20')
 smlua_audio_utils_replace_sequence(0x21, 0x0C, 75, 'seq_21')
 smlua_audio_utils_replace_sequence(0x22, 0x1B, 75, 'seq_22')
-smlua_audio_utils_replace_sequence(0x23, 0x0C, 75, 'seq_23')
+smlua_audio_utils_replace_sequence(0x23, 0x2A, 75, 'SEQ_0x23 - Course 1')    -- COURSE 1     -- since Piano is broken in the 2A Bank it was replaced with the Nylon Guitar inst
 smlua_audio_utils_replace_sequence(0x24, 0x0C, 75, 'seq_24')
 smlua_audio_utils_replace_sequence(0x25, 0x0C, 75, 'seq_25')
 smlua_audio_utils_replace_sequence(0x26, 0x2A, 75, 'SEQ_0x26 - Overworld 1') -- OVERWORLD 1
