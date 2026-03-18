@@ -34,25 +34,25 @@ smlua_audio_utils_replace_sequence(0x1F, 0x1A, 75, 'seq_1F')
 smlua_audio_utils_replace_sequence(0x20, 0x23, 75, 'seq_20')
 smlua_audio_utils_replace_sequence(0x21, 0x0C, 75, 'seq_21')
 smlua_audio_utils_replace_sequence(0x22, 0x1B, 75, 'seq_22')
-smlua_audio_utils_replace_sequence(0x23, 0x2A, 75, 'SEQ_0x23 - Course 1')     -- COURSE 1        -- since Piano is broken in the 2A Bank it was replaced with the Nylon Guitar inst, after that all instruments are correct
-smlua_audio_utils_replace_sequence(0x24, 0x2A, 75, 'SEQ_0x24 - Course 2')     -- COURSE 2        -- same as SEQ_0x23 (COURSE 1)
+smlua_audio_utils_replace_sequence(0x23, 0x2A, 75, 'SEQ_0x23 - Course 1')           -- COURSE 1        -- since Piano is broken in the 2A Bank it was replaced with the Nylon Guitar inst, after that all instruments are correct
+smlua_audio_utils_replace_sequence(0x24, 0x2A, 75, 'SEQ_0x24 - Course 2')           -- COURSE 2        -- same as SEQ_0x23 (COURSE 1)
 smlua_audio_utils_replace_sequence(0x25, 0x0C, 75, 'seq_25')
-smlua_audio_utils_replace_sequence(0x26, 0x2A, 75, 'SEQ_0x26 - Overworld 1')  -- OVERWORLD 1
+smlua_audio_utils_replace_sequence(0x26, 0x2A, 75, 'SEQ_0x26 - Overworld 1')        -- OVERWORLD 1
 smlua_audio_utils_replace_sequence(0x27, 0x25, 75, 'seq_27')
-smlua_audio_utils_replace_sequence(0x28, 0x2A, 75, 'SEQ_0x28 - Course 3')     -- COURSE 3        -- same as SEQ_0x23 (COURSE 1)
-smlua_audio_utils_replace_sequence(0x29, 0x2A, 75, 'SEQ_0x29 - Course 4')     -- COURSE 4        -- broken Lead Square and Synth Bass these were replaced with Percussive Organ and Rhodes Bass
-smlua_audio_utils_replace_sequence(0x2A, 0x2A, 75, 'SEQ_0x2A - Course 5')     -- COURSE 5        -- broken Piano replaced with Nylon Guitar
-smlua_audio_utils_replace_sequence(0x2B, 0x25, 75, 'SEQ_0x2B - Course 6')     -- COURSE 6        -- this contains mostly instruments from the credits bank that are broken in 2A, only 2 are extended here which would be Acoustic Bass and Drum Machine these were replaced with Slap Bass and Percussion
-smlua_audio_utils_replace_sequence(0x2C, 0x2A, 120, 'SEQ_0x2C - Course 7')    -- COURSE 7        -- perfect
-smlua_audio_utils_replace_sequence(0x2D, 0x2A, 75, 'SEQ_0x2D - Course 8')     -- COURSE 8        -- broken Synth Bass replaced with Rhodes Bass
-smlua_audio_utils_replace_sequence(0x2E, 0x0C, 75, 'seq_2E')
+smlua_audio_utils_replace_sequence(0x28, 0x2A, 75, 'SEQ_0x28 - Course 3')           -- COURSE 3        -- same as SEQ_0x23 (COURSE 1)
+smlua_audio_utils_replace_sequence(0x29, 0x2A, 75, 'SEQ_0x29 - Course 4')           -- COURSE 4        -- broken Lead Square and Synth Bass these were replaced with Percussive Organ and Rhodes Bass
+smlua_audio_utils_replace_sequence(0x2A, 0x2A, 75, 'SEQ_0x2A - Course 5')           -- COURSE 5        -- broken Piano replaced with Nylon Guitar
+smlua_audio_utils_replace_sequence(0x2B, 0x25, 75, 'SEQ_0x2B - Course 6')           -- COURSE 6        -- this contains mostly instruments from the credits bank that are broken in 2A, only 2 are extended here which would be Acoustic Bass and Drum Machine these were replaced with Slap Bass and Percussion
+smlua_audio_utils_replace_sequence(0x2C, 0x2A, 120, 'SEQ_0x2C - Course 7')          -- COURSE 7        -- perfect
+smlua_audio_utils_replace_sequence(0x2D, 0x2A, 75, 'SEQ_0x2D - Course 8')           -- COURSE 8        -- broken Synth Bass replaced with Rhodes Bass
+smlua_audio_utils_replace_sequence(0x2E, 0x2A, 75, 'SEQ_0x2E - Course 8 Area 3')    -- A3 / A4         -- perfect
 smlua_audio_utils_replace_sequence(0x2F, 0x0C, 75, 'seq_2F')
 smlua_audio_utils_replace_sequence(0x30, 0x0C, 75, 'seq_30')
 smlua_audio_utils_replace_sequence(0x31, 0x0C, 75, 'seq_31')
 smlua_audio_utils_replace_sequence(0x32, 0x0C, 75, 'seq_32')
 smlua_audio_utils_replace_sequence(0x33, 0x0C, 75, 'seq_33')
 smlua_audio_utils_replace_sequence(0x34, 0x0C, 75, 'seq_34')
-smlua_audio_utils_replace_sequence(0x35, 0x2A, 75, 'SEQ_0x35 - Course 14')     -- COURSE 14       -- broken Piano, Lead Square, Synth Bass replaced with Nylon Guitar, Percussive Organ, Rhodes Bass
+smlua_audio_utils_replace_sequence(0x35, 0x2A, 75, 'SEQ_0x35 - Course 14')          -- COURSE 14       -- broken Piano, Lead Square, Synth Bass replaced with Nylon Guitar, Percussive Organ, Rhodes Bass
 smlua_audio_utils_replace_sequence(0x36, 0x0C, 75, 'seq_36')
 smlua_audio_utils_replace_sequence(0x37, 0x0C, 75, 'seq_37')
 smlua_audio_utils_replace_sequence(0x38, 0x0C, 75, 'seq_38')
