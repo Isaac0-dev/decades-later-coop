@@ -30,7 +30,9 @@ const LevelScript level_castle_inside_entry[] = {
     // LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_0C /* or MODEL_MAIN_MENU_GENERIC_BUTTON */, ccm_geo_12000738),
     // LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_0D /* or MODEL_WF_GIANT_POLE */, ccm_geo_12000758),
     // LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_0E, ccm_geo_12000770),
-    // LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_0F, ccm_geo_12000788),
+
+    // LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_0F, ccm_geo_12000788), // BRODUTE
+
     // LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_10 /* or MODEL_WF_ROTATING_PLATFORM */, ccm_geo_120007A0),
     // LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_11, ccm_geo_120007B8),
     // LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_12 /* or MODEL_BITDW_WARP_PIPE */, ccm_geo_120007D0),
@@ -66,6 +68,7 @@ const LevelScript level_castle_inside_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_3_STARS, bbh_geo_1600091C),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_KEY_DOOR, key_door_geo),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR, castle_door_geo),
+    LOAD_MODEL_FROM_GEO(15, brodute_geo),
     AREA(1, castle_inside_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 364, /* posZ */ 0, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR, /* posX */ -76, /* posY */ 0, /* posZ */ 1530, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00140000, bhvDoorWarp),
@@ -182,7 +185,7 @@ const LevelScript level_castle_inside_entry[] = {
     AREA(2, castle_inside_area_1_area_2_geo_190000B0),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR, /* posX */ -303, /* posY */ 0, /* posZ */ 785, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvDoorWarp),
         OBJECT(MODEL_CASTLE_DOOR_0_STARS, /* posX */ -110, /* posY */ 0, /* posZ */ -595, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x5e000000, bhvDoor),
-        OBJECT(MODEL_LEVEL_GEOMETRY_0F, /* posX */ 495, /* posY */ 37, /* posZ */ 28, /* angleX */ 0, /* angleY */ 338, /* angleZ */ 0, /* behParam */ 0x52000000, bhvToadMessage),
+        OBJECT(15, /* posX */ 495, /* posY */ 37, /* posZ */ 28, /* angleX */ 0, /* angleY */ 338, /* angleZ */ 0, /* behParam */ 0x52000000, bhvToadMessage),
         OBJECT(MODEL_WOODEN_SIGNPOST, /* posX */ -560, /* posY */ 0, /* posZ */ 224, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x002c0000, bhvMessagePanel),
         OBJECT(MODEL_WOODEN_SIGNPOST, /* posX */ -594, /* posY */ 562, /* posZ */ -682, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00a90000, bhvMessagePanel),
         OBJECT(MODEL_NONE, /* posX */ -446, /* posY */ 324, /* posZ */ -598, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00f00000, bhvSwimmingWarp),
