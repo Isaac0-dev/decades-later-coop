@@ -13,9 +13,9 @@ local spawn_non_sync_object = spawn_non_sync_object
 -- Model / Collision --
 -----------------------
 
-local E_MODEL_FLIPSWAP_PLATFORM         = smlua_model_util_get_id("Flipswap_Platform_MOP")
-local E_MODEL_FLIPSWAP_PLATFORM_BORDER  = smlua_model_util_get_id("Flipswap_Platform_Border_MOP")
-local COL_FLIPSWAP_PLATFORM_MOP         = smlua_collision_util_get("col_Flipswap_Platform_MOP_0x7d9d88")
+local E_MODEL_FLIPSWAP_PLATFORM         = smlua_model_util_get_id("flipswap_geo")
+local E_MODEL_FLIPSWAP_PLATFORM_BORDER  = smlua_model_util_get_id("flipswap_border_geo")
+local COL_FLIPSWAP_PLATFORM_MOP         = smlua_collision_util_get("flipswap_collision")
 
 -------------
 -- Helpers --

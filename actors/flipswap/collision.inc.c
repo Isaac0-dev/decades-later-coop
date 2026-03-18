@@ -1,4 +1,4 @@
-const Collision col_Flipswap_Platform_MOP_0x7d9d88[] = {
+const Collision flipswap_collision[] = {
 	COL_INIT(),
 	COL_VERTEX_INIT(14),
 	COL_VERTEX(15, -7, 135),
@@ -15,7 +15,7 @@ const Collision col_Flipswap_Platform_MOP_0x7d9d88[] = {
 	COL_VERTEX(285, 7, 135),
 	COL_VERTEX(285, 7, -135),
 	COL_VERTEX(15, 7, -135),
-	COL_TRI_INIT(SURFACE_DEFAULT, 24),
+	COL_TRI_INIT(SURFACE_NOT_SLIPPERY, 24),
 	COL_TRI(0, 1, 2),
 	COL_TRI(1, 0, 3),
 	COL_TRI(4, 3, 0),
