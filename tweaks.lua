@@ -3,6 +3,10 @@ gLevelValues.coinsRequiredForCoinStar = 80
 gLevelValues.exitCastleWarpNode = 16
 gLevelValues.pssSlideStarTime = 840
 
+gLevelValues.wingCapDurationTotwc = 1
+gLevelValues.vanishCapDurationVcutm = 1
+gLevelValues.metalCapDurationCotmc = 1
+
 gBehaviorValues.ToadStar1Requirement = 0 -- Overworld 2 Area 2 Brodute
 
 vec3f_set(gLevelValues.starPositions.KoopaBobStarPos, 4665, 4503, 11006)
