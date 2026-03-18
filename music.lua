@@ -41,7 +41,7 @@ smlua_audio_utils_replace_sequence(0x26, 0x2A, 75, 'SEQ_0x26 - Overworld 1')  --
 smlua_audio_utils_replace_sequence(0x27, 0x25, 75, 'seq_27')
 smlua_audio_utils_replace_sequence(0x28, 0x2A, 75, 'SEQ_0x28 - Course 3')     -- COURSE 3        -- same as SEQ_0x23 (COURSE 1)
 smlua_audio_utils_replace_sequence(0x29, 0x2A, 75, 'SEQ_0x29 - Course 4')     -- COURSE 4        -- broken Lead Square and Synth Bass these were replaced with Percussive Organ and Rhodes Bass
-smlua_audio_utils_replace_sequence(0x2A, 0x0C, 75, 'seq_2A')
+smlua_audio_utils_replace_sequence(0x2A, 0x2A, 75, 'SEQ_0x2A - Course 5')     -- COURSE 5        -- broken Piano replaced with Nylon Guitar
 smlua_audio_utils_replace_sequence(0x2B, 0x0C, 75, 'seq_2B')
 smlua_audio_utils_replace_sequence(0x2C, 0x0C, 75, 'seq_2C')
 smlua_audio_utils_replace_sequence(0x2D, 0x0C, 75, 'seq_2D')
@@ -52,7 +52,7 @@ smlua_audio_utils_replace_sequence(0x31, 0x0C, 75, 'seq_31')
 smlua_audio_utils_replace_sequence(0x32, 0x0C, 75, 'seq_32')
 smlua_audio_utils_replace_sequence(0x33, 0x0C, 75, 'seq_33')
 smlua_audio_utils_replace_sequence(0x34, 0x0C, 75, 'seq_34')
-smlua_audio_utils_replace_sequence(0x35, 0x0C, 75, 'seq_35')
+smlua_audio_utils_replace_sequence(0x35, 0x2A, 75, 'SEQ_0x35 - Course 14')     -- COURSE 14       -- broken Piano, Lead Square, Synth Bass replaced with Nylon Guitar, Percussive Organ, Rhodes Bass
 smlua_audio_utils_replace_sequence(0x36, 0x0C, 75, 'seq_36')
 smlua_audio_utils_replace_sequence(0x37, 0x0C, 75, 'seq_37')
 smlua_audio_utils_replace_sequence(0x38, 0x0C, 75, 'seq_38')
