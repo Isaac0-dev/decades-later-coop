@@ -40,7 +40,7 @@ smlua_audio_utils_replace_sequence(0x25, 0x0C, 75, 'seq_25')
 smlua_audio_utils_replace_sequence(0x26, 0x2A, 75, 'SEQ_0x26 - Overworld 1')  -- OVERWORLD 1
 smlua_audio_utils_replace_sequence(0x27, 0x25, 75, 'seq_27')
 smlua_audio_utils_replace_sequence(0x28, 0x2A, 75, 'SEQ_0x28 - Course 3')     -- COURSE 3        -- same as SEQ_0x23 (COURSE 1)
-smlua_audio_utils_replace_sequence(0x29, 0x0C, 75, 'seq_29')
+smlua_audio_utils_replace_sequence(0x29, 0x2A, 75, 'SEQ_0x29 - Course 4')     -- COURSE 4        -- broken Lead Square and Synth Bass these were replaced with Percussive Organ and Rhodes Bass
 smlua_audio_utils_replace_sequence(0x2A, 0x0C, 75, 'seq_2A')
 smlua_audio_utils_replace_sequence(0x2B, 0x0C, 75, 'seq_2B')
 smlua_audio_utils_replace_sequence(0x2C, 0x0C, 75, 'seq_2C')
