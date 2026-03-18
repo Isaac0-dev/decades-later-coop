@@ -1,3 +1,15 @@
+local movtexqc_register = movtexqc_register
+local add_scroll_target = add_scroll_target
+
+-- Movtexqc
+
+movtexqc_register('hmc_area_1_movtex_0174C4_collection', LEVEL_HMC, 1, 20481)
+movtexqc_register('wdw_area_1_movtex_018748_collection', LEVEL_WDW, 1, 20480)
+movtexqc_register('thi_area_1_area_2_movtex_00E2BC_collection', LEVEL_THI, 1, 20481)
+movtexqc_register('castle_grounds_area_1_movtex_017574_collection', LEVEL_CASTLE_GROUNDS, 1, 20480)
+
+-- Scrolling Textures
+
 add_scroll_target(0, 'bbh_area_1_vertex_0E066150_n13', 0, 13)
 add_scroll_target(0, 'bbh_area_1_vertex_0E066220_n13', 0, 13)
 add_scroll_target(1, 'bbh_area_1_area_2_vertex_0E0DB5C0_n15', 0, 15)
