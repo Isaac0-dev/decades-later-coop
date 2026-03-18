@@ -46,7 +46,7 @@ smlua_audio_utils_replace_sequence(0x2B, 0x25, 75, 'SEQ_0x2B - Course 6')       
 smlua_audio_utils_replace_sequence(0x2C, 0x2A, 120, 'SEQ_0x2C - Course 7')          -- COURSE 7        -- perfect
 smlua_audio_utils_replace_sequence(0x2D, 0x2A, 75, 'SEQ_0x2D - Course 8')           -- COURSE 8        -- broken Synth Bass replaced with Rhodes Bass
 smlua_audio_utils_replace_sequence(0x2E, 0x2A, 75, 'SEQ_0x2E - Course 8 Area 3')    -- A3 / A4         -- perfect
-smlua_audio_utils_replace_sequence(0x2F, 0x0C, 75, 'seq_2F')
+smlua_audio_utils_replace_sequence(0x2F, 0x2A, 75, 'SEQ_0x2F - Course 9')           -- COURSE 9        -- broken Synth Bass replaced with Rhodes Bass
 smlua_audio_utils_replace_sequence(0x30, 0x0C, 75, 'seq_30')
 smlua_audio_utils_replace_sequence(0x31, 0x0C, 75, 'seq_31')
 smlua_audio_utils_replace_sequence(0x32, 0x0C, 75, 'seq_32')
