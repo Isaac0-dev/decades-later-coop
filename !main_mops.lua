@@ -13,7 +13,7 @@
 -- local E_MODEL_SANDBLOCK = smlua_model_util_get_id("SandBlock_MOP")
 -- local E_MODEL_SHELL_1 = smlua_model_util_get_id("Shell_1_MOP") -- No code
 -- local E_MODEL_SHELL_2 = smlua_model_util_get_id("Shell_2_MOP") -- No code
--- local E_MODEL_SHRINK_PLATFORM = smlua_model_util_get_id("Shrink_Platform_MOP")
+local E_MODEL_SHRINK_PLATFORM = smlua_model_util_get_id("Shrink_Platform_MOP")
 -- local E_MODEL_SHRINK_PLATFORM_BORDER = smlua_model_util_get_id("Shrink_Platform_Border_MOP")
 -- local E_MODEL_SWITCHBLOCK = smlua_model_util_get_id("Switchblock_MOP")
 -- local E_MODEL_SWITCHBLOCK_SWITCH = smlua_model_util_get_id("Switchblock_Switch_MOP")
@@ -29,19 +29,19 @@
 -----Collisions-----
 --------------------
 
--- Still unused
---[[
-COL_FLIPBLOCK_MOP = smlua_collision_util_get("col_FlipBlock_MOP_0x7d1a98")
-COL_NOTEBLOCK_MOP = smlua_collision_util_get("col_Noteblock_MOP_0xaa6444")
-COL_SANDBLOCK_MOP = smlua_collision_util_get("col_Sandblock_MOP_0xaa6444")
-COL_FLIPSWAP_PLATFORM_MOP = smlua_collision_util_get("col_Flipswap_Platform_MOP_0x7d9d88")
-COL_FLIPSWITCH_PANEL_MOP = smlua_collision_util_get("col_Flipswitch_Panel_MOP_0x7daf78")
-COL_GREEN_SWITCHBOARD_MOP = smlua_collision_util_get("col_Green_Switchboard_MOP_0x7ddc38")
+--Still unused
+
+-- COL_FLIPBLOCK_MOP = smlua_collision_util_get("col_FlipBlock_MOP_0x7d1a98")
+-- COL_NOTEBLOCK_MOP = smlua_collision_util_get("col_Noteblock_MOP_0xaa6444")
+-- COL_SANDBLOCK_MOP = smlua_collision_util_get("col_Sandblock_MOP_0xaa6444")
+-- COL_FLIPSWAP_PLATFORM_MOP = smlua_collision_util_get("col_Flipswap_Platform_MOP_0x7d9d88")
+-- COL_FLIPSWITCH_PANEL_MOP = smlua_collision_util_get("col_Flipswitch_Panel_MOP_0x7daf78")
+-- COL_GREEN_SWITCHBOARD_MOP = smlua_collision_util_get("col_Green_Switchboard_MOP_0x7ddc38")
 COL_SHRINK_PLATFORM = smlua_collision_util_get("col_Shrink_Platform_MOP_0xad3720")
-COL_SWITCHBLOCK_MOP = smlua_collision_util_get("col_Switchblock_MOP_0x7d3058")
-COL_SWITCHBLOCK_SWITCH_MOP = smlua_collision_util_get("col_Switchblock_Switch_MOP_0x7d7348")
-COL_MOVING_ROTATING_BLOCK_MOP = smlua_collision_util_get("col_Moving_Rotating_Block_MOP_0x7e3ea0")
-]]
+-- COL_SWITCHBLOCK_MOP = smlua_collision_util_get("col_Switchblock_MOP_0x7d3058")
+-- COL_SWITCHBLOCK_SWITCH_MOP = smlua_collision_util_get("col_Switchblock_Switch_MOP_0x7d7348")
+-- COL_MOVING_ROTATING_BLOCK_MOP = smlua_collision_util_get("col_Moving_Rotating_Block_MOP_0x7e3ea0")
+
 
 -----------------
 -----Actions-----
@@ -139,9 +139,9 @@ end
 -----Helper Variables-----
 --------------------------
 
-local id_bhvFlipswap_Platform_Border_MOP = id_bhvUnused05A8
-local id_bhvShrink_Platform_Border_MOP = id_bhvUnused05A8
-local id_bhvGreen_Switchboard_Gears_MOP = id_bhvUnused05A8
+-- local id_bhvFlipswap_Platform_Border_MOP = id_bhvUnused05A8
+-- local id_bhvShrink_Platform_Border_MOP = id_bhvUnused05A8
+-- local id_bhvGreen_Switchboard_Gears_MOP = id_bhvUnused05A8
 
 --------------------------
 -----Helper Functions-----
@@ -648,14 +648,14 @@ local SHRINK_TIME = 150
 ---@param obj Object
 function bhv_shrinkplatform_init(obj)
     -- Spawns border
-    local childObj = spawn_non_sync_object(id_bhvShrink_Platform_Border_MOP, E_MODEL_SHRINK_PLATFORM_BORDER, obj.oPosX, obj.oPosY, obj.oPosZ,
+    --local childObj = spawn_non_sync_object(id_bhvShrink_Platform_Border_MOP, E_MODEL_SHRINK_PLATFORM_BORDER, obj.oPosX, obj.oPosY, obj.oPosZ,
     ---@param o Object
-    function (o)
+    --function (o)
         -- Overdone like the flipswap platform and for the same reason
         obj_set_face_angle(o, obj.oFaceAnglePitch, obj.oFaceAngleYaw, obj.oFaceAngleRoll)
         obj_set_move_angle(o, obj.oMoveAnglePitch, obj.oMoveAngleYaw, obj.oMoveAngleRoll)
-    end)
-    childObj.parentObj = obj
+    --end)
+    --childObj.parentObj = obj
     obj_set_model_extended(obj, E_MODEL_SHRINK_PLATFORM)
 end
 
