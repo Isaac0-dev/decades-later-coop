@@ -1,3 +1,5 @@
+local smlua_audio_utils_replace_sequence = smlua_audio_utils_replace_sequence
+
 smlua_audio_utils_replace_sequence(0x01, 0x0C, 75, 'seq_01')
 smlua_audio_utils_replace_sequence(0x02, 0x0C, 75, 'seq_02')
 smlua_audio_utils_replace_sequence(0x03, 0x0C, 75, 'seq_03')
@@ -35,7 +37,7 @@ smlua_audio_utils_replace_sequence(0x22, 0x1B, 75, 'seq_22')
 smlua_audio_utils_replace_sequence(0x23, 0x0C, 75, 'seq_23')
 smlua_audio_utils_replace_sequence(0x24, 0x0C, 75, 'seq_24')
 smlua_audio_utils_replace_sequence(0x25, 0x0C, 75, 'seq_25')
-smlua_audio_utils_replace_sequence(0x26, 0x0C, 75, 'seq_26')
+smlua_audio_utils_replace_sequence(0x26, 0x2A, 75, 'SEQ_0x26 - Overworld 1') -- OVERWORLD 1
 smlua_audio_utils_replace_sequence(0x27, 0x25, 75, 'seq_27')
 smlua_audio_utils_replace_sequence(0x28, 0x0C, 75, 'seq_28')
 smlua_audio_utils_replace_sequence(0x29, 0x0C, 75, 'seq_29')
