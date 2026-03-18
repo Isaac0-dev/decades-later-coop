@@ -54,9 +54,6 @@ local FLIP_BLOCK_ACT_UNINITIALIZED = 0
 local FLIP_BLOCK_ACT_IDLE = 1
 local FLIP_BLOCK_ACT_FLIPPING = 2
 
-local NOTEBLOCK_ACT_IDLE = 0
-local NOTEBLOCK_ACT_BOUNCING = 1
-
 local SANDBLOCK_ACT_IDLE = 0
 local SANDBLOCK_ACT_FADING = 1
 local SANDBLOCK_ACT_DISAPPEARED = 2
@@ -376,54 +373,6 @@ function bhv_flip_block_loop(obj)
 end
 
 --id_bhvFlipBlock_MOP = hook_behavior(nil, OBJ_LIST_SURFACE, false, bhv_flip_block_init, bhv_flip_block_loop, "bhvFlipBlock_MOP")
-
------- Noteblock ------
--- Jumping onto this block will cause Mario to jump higher.
-
----@param obj Object
-function bhv_noteblock_init(obj)
-    obj_set_model_extended(obj, E_MODEL_NOTEBLOCK)
-end
-
----@param obj Object
-function bhv_noteblock_loop(obj)
-    local m = gMarioStates[0]
-    local y_spd = 64
-
-    if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(m) then
-        --this is awful -- It really is -Sunk
-        -- Jump. If A is pressed during the jump, increase y_spd.
-        if m.controller.buttonPressed & A_BUTTON ~= 0 then
-            y_spd = y_spd + 12 -- I feel like this should increase with oBehParams2ndByte
-            spawn_mist_particles()
-        end
-        set_mario_action(m, ACT_DOUBLE_JUMP, 0)
-
-        -- Calculates y speed
-        local intermediate_y_spd = repack(y_spd, "f", "I")
-		intermediate_y_spd = intermediate_y_spd + (obj.oBehParams2ndByte << 16)
-		y_spd = repack(intermediate_y_spd, "I", "f")
-		m.vel.y = y_spd
-
-        obj.oAction = NOTEBLOCK_ACT_BOUNCING
-    end
-
-    if obj.oAction == NOTEBLOCK_ACT_BOUNCING then
-        if obj.oTimer == 4 then
-            obj.oAction = NOTEBLOCK_ACT_IDLE
-            obj.oPosY = obj.oHomeY
-        else
-            -- Moves the noteblock slightly up and down, to give it a "bounce"
-            if obj.oTimer > 2 then
-                obj.oPosY = obj.oHomeY + (obj.oTimer % 3) * 6
-            else
-                obj.oPosY = obj.oHomeY - obj.oTimer * 6
-            end
-        end
-    end
-end
-
---id_bhvNoteblock_MOP = hook_behavior(nil, OBJ_LIST_SURFACE, false, bhv_noteblock_init, bhv_noteblock_loop, "bhvNoteblock_MOP")
 
 ------ Sandblock ------
 -- Standing on this block causes it to slowly fall to pieces, eventually no longer becoming a platform.

@@ -1,3 +1,5 @@
 -- name: SM64 Decades Later
 -- description: Extracted with rom-decomp-64.
 -- incompatible: romhack
+
+require("data/a-bhv-loader")
