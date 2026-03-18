@@ -58,9 +58,6 @@ local SANDBLOCK_ACT_IDLE = 0
 local SANDBLOCK_ACT_FADING = 1
 local SANDBLOCK_ACT_DISAPPEARED = 2
 
-local FLIPSWAP_PLATFORM_ACT_IDLE = 0
-local FLIPSWAP_PLATFORM_ACT_FLIPPING = 1
-
 local SHRINK_PLATFORM_ACT_IDLE = 0
 local SHRINK_PLATFORM_ACT_SHRINKING = 1
 local SHRINK_PLATFORM_ACT_DISAPPEARED = 2
@@ -420,55 +417,6 @@ function bhv_sandblock_loop(obj)
 end
 
 --id_bhvSandBlock_MOP = hook_behavior(nil, OBJ_LIST_SURFACE, false, bhv_sandblock_init, bhv_sandblock_loop, "bhvSandBlock_MOP")
-
------- Flipswap platform ------
--- Jumping will cause this platform to spin, moving the land to the other side.
-
--- 1x is very fast, 0.5x is usually the norm
-local FLIP_SPEED_MULTIPLIER = 0.5
-
----@param obj Object
-function bhv_flipswap_init(obj)
-    -- Spawns the border
-    local childObj = spawn_non_sync_object(id_bhvFlipswap_Platform_Border_MOP, E_MODEL_FLIPSWAP_PLATFORM_BORDER, obj.oPosX, obj.oPosY, obj.oPosZ,
-    ---@param o Object
-    function (o)
-        -- Probably overdone but just to be safe
-        obj_set_face_angle(o, obj.oFaceAnglePitch, obj.oFaceAngleYaw, obj.oFaceAngleRoll)
-        obj_set_move_angle(o, obj.oMoveAnglePitch, obj.oMoveAngleYaw, obj.oMoveAngleRoll)
-    end)
-    childObj.parentObj = obj
-    obj_set_model_extended(obj, E_MODEL_FLIPSWAP_PLATFORM)
-end
-
----@param obj Object
-function bhv_flipswap_loop(obj)
-    local m = gMarioStates[0]
-
-    local action = obj.oAction
-    if action == FLIPSWAP_PLATFORM_ACT_IDLE then
-        -- If Mario enters an air action, start flipping
-        if m.prevAction & ACT_GROUP_MASK ~= ACT_GROUP_AIRBORNE and m.action & ACT_GROUP_MASK == ACT_GROUP_AIRBORNE then
-            --sloth brain it
-            if obj.oFaceAngleRoll == 0 then
-                obj.oMoveAngleRoll = -2048 * FLIP_SPEED_MULTIPLIER
-            else
-                obj.oMoveAngleRoll = 2048 * FLIP_SPEED_MULTIPLIER
-            end
-            obj.oAction = FLIPSWAP_PLATFORM_ACT_FLIPPING
-        end
-    elseif action == FLIPSWAP_PLATFORM_ACT_FLIPPING then
-        -- Flip the platform
-        if obj.oTimer < 16 * FLIP_SPEED_MULTIPLIER ^ -1 then
-            obj.oFaceAngleRoll = obj.oFaceAngleRoll + obj.oMoveAngleRoll
-        -- Disallow flipping again until Mario lands
-        elseif m.action & ACT_GROUP_MASK ~= ACT_GROUP_AIRBORNE then
-            obj.oAction = FLIPSWAP_PLATFORM_ACT_IDLE
-        end
-    end
-end
-
---id_bhvFlipswap_Platform_MOP = hook_behavior(nil, OBJ_LIST_SURFACE, false, bhv_flipswap_init, bhv_flipswap_loop, "bhvFlipswap_Platform_MOP")
 
 ------ Checkpoint flag ------
 -- Dying will cause the player to respawn at this point

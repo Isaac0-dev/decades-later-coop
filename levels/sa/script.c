@@ -86,7 +86,7 @@ const LevelScript level_sa_entry[] = {
         OBJECT(MODEL_BOBOMB_BUDDY, /* posX */ -4700, /* posY */ 5699, /* posZ */ -4350, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBobombBuddyOpensCannon),
         OBJECT(0x98, /* posX */ -1350, /* posY */ 5300, /* posZ */ -4650, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvWFBreakableWallRight),
         OBJECT(0x98, /* posX */ -1350, /* posY */ 5600, /* posZ */ -4650, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvWFBreakableWallRight),
-        OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ 1550, /* posY */ 3925, /* posZ */ -3850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvWFRotatingWoodenPlatform),
+        OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ 1550, /* posY */ 3925, /* posZ */ -3850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswap_Platform_MOP),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 2285, /* posY */ 3308, /* posZ */ -2140, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00060009, bhvExclamationBox),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 4650, /* posY */ 5408, /* posZ */ 3900, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00060009, bhvExclamationBox),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -5540, /* posY */ 4708, /* posZ */ -1090, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00060009, bhvExclamationBox),

@@ -220,7 +220,7 @@ const LevelScript level_castle_courtyard_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 2519, /* posZ */ 2340, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00ab0000, bhvSwimmingWarp),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 2325, /* posY */ 1475, /* posZ */ 4900, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00020000, bhvExclamationBox),
         OBJECT(MODEL_NONE, /* posX */ 2324, /* posY */ 1475, /* posZ */ 3550, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00240000, bhvExclamationBox),
-        OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ 3767, /* posY */ 1049, /* posZ */ 4900, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvWFRotatingWoodenPlatform),
+        OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ 3767, /* posY */ 1049, /* posZ */ 4900, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswap_Platform_MOP),
         WARP_NODE(/* id */ 0x64, /* destLevel */ LEVEL_SL, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x65, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x6e, /* destLevel */ LEVEL_WDW, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
