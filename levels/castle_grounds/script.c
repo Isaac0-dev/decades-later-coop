@@ -121,7 +121,9 @@ const LevelScript level_castle_grounds_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 3666, /* posZ */ -7400, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x004e0000, bhvFadingWarp),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ -600, /* posZ */ -150, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x004e0000, bhvFadingWarp),
         OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 8250, /* posY */ 389, /* posZ */ -625, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00500000, bhvExitPodiumWarp),
-        OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 8760, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE0B0),
+
+        //OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 8760, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE0B0), // useless behavior
+        
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
