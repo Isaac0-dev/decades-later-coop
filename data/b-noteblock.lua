@@ -15,8 +15,8 @@ local spawn_non_sync_object = spawn_non_sync_object
 -- Model / Collision --
 -----------------------
 
-local E_MODEL_NOTEBLOCK = smlua_model_util_get_id("Noteblock_MOP")
-local COL_NOTEBLOCK_MOP = smlua_collision_util_get("col_Noteblock_MOP_0xaa6444")
+local E_MODEL_NOTEBLOCK = smlua_model_util_get_id("noteblock_geo")
+local COL_NOTEBLOCK_MOP = smlua_collision_util_get("noteblock_collision")
 
 -------------
 -- Helpers --
@@ -51,7 +51,6 @@ local function bhv_noteblock_init(o)
     o.collisionData = COL_NOTEBLOCK_MOP
     o.oHomeY = o.oPosY
     obj_set_model_extended(o, E_MODEL_NOTEBLOCK)
-    obj_scale(o, 0.8)
 end
 
 ---@param o Object
