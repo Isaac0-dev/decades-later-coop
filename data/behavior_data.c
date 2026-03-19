@@ -74,18 +74,18 @@
 // };
 // */
 
-const BehaviorScript bhvShrink_Platform_MOP[] = {
-BEGIN(OBJ_LIST_SURFACE),
-ID(id_bhvNewId),
-OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE ),
-LOAD_COLLISION_DATA(col_Shrink_Platform_MOP_0xad3720),
+//const BehaviorScript bhvShrink_Platform_MOP[] = {
+//BEGIN(OBJ_LIST_SURFACE),
+//ID(id_bhvNewId),
+//OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE ),
+//LOAD_COLLISION_DATA(col_Shrink_Platform_MOP_0xad3720),
 //SPAWN_CHILD(0x97,bhvUnused05A8),
-CALL_NATIVE(bhv_shrinkplatform_init),
-BEGIN_LOOP(),
-CALL_NATIVE(bhv_shrinkplatform_loop),
-CALL_NATIVE(load_object_collision_model),
-END_LOOP(),
-};
+//CALL_NATIVE(bhv_shrinkplatform_init),
+//BEGIN_LOOP(),
+//CALL_NATIVE(bhv_shrinkplatform_loop),
+//CALL_NATIVE(load_object_collision_model),
+//END_LOOP(),
+//};
 
 // const BehaviorScript bhvSwitchblock_MOP[] = {
 // BEGIN(OBJ_LIST_SURFACE),
