@@ -19,8 +19,6 @@ local E_MODEL_SHRINK_PLATFORM = smlua_model_util_get_id("Shrink_Platform_MOP")
 -- local E_MODEL_SWITCHBLOCK_SWITCH = smlua_model_util_get_id("Switchblock_Switch_MOP")
 -- local E_MODEL_SPRING = smlua_model_util_get_id("Spring_MOP")
 -- local E_MODEL_CHECKPOINT = smlua_model_util_get_id("Checkpoint_Flag_MOP")
- --local E_MODEL_GREEN_SWITCHBOARD = smlua_model_util_get_id("Green_Switchboard_MOP")
- --local E_MODEL_GREEN_SWITCHBOARD_GEARS = smlua_model_util_get_id("Green_Switchboard_Gears_MOP")
 -- local E_MODEL_MOVING_ROATING_BLOCK = smlua_model_util_get_id("Moving_Rotating_Block_MOP")
 -- local E_MODEL_BLARGG = smlua_model_util_get_id("blargg_geo")
 -- local E_MODEL_FRIENDLY_BLARGG = smlua_model_util_get_id("friendly_blargg_geo")
@@ -36,7 +34,6 @@ local E_MODEL_SHRINK_PLATFORM = smlua_model_util_get_id("Shrink_Platform_MOP")
 -- COL_SANDBLOCK_MOP = smlua_collision_util_get("col_Sandblock_MOP_0xaa6444")
 -- COL_FLIPSWAP_PLATFORM_MOP = smlua_collision_util_get("col_Flipswap_Platform_MOP_0x7d9d88")
 -- COL_FLIPSWITCH_PANEL_MOP = smlua_collision_util_get("col_Flipswitch_Panel_MOP_0x7daf78")
--- COL_GREEN_SWITCHBOARD_MOP = smlua_collision_util_get("col_Green_Switchboard_MOP_0x7ddc38")
 COL_SHRINK_PLATFORM = smlua_collision_util_get("col_Shrink_Platform_MOP_0xad3720")
 -- COL_SWITCHBLOCK_MOP = smlua_collision_util_get("col_Switchblock_MOP_0x7d3058")
 -- COL_SWITCHBLOCK_SWITCH_MOP = smlua_collision_util_get("col_Switchblock_Switch_MOP_0x7d7348")
@@ -167,21 +164,6 @@ local function bounce_off_object(m, obj, new_velY)
     m.flags = m.flags & ~MARIO_UNKNOWN_08
 
     play_sound(SOUND_ACTION_BOUNCE_OFF_OBJECT, m.marioObj.header.gfx.cameraToObject)
-end
-
---- Gets closer to a goal value by the increment when ran
----@param goal integer
----@param src integer
----@param inc integer
-local function approach_by_increment(goal, src, inc)
-    local diff = goal - src
-    if diff > inc then
-        return src + inc
-    elseif diff < -inc then
-        return src - inc
-    else
-        return goal
-    end
 end
 
 ---@param m MarioState
@@ -470,72 +452,6 @@ function ()
 end)
 
 --id_bhvCheckpoint_Flag_MOP = hook_behavior(nil, OBJ_LIST_GENACTOR, false, bhv_checkpoint_flag_init, bhv_checkpoint_flag_loop, "bhvCheckpoint_Flag_MOP")
-
------- Green switchboard ------
--- The platform moves depending on where the player is on it. Similar to the rolling log.
-
----@param obj Object
-function bhv_green_switchboard_init(obj)
-    -- Spawns gears
-    obj.oIntroLakituCloud = spawn_object(obj, E_MODEL_GREEN_SWITCHBOARD_GEARS, id_bhvGreen_Switchboard_Gears_MOP)
-    obj_set_model_extended(obj, E_MODEL_GREEN_SWITCHBOARD)
-end
-
----@param obj Object
-function bhv_green_switchboard_loop(obj)
-    local MAX_SPEED = 20.0
-    local SPEED_INC = 2.0
-    local child = obj.oIntroLakituCloud
-    local dot = 0
-    local dotH = 0
-
-    -- Moves the gears along with the platform
-    child.oFaceAnglePitch = child.oFaceAnglePitch + (obj.oForwardVel * 200)
-    obj_copy_pos(child, obj)
-
-    if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
-        -- Makes sure this object only moves if the local player is on it
-        local m = gMarioStates[0]
-
-        local dx = m.pos.x - obj.oPosX
-        local dz = m.pos.z - obj.oPosZ
-        local dHx = obj.oPosX - obj.oHomeX
-        local dHz = obj.oPosZ - obj.oHomeZ
-        local facingZ = coss(obj.oFaceAngleYaw)
-        local facingX = sins(obj.oFaceAngleYaw)
-
-        --if dot is positive, mario is on front arrow
-        dot = facingZ * dz + facingX * dx
-        dotH = facingZ * dHz + facingX * dHx
-
-        if dot > 0 then
-            -- 1st byte determines how far the switchboard can go forwards
-            if dotH < ((obj.oBehParams >> 24) & 0xFF) * 16 then
-                obj.oForwardVel = approach_by_increment(MAX_SPEED, obj.oForwardVel, SPEED_INC)
-            else
-                obj.oForwardVel = 0
-            end
-            obj.oFaceAnglePitch = approach_by_increment(2048.0, obj.oFaceAnglePitch, 128.0)
-        else
-            -- 2nd byte determines how far the switchboard can go backwards
-            if dotH > obj.oBehParams2ndByte * -16 then
-                obj.oForwardVel = approach_by_increment(-MAX_SPEED, obj.oForwardVel, SPEED_INC)
-            else
-                obj.oForwardVel = 0
-            end
-            --this function doesn't work well with negatives thanks nintendo
-            if (obj.oFaceAnglePitch > -2048) then
-                obj.oFaceAnglePitch = approach_by_increment( -2048.0, obj.oFaceAnglePitch, 128.0)
-            end
-        end
-    else
-        -- Slowly resets the pitch and speed back to 0
-        obj.oForwardVel = approach_by_increment(0.0, obj.oForwardVel, SPEED_INC)
-        obj.oFaceAnglePitch = approach_by_increment(0.0, obj.oFaceAnglePitch, 128.0)
-    end
-end
-
---id_bhvGreen_Switchboard_MOP = hook_behavior(nil, OBJ_LIST_SURFACE, false, bhv_green_switchboard_init, bhv_green_switchboard_loop, "bhvGreen_Switchboard_MOP")
 
 ------ Shrink platform ------
 -- Upon being stood on, shrinks platform over time until it no longer exists.

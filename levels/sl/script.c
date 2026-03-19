@@ -66,7 +66,7 @@ const LevelScript level_sl_entry[] = {
         OBJECT(MODEL_GOOMBA, /* posX */ -1657, /* posY */ 2250, /* posZ */ -8608, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGoomba),
         OBJECT(MODEL_BOWLING_BALL, /* posX */ -1675, /* posY */ 2694, /* posZ */ -10201, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFireSpitter),
         OBJECT(MODEL_GOOMBA, /* posX */ -1633, /* posY */ 2850, /* posZ */ -11416, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGoomba),
-        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ 4650, /* posY */ 354, /* posZ */ -9660, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x790d0000, bhvWFRotatingWoodenPlatform),
+        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ 4650, /* posY */ 354, /* posZ */ -9660, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x790d0000, bhvGreenSwitchboard),
         OBJECT(MODEL_AMP, /* posX */ 4633, /* posY */ 428, /* posZ */ -11050, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvCirclingAmp),
         OBJECT(MODEL_HOOT /* or MODEL_BULLY, MODEL_KING_BOBOMB, ... (10 total) */, /* posX */ 1130, /* posY */ 1200, /* posZ */ -12895, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00010000, bhvMrBlizzard),
         OBJECT(MODEL_HOOT /* or MODEL_BULLY, MODEL_KING_BOBOMB, ... (10 total) */, /* posX */ 930, /* posY */ 1200, /* posZ */ -12895, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00010000, bhvMrBlizzard),

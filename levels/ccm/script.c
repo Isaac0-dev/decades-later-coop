@@ -108,9 +108,6 @@ const LevelScript level_ccm_entry[] = {
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 8508, /* posY */ 954, /* posZ */ -6985, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000d0007, bhvExclamationBox),
         OBJECT(MODEL_NONE, /* posX */ 3763, /* posY */ -5184, /* posZ */ 6684, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x05000000, bhvHiddenRedCoinStar),
 
-        //OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ -3265, /* posY */ 6187, /* posZ */ 653, /* angleX */ 0, /* angleY */ 345, /* angleZ */ 0, /* behParam */ 0x00000000, bhvWFRotatingWoodenPlatform),   // FlipSwitch Platform PARAM 0
-        //OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ -3445, /* posY */ 6187, /* posZ */ 1385, /* angleX */ 0, /* angleY */ 345, /* angleZ */ 0, /* behParam */ 0x00000000, bhvWFRotatingWoodenPlatform),  // FlipSwitch Platform PARAM 0
-
         OBJECT(0, /* posX */ -3265, /* posY */ 6187, /* posZ */ 653, /* angleX */ 0, /* angleY */ 345, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswap_Platform_MOP),
         OBJECT(0, /* posX */ -3445, /* posY */ 6187, /* posZ */ 1385, /* angleX */ 0, /* angleY */ 345, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswap_Platform_MOP),
         

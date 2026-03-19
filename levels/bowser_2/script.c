@@ -77,7 +77,7 @@ const LevelScript level_bowser_2_entry[] = {
         OBJECT(MODEL_BOWLING_BALL, /* posX */ -900, /* posY */ 42, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFireSpitter),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 42, /* posZ */ -900, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00110000, bhvCoinFormation),
         OBJECT(MODEL_HEART, /* posX */ 0, /* posY */ 1276, /* posZ */ 3600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRecoveryHeart),
-        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ 1375, /* posY */ 57, /* posZ */ 4800, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x5a0d0000, bhvWFRotatingWoodenPlatform),
+        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ 1375, /* posY */ 57, /* posZ */ 4800, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x5a0d0000, bhvGreenSwitchboard),
         OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 0, /* posY */ 0, /* posZ */ 4345, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x003c0000, bhvExitPodiumWarp),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),

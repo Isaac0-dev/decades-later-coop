@@ -163,7 +163,7 @@ const LevelScript level_rr_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ -1200, /* posY */ 1948, /* posZ */ -10201, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00730000, bhvPoleGrabbing),
         OBJECT(MODEL_RR_SEESAW_PLATFORM, /* posX */ -1200, /* posY */ 944, /* posZ */ -10600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00050000, bhvSeesawPlatform),
         OBJECT(MODEL_RR_SEESAW_PLATFORM, /* posX */ -1200, /* posY */ 1400, /* posZ */ -11200, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00050000, bhvSeesawPlatform),
-        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ 10485, /* posY */ 1559, /* posZ */ 2356, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0xca170000, bhvWFRotatingWoodenPlatform),
+        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ 10485, /* posY */ 1559, /* posZ */ 2356, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0xca170000, bhvGreenSwitchboard),
         OBJECT(MODEL_NONE, /* posX */ 11150, /* posY */ 1645, /* posZ */ 4575, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlamethrower),
         OBJECT(MODEL_NONE, /* posX */ 11150, /* posY */ 1645, /* posZ */ 3825, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlamethrower),
         OBJECT(MODEL_NONE, /* posX */ 11150, /* posY */ 1645, /* posZ */ 3075, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlamethrower),
