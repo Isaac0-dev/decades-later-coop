@@ -13,8 +13,6 @@
 -- local E_MODEL_SANDBLOCK = smlua_model_util_get_id("SandBlock_MOP")
 -- local E_MODEL_SHELL_1 = smlua_model_util_get_id("Shell_1_MOP") -- No code
 -- local E_MODEL_SHELL_2 = smlua_model_util_get_id("Shell_2_MOP") -- No code
-local E_MODEL_SHRINK_PLATFORM = smlua_model_util_get_id("Shrink_Platform_MOP")
--- local E_MODEL_SHRINK_PLATFORM_BORDER = smlua_model_util_get_id("Shrink_Platform_Border_MOP")
 -- local E_MODEL_SWITCHBLOCK = smlua_model_util_get_id("Switchblock_MOP")
 -- local E_MODEL_SWITCHBLOCK_SWITCH = smlua_model_util_get_id("Switchblock_Switch_MOP")
 -- local E_MODEL_SPRING = smlua_model_util_get_id("Spring_MOP")
@@ -34,7 +32,6 @@ local E_MODEL_SHRINK_PLATFORM = smlua_model_util_get_id("Shrink_Platform_MOP")
 -- COL_SANDBLOCK_MOP = smlua_collision_util_get("col_Sandblock_MOP_0xaa6444")
 -- COL_FLIPSWAP_PLATFORM_MOP = smlua_collision_util_get("col_Flipswap_Platform_MOP_0x7d9d88")
 -- COL_FLIPSWITCH_PANEL_MOP = smlua_collision_util_get("col_Flipswitch_Panel_MOP_0x7daf78")
-COL_SHRINK_PLATFORM = smlua_collision_util_get("col_Shrink_Platform_MOP_0xad3720")
 -- COL_SWITCHBLOCK_MOP = smlua_collision_util_get("col_Switchblock_MOP_0x7d3058")
 -- COL_SWITCHBLOCK_SWITCH_MOP = smlua_collision_util_get("col_Switchblock_Switch_MOP_0x7d7348")
 -- COL_MOVING_ROTATING_BLOCK_MOP = smlua_collision_util_get("col_Moving_Rotating_Block_MOP_0x7e3ea0")
@@ -54,10 +51,6 @@ local FLIP_BLOCK_ACT_FLIPPING = 2
 local SANDBLOCK_ACT_IDLE = 0
 local SANDBLOCK_ACT_FADING = 1
 local SANDBLOCK_ACT_DISAPPEARED = 2
-
-local SHRINK_PLATFORM_ACT_IDLE = 0
-local SHRINK_PLATFORM_ACT_SHRINKING = 1
-local SHRINK_PLATFORM_ACT_DISAPPEARED = 2
 
 local FLIPSWITCH_PANEL_ACT_IDLE = 0
 local FLIPSWITCH_PANEL_ACT_MARIO_IS_ON = 1
@@ -452,62 +445,6 @@ function ()
 end)
 
 --id_bhvCheckpoint_Flag_MOP = hook_behavior(nil, OBJ_LIST_GENACTOR, false, bhv_checkpoint_flag_init, bhv_checkpoint_flag_loop, "bhvCheckpoint_Flag_MOP")
-
------- Shrink platform ------
--- Upon being stood on, shrinks platform over time until it no longer exists.
-
-local SHRINK_TIME = 150
-
----@param obj Object
-function bhv_shrinkplatform_init(obj)
-    -- Spawns border
-    --local childObj = spawn_non_sync_object(id_bhvShrink_Platform_Border_MOP, E_MODEL_SHRINK_PLATFORM_BORDER, obj.oPosX, obj.oPosY, obj.oPosZ,
-    ---@param o Object
-    --function (o)
-        -- Overdone like the flipswap platform and for the same reason
-        obj_set_face_angle(o, obj.oFaceAnglePitch, obj.oFaceAngleYaw, obj.oFaceAngleRoll)
-        obj_set_move_angle(o, obj.oMoveAnglePitch, obj.oMoveAngleYaw, obj.oMoveAngleRoll)
-    --end)
-    --childObj.parentObj = obj
-    obj_set_model_extended(obj, E_MODEL_SHRINK_PLATFORM)
-end
-
----@param obj Object
-function bhv_shrinkplatform_loop(obj)
-    -- Only activate collision if the model is still visible
-    if obj.oAction < SHRINK_PLATFORM_ACT_DISAPPEARED then
-        load_object_collision_model()
-    end
-
-    local action = obj.oAction
-    --disappearing
-    if action == SHRINK_PLATFORM_ACT_SHRINKING then
-        if obj.oTimer == SHRINK_TIME then
-            obj.oAction = SHRINK_PLATFORM_ACT_DISAPPEARED
-        end
-
-        -- Slowly shrinks the size of the platform horizontally
-        obj.header.gfx.scale.x = (SHRINK_TIME - obj.oTimer) / SHRINK_TIME
-        obj.header.gfx.scale.z = (SHRINK_TIME - obj.oTimer) / SHRINK_TIME
-    elseif action == SHRINK_PLATFORM_ACT_DISAPPEARED then
-        -- Reset after the platform has fully disappeared
-        cur_obj_hide()
-        if obj.oTimer == SHRINK_TIME + 1 then
-            obj.oAction = SHRINK_PLATFORM_ACT_IDLE
-            obj.header.gfx.scale.x = 1.0
-            obj.header.gfx.scale.z = 1.0
-            cur_obj_unhide()
-        end
-    end
-
-    -- Start disappearing once Mario gets on it
-    if cur_obj_is_mario_on_platform() == 1 and obj.oAction == SHRINK_PLATFORM_ACT_IDLE and not is_bubbled(gMarioStates[0]) then
-        obj.oAction = SHRINK_PLATFORM_ACT_SHRINKING
-        cur_obj_play_sound_1(SOUND_OBJ_UNK23)
-    end
-end
-
---id_bhvShrink_Platform_MOP = hook_behavior(nil, OBJ_LIST_SURFACE, false, bhv_shrinkplatform_init, bhv_shrinkplatform_loop, "bhvShrink_Platform_MOP")
 
 ------ Flipswitch panel ------
 -- Jumping onto a panel activates it. Activating all panels spawns a star. Jumping onto a panel while it's activated with deactivate it.
