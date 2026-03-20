@@ -116,7 +116,7 @@ local LEVEL_START_STATES = {
 ---@param o Object
 local function bhv_switchblock_sign(o)
     o.oFlags = OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE
-    o.header.gfx.skipInViewCheck = false
+    o.header.gfx.skipInViewCheck = true
     o.oPosY = o.oPosY + 80
     obj_set_model_extended(o, E_MODEL_SWITCHBLOCK_SIGN)
 end
@@ -153,7 +153,7 @@ local id_bhvSwitchBlockSign = hook_behavior(nil, OBJ_LIST_DEFAULT, true, bhv_swi
 ---@param o Object
 local function bhv_Switchblock_init(o)
     o.collisionData = COL_SWITCHBLOCK_MOP
-    o.header.gfx.skipInViewCheck = false
+    o.header.gfx.skipInViewCheck = true
     obj_set_model_extended(o, E_MODEL_SWITCHBLOCK)
     spawn_object(o, E_MODEL_SWITCHBLOCK_SIGN, id_bhvSwitchBlockSign)
 end
@@ -191,7 +191,7 @@ local function bhv_Switchblock_Switch_init(o)
     o.collisionData         = COL_SWITCHBLOCK_SWITCH_MOP
     o.oSwitchSyncState      = CURR_SWITCH_STATE
     o.oSwitchOldSyncState   = CURR_SWITCH_STATE
-    o.header.gfx.skipInViewCheck = false
+    o.header.gfx.skipInViewCheck = true
     obj_set_model_extended(o, E_MODEL_SWITCHBLOCK_SWITCH)
     network_init_object(o, false, { "oSwitchSyncState" })
 end

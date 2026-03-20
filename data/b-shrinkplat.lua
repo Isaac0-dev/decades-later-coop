@@ -47,6 +47,7 @@ end
 local function bhv_shrinkplat_border(o)
     obj_set_model_extended(o, E_MODEL_SHRINK_PLATFORM_BORDER)
     o.oFlags = OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE
+    o.header.gfx.skipInViewCheck = true
 end
 
 local id_bhvShrinkPlatBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_shrinkplat_border, nil)
@@ -73,6 +74,7 @@ local RESPAWN_TIME = 120
 local function bhv_shrinkplatform_init(o)
     obj_set_model_extended(o, E_MODEL_SHRINK_PLATFORM)
     o.collisionData = COL_SHRINK_PLATFORM
+    o.header.gfx.skipInViewCheck = true
     spawn_object(o, E_MODEL_NONE, id_bhvShrinkPlatBorder)
 end
 

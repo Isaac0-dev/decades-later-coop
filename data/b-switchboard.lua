@@ -60,6 +60,7 @@ end
 local function bhv_greenboard_gear(o)
     obj_set_model_extended(o, E_MODEL_GREEN_SWITCHBOARD_GEARS)
     o.oFlags = OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE
+    o.header.gfx.skipInViewCheck = true
 end
 
 local id_bhvGreenBoardGear = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_greenboard_gear, nil)
@@ -72,6 +73,7 @@ local id_bhvGreenBoardGear = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_gre
 local function bhv_green_switchboard_init(o)
     o.oFlags = OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_MOVE_XZ_USING_FVEL
     o.collisionData = COL_GREEN_SWITCHBOARD_MOP
+    o.header.gfx.skipInViewCheck = true
     obj_set_model_extended(o, E_MODEL_GREEN_SWITCHBOARD)
     cur_obj_set_home_once()
     o.oIntroLakituCloud = spawn_object(o, E_MODEL_NONE, id_bhvGreenBoardGear)

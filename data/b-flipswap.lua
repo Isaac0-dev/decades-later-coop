@@ -36,6 +36,7 @@ end
 local function bhv_flipswap_border(o)
     obj_set_model_extended(o, E_MODEL_FLIPSWAP_PLATFORM_BORDER)
     o.oFlags = OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE
+    o.header.gfx.skipInViewCheck = true
 end
 
 local id_bhvFlipswapBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_flipswap_border, nil)
@@ -57,6 +58,7 @@ local FLIP_SPEED_MULTIPLIER = 1
 local function bhv_flipswap_init(o)
     o.oFlags = OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE
     o.collisionData = COL_FLIPSWAP_PLATFORM_MOP
+    o.header.gfx.skipInViewCheck = true
     obj_set_model_extended(o, E_MODEL_FLIPSWAP_PLATFORM)
     spawn_object(o, E_MODEL_NONE, id_bhvFlipswapBorder)
 end

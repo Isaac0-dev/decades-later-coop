@@ -50,6 +50,7 @@ local function bhv_noteblock_init(o)
     o.oFlags = OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE
     o.collisionData = COL_NOTEBLOCK_MOP
     o.oHomeY = o.oPosY
+    o.header.gfx.skipInViewCheck = true
     obj_set_model_extended(o, E_MODEL_NOTEBLOCK)
 end
 
