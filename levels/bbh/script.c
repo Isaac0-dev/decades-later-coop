@@ -270,8 +270,8 @@ const LevelScript level_bbh_entry[] = {
         OBJECT(MODEL_STAR, /* posX */ -3, /* posY */ 714, /* posZ */ 5539, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 7425, /* posY */ 1200, /* posZ */ -5025, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 0, /* posY */ 4300, /* posZ */ 583, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x06000001, bhvStar),
-        OBJECT(0xf1, /* posX */ -2250, /* posY */ -450, /* posZ */ 375, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
-        OBJECT(0xf2, /* posX */ 600, /* posY */ 3000, /* posZ */ 125, /* angleX */ 0, /* angleY */ 45, /* angleZ */ 0, /* behParam */ 0x00010000, bhvTHIHugeIslandTop),
+        OBJECT(0xf1, /* posX */ -2250, /* posY */ -450, /* posZ */ 375, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),      // BLUE BLOCK
+        OBJECT(0xf2, /* posX */ 600, /* posY */ 3000, /* posZ */ 125, /* angleX */ 0, /* angleY */ 45, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchBlockSwitch), // RED SWITCH
         OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ -2250, /* posY */ -450, /* posZ */ 375, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00af0000, bhvExitPodiumWarp),
         WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x14, /* destLevel */ LEVEL_BBH, /* destArea */ 0x01, /* destNode */ 0x14, /* flags */ 0x00),

@@ -94,7 +94,7 @@ const LevelScript level_hmc_entry[] = {
         OBJECT(MODEL_RED_COIN, /* posX */ -5981, /* posY */ 660, /* posZ */ -6859, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ -8878, /* posY */ 774, /* posZ */ 2149, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ -12583, /* posY */ 805, /* posZ */ -2471, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
-        OBJECT(0x99, /* posX */ -12583, /* posY */ 73, /* posZ */ -2471, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(0x99, /* posX */ -12583, /* posY */ 73, /* posZ */ -2471, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop), // SandBlock
         OBJECT(MODEL_NONE, /* posX */ 8318, /* posY */ 2453, /* posZ */ -15321, /* angleX */ 0, /* angleY */ 118, /* angleZ */ 0, /* behParam */ 0x00000000, bhvScuttlebugSpawn),
         OBJECT(MODEL_NONE, /* posX */ 5912, /* posY */ 2453, /* posZ */ -12225, /* angleX */ 0, /* angleY */ 156, /* angleZ */ 0, /* behParam */ 0x00000000, bhvScuttlebugSpawn),
         OBJECT(MODEL_NONE, /* posX */ 12093, /* posY */ 1518, /* posZ */ -577, /* angleX */ 0, /* angleY */ 181, /* angleZ */ 0, /* behParam */ 0x00000000, bhvScuttlebugSpawn),

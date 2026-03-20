@@ -69,13 +69,13 @@ const LevelScript level_bitfs_entry[] = {
     AREA(1, bitfs_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ -6000, /* posY */ 500, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_NONE, /* posX */ 450, /* posY */ 6425, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000000, bhvHiddenStar),
-        OBJECT(0xf2, /* posX */ 450, /* posY */ 6001, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvTHIHugeIslandTop),
+        OBJECT(0xf2, /* posX */ 450, /* posY */ 6001, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchBlockSwitch),       // RED SWITCH
         OBJECT(MODEL_NONE, /* posX */ 1200, /* posY */ 28, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00140000, bhvFadingWarp),
-        OBJECT(0xf1, /* posX */ 1200, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(0xf1, /* posX */ 1200, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),               // BLUE BLOCK
         OBJECT(MODEL_NONE, /* posX */ -150, /* posY */ 3628, /* posZ */ 600, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x001e0000, bhvFadingWarp),
-        OBJECT(0xf1, /* posX */ -150, /* posY */ 3600, /* posZ */ 600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(0xf1, /* posX */ -150, /* posY */ 3600, /* posZ */ 600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),          // BLUE BLOCK
         OBJECT(MODEL_NONE, /* posX */ 300, /* posY */ 6028, /* posZ */ -1575, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00280000, bhvFadingWarp),
-        OBJECT(0xf1, /* posX */ 300, /* posY */ 6000, /* posZ */ -1575, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(0xf1, /* posX */ 300, /* posY */ 6000, /* posZ */ -1575, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),         // BLUE BLOCK
         OBJECT(MODEL_NONE, /* posX */ 4350, /* posY */ 6045, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x05450000, bhvWarp),
         OBJECT(MODEL_RED_COIN, /* posX */ 1200, /* posY */ 65, /* posZ */ -575, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ 1950, /* posY */ 375, /* posZ */ -3150, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),

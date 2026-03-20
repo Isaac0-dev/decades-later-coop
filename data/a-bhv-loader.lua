@@ -4,7 +4,8 @@ local behavior_files = {
     "b-noteblock",
     "b-flipswap",
     "b-switchboard",
-    "b-shrinkplat"
+    "b-shrinkplat",
+    "b-switchblock"
 }
 
 for _, file in ipairs(behavior_files) do
