@@ -1,5 +1,3 @@
---template hud mod, accurate hud but still wip
-
 timer = false
 dl_hud = true
 ts = false
@@ -130,13 +128,12 @@ function render_timer(timer, x, y)
         if timer then 
             minutes = math.floor(timer/30/60%60)
             seconds = math.floor(timer/30)%60
-            milliseconds = math.floor(timer/30%1 * 100)
+            milliseconds = math.floor(timer/30%1 * 10)
 
-            djui_hud_print_text(string.format("%02d", minutes), x + 12, y, 1)
-            djui_hud_print_text("'", x + 36, y - 7, 1)
+            djui_hud_print_text(string.format(" %d", minutes), x + 13, y, 1)
             djui_hud_print_text(string.format("%02d", seconds), x + 47, y, 1)
             djui_hud_print_text('"', x + 73, y - 7, 1)
-            djui_hud_print_text(string.format("%02d", milliseconds), x + 87, y, 1)
+            djui_hud_print_text(string.format("%d", milliseconds), x + 82, y, 1)
 
         elseif not timer then
             minutes = math.floor(timer/30/60%60)
@@ -172,7 +169,7 @@ local function on_hud_render()
         if timer then
             render_timer(hud_get_value(HUD_DISPLAY_TIMER), halfScreenWidth - 47, screenHeight * 0.85)
         else
-            render_timer(hud_get_value(HUD_DISPLAY_TIMER), halfScreenWidth + 54, 39)
+            render_timer(hud_get_value(HUD_DISPLAY_TIMER), halfScreenWidth + -64, 15)
         end
     end
 end
