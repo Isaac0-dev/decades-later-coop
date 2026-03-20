@@ -220,7 +220,7 @@ const LevelScript level_ssl_entry[] = {
         OBJECT(MODEL_SSL_GRINDEL, /* posX */ 1431, /* posY */ -300, /* posZ */ -5499, /* angleX */ 0, /* angleY */ 135, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvGrindel),
         OBJECT(0xf1, /* posX */ -1091, /* posY */ -335, /* posZ */ -3600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00020000, bhvTHIHugeIslandTop),
         OBJECT(0xf1, /* posX */ -1808, /* posY */ -394, /* posZ */ -3600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00020000, bhvTHIHugeIslandTop),
-        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -3225, /* posY */ 0, /* posZ */ -6869, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -3225, /* posY */ 0, /* posZ */ -6869, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBlueCoinSwitch),
         OBJECT(MODEL_SSL_GRINDEL, /* posX */ -3225, /* posY */ 0, /* posZ */ -5857, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x001c0000, bhvGrindel),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -3225, /* posY */ 0, /* posZ */ -5700, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -3225, /* posY */ 0, /* posZ */ -6300, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),

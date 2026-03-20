@@ -94,7 +94,7 @@ const LevelScript level_jrb_entry[] = {
         OBJECT(MODEL_RED_COIN, /* posX */ 6140, /* posY */ 2737, /* posZ */ -57, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ 6138, /* posY */ 2962, /* posZ */ 992, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ 6133, /* posY */ 3350, /* posZ */ 2228, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
-        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ 8366, /* posY */ 531, /* posZ */ -2167, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ 8366, /* posY */ 531, /* posZ */ -2167, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBlueCoinSwitch),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 9029, /* posY */ 343, /* posZ */ -1793, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 9225, /* posY */ 381, /* posZ */ -1230, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 9222, /* posY */ 369, /* posZ */ -802, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),

@@ -137,7 +137,7 @@ const LevelScript level_wf_entry[] = {
         OBJECT(MODEL_BOBOMB_BUDDY, /* posX */ 677, /* posY */ 2425, /* posZ */ -4622, /* angleX */ 0, /* angleY */ 129, /* angleZ */ 0, /* behParam */ 0x00120000, bhvBobombBuddy),
         OBJECT(MODEL_NONE, /* posX */ -5339, /* posY */ 1674, /* posZ */ -6736, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00110000, bhvCoinFormation),
         OBJECT(MODEL_AMP, /* posX */ -4785, /* posY */ 3149, /* posZ */ -7222, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHomingAmp),
-        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -4450, /* posY */ 450, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -4450, /* posY */ 450, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBlueCoinSwitch),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -3839, /* posY */ 688, /* posZ */ -600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -3839, /* posY */ 688, /* posZ */ 600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -5460, /* posY */ 688, /* posZ */ -600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),

@@ -75,7 +75,7 @@ const LevelScript level_ddd_entry[] = {
         OBJECT_WITH_ACTS(MODEL_HMC_METAL_DOOR, /* posX */ 3300, /* posY */ 0, /* posZ */ -937, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00140000, bhvDoorWarp, /* acts */ 0x3c),
         OBJECT_WITH_ACTS(MODEL_HMC_METAL_DOOR, /* posX */ -5325, /* posY */ 1200, /* posZ */ -937, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x001e0000, bhvDoorWarp, /* acts */ 0x3c),
         OBJECT_WITH_ACTS(MODEL_HMC_METAL_DOOR, /* posX */ 4090, /* posY */ 900, /* posZ */ -4500, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00280000, bhvDoorWarp, /* acts */ 0x3c),
-        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ 5836, /* posY */ 1800, /* posZ */ -1052, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ 5836, /* posY */ 1800, /* posZ */ -1052, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBlueCoinSwitch),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 3680, /* posY */ 1671, /* posZ */ 365, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 5330, /* posY */ 1671, /* posZ */ 365, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 5330, /* posY */ 1973, /* posZ */ 1368, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),

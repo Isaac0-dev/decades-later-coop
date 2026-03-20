@@ -149,7 +149,7 @@ const LevelScript level_thi_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 2400, /* posY */ -4653, /* posZ */ 867, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x006c0000, bhvPoleGrabbing),
         OBJECT(MODEL_NONE, /* posX */ 2400, /* posY */ -4653, /* posZ */ 266, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x006c0000, bhvPoleGrabbing),
         OBJECT(MODEL_NONE, /* posX */ 2400, /* posY */ -4202, /* posZ */ -483, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x006c0000, bhvPoleGrabbing),
-        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ 2400, /* posY */ -3076, /* posZ */ -650, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ 2400, /* posY */ -3076, /* posZ */ -650, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBlueCoinSwitch),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 2403, /* posY */ -3044, /* posZ */ -50, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 2403, /* posY */ -3494, /* posZ */ -50, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 2395, /* posY */ -3044, /* posZ */ 550, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),

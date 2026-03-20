@@ -114,7 +114,7 @@ const LevelScript level_hmc_entry[] = {
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ -8480, /* posY */ 300, /* posZ */ 2553, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvMontyMoleHole),
         OBJECT(MODEL_YELLOW_SPHERE /* or MODEL_WATER_BOMB_SHADOW, MODEL_UNAGI, ... (10 total) */, /* posX */ -8874, /* posY */ 300, /* posZ */ 3738, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvMontyMole),
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ -7693, /* posY */ 300, /* posZ */ 2179, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvMontyMoleHole),
-        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -6404, /* posY */ 900, /* posZ */ -596, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -6404, /* posY */ 900, /* posZ */ -596, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBlueCoinSwitch),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -5292, /* posY */ 345, /* posZ */ 150, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -5320, /* posY */ 524, /* posZ */ 1522, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -5297, /* posY */ 524, /* posZ */ 895, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),

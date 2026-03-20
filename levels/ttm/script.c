@@ -198,7 +198,7 @@ const LevelScript level_ttm_entry[] = {
         OBJECT(MODEL_TTM_STAR_CAGE, /* posX */ -2895, /* posY */ 2135, /* posZ */ -949, /* angleX */ 90, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02500000, bhvSlidingPlatform2),
         OBJECT(0x98, /* posX */ -3075, /* posY */ 768, /* posZ */ 1000, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform),
         OBJECT(0x98, /* posX */ -3075, /* posY */ 1182, /* posZ */ 1000, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform),
-        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -1540, /* posY */ -378, /* posZ */ 3778, /* angleX */ 0, /* angleY */ -33, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -1540, /* posY */ -378, /* posZ */ 3778, /* angleX */ 0, /* angleY */ -33, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBlueCoinSwitch),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -1540, /* posY */ 72, /* posZ */ 3778, /* angleX */ 0, /* angleY */ -33, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -1540, /* posY */ 558, /* posZ */ 3778, /* angleX */ 0, /* angleY */ -33, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -1540, /* posY */ 1044, /* posZ */ 3778, /* angleX */ 0, /* angleY */ -33, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),

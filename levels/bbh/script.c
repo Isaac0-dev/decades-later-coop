@@ -142,7 +142,7 @@ const LevelScript level_bbh_entry[] = {
         OBJECT(MODEL_BBH_HAUNTED_DOOR, /* posX */ 2320, /* posY */ -2400, /* posZ */ -450, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvDoor),
         OBJECT(MODEL_BBH_HAUNTED_DOOR, /* posX */ 150, /* posY */ -2550, /* posZ */ -975, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00000000, bhvDoor),
         OBJECT(MODEL_BBH_HAUNTED_DOOR, /* posX */ 150, /* posY */ -2550, /* posZ */ -4575, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00000000, bhvDoor),
-        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -5402, /* posY */ 0, /* posZ */ -4212, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -5402, /* posY */ 0, /* posZ */ -4212, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBlueCoinSwitch),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -6311, /* posY */ 178, /* posZ */ -4137, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -6115, /* posY */ 178, /* posZ */ -5324, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -4510, /* posY */ 178, /* posZ */ -5458, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),

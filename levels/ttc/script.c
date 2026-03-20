@@ -224,7 +224,7 @@ const LevelScript level_ttc_entry[] = {
         OBJECT(0xf1, /* posX */ 0, /* posY */ 4050, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
         OBJECT(0xf1, /* posX */ 0, /* posY */ 4950, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
         OBJECT(0xf1, /* posX */ 0, /* posY */ 5850, /* posZ */ 0, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
-        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ 375, /* posY */ 6299, /* posZ */ 0, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ 375, /* posY */ 6299, /* posZ */ 0, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBlueCoinSwitch),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 0, /* posY */ 1083, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 0, /* posY */ 1975, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 0, /* posY */ 2886, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),

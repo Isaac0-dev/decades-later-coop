@@ -133,7 +133,7 @@ const LevelScript level_lll_entry[] = {
         OBJECT(MODEL_LLL_TILTING_SQUARE_PLATFORM, /* posX */ -2070, /* posY */ -742, /* posZ */ -9610, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvLLLTiltingInvertedPyramid),
         OBJECT(0x98, /* posX */ -4390, /* posY */ 533, /* posZ */ -8751, /* angleX */ 0, /* angleY */ 45, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform),
         OBJECT(0x98, /* posX */ -5720, /* posY */ 0, /* posZ */ -8174, /* angleX */ 0, /* angleY */ 45, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform),
-        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -3959, /* posY */ 817, /* posZ */ -7405, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ -3959, /* posY */ 817, /* posZ */ -7405, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBlueCoinSwitch),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -3590, /* posY */ 854, /* posZ */ -8305, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -3590, /* posY */ 854, /* posZ */ -7405, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -3125, /* posY */ 854, /* posZ */ -8305, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),

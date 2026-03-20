@@ -180,7 +180,7 @@ const LevelScript level_wdw_entry[] = {
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 4650, /* posY */ 5444, /* posZ */ 3900, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00060009, bhvExclamationBox),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -1200, /* posY */ 2805, /* posZ */ -1600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00050008, bhvExclamationBox),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 1206, /* posY */ 4019, /* posZ */ -1548, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00250014, bhvExclamationBox),
-        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ 1200, /* posY */ 0, /* posZ */ 750, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_BLUE_COIN_SWITCH, /* posX */ 1200, /* posY */ 0, /* posZ */ 750, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBlueCoinSwitch),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 450, /* posY */ 42, /* posZ */ 750, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -450, /* posY */ 42, /* posZ */ 750, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -900, /* posY */ 42, /* posZ */ 785, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
