@@ -56,7 +56,7 @@ const LevelScript level_sl_entry[] = {
         OBJECT(MODEL_RED_COIN, /* posX */ -2621, /* posY */ 648, /* posZ */ -10960, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ -10030, /* posY */ 1793, /* posZ */ -4959, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ -7754, /* posY */ 1800, /* posZ */ -726, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
-        OBJECT(0x92, /* posX */ -1665, /* posY */ 708, /* posZ */ -12000, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x14960000, bhv_unknown_130005B4), // Spring
+        OBJECT(0x92, /* posX */ -1665, /* posY */ 708, /* posZ */ -12000, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x14960000, bhvSpring), // Spring
         OBJECT(0xf1, /* posX */ -1665, /* posY */ 900, /* posZ */ -12225, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),
         OBJECT(0xf2, /* posX */ -1665, /* posY */ 901, /* posZ */ -12905, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchBlockSwitch),
         OBJECT(0xf1, /* posX */ -716, /* posY */ 445, /* posZ */ -8150, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00020000, bhvSwitchBlock),

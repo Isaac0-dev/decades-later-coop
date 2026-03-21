@@ -272,7 +272,7 @@ const LevelScript level_castle_courtyard_entry[] = {
     END_AREA(),
     AREA(3, castle_courtyard_area_1_area_2_area_3_geo_19000160),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 300, /* posZ */ 1950, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
-        OBJECT(0x92, /* posX */ 0, /* posY */ -215, /* posZ */ 1650, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x1e320000, bhv_unknown_130005B4),
+        OBJECT(0x92, /* posX */ 0, /* posY */ -215, /* posZ */ 1650, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x1e320000, bhvSpring),
         OBJECT(MODEL_LEVEL_GEOMETRY_0F, /* posX */ 0, /* posY */ 0, /* posZ */ -450, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x008c0000, bhvBobombBuddy),
         OBJECT(MODEL_WOODEN_SIGNPOST, /* posX */ 0, /* posY */ 0, /* posZ */ -1350, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x008b0000, bhvMessagePanel),
         OBJECT(MODEL_STAR, /* posX */ 0, /* posY */ 350, /* posZ */ -900, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x06000000, bhvStar),

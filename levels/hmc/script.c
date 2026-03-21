@@ -176,7 +176,7 @@ const LevelScript level_hmc_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 9371, /* posY */ -1750, /* posZ */ 18301, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFishSpawner),
         OBJECT(MODEL_NONE, /* posX */ 5099, /* posY */ -1750, /* posZ */ 17337, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFishSpawner),
         OBJECT(MODEL_NONE, /* posX */ 12184, /* posY */ 1519, /* posZ */ -11487, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvCoinFormation),
-        OBJECT(0x92, /* posX */ 9785, /* posY */ -657, /* posZ */ 7047, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x32fa0000, bhv_unknown_130005B4),
+        OBJECT(0x92, /* posX */ 9785, /* posY */ -657, /* posZ */ 7047, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x32fa0000, bhvSpring),
         OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ -7570, /* posY */ 4350, /* posZ */ -8249, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswap_Platform_MOP),
         OBJECT(MODEL_STAR, /* posX */ 3223, /* posY */ 2547, /* posZ */ -9398, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 11567, /* posY */ -977, /* posZ */ -4809, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000001, bhvStar),

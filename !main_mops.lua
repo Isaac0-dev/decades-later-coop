@@ -41,9 +41,6 @@
 -----Actions-----
 -----------------
 
-local SPRING_ACT_READY = 0
-local SPRING_ACT_USED = 1
-
 local FLIP_BLOCK_ACT_UNINITIALIZED = 0
 local FLIP_BLOCK_ACT_IDLE = 1
 local FLIP_BLOCK_ACT_FLIPPING = 2
@@ -109,16 +106,6 @@ local count_objects_with_behavior = count_objects_with_behavior
 -- local obj_get_nearest_object_with_behavior_id = obj_get_nearest_object_with_behavior_id
 local cur_obj_become_tangible = cur_obj_become_tangible
 
--- Packing and unpacking like this allows for C-like type conversions
-local string_pack = string.pack
-local string_unpack = string.unpack
----@param value number
----@param pack_fmt string
----@param unpack_fmt string
-local repack = function (value, pack_fmt, unpack_fmt)
-    return string_unpack(unpack_fmt, string_pack(pack_fmt, value))
-end
-
 --------------------------
 -----Helper Variables-----
 --------------------------
@@ -142,21 +129,6 @@ local function switch(param, case_table)
     if case then return case() end
     local def = case_table['default']
     return def and def() or nil
-end
-
---- Moves Mario to the top of the object, then sets his Y speed and resets his fall.
----@param m MarioState
----@param obj Object
----@param new_velY integer
-local function bounce_off_object(m, obj, new_velY)
-    m.pos.y = obj.oPosY + obj.hitboxHeight
-    m.vel.y = new_velY
-
-    -- MARIO_UNKNOWN_8 is the flag that controls Mario's screaming when he falls from a high place
-    -- This removes the flag so he can scream again
-    m.flags = m.flags & ~MARIO_UNKNOWN_08
-
-    play_sound(SOUND_ACTION_BOUNCE_OFF_OBJECT, m.marioObj.header.gfx.cameraToObject)
 end
 
 ---@param m MarioState
@@ -224,51 +196,6 @@ end
 -------------------
 -----Functions-----
 -------------------
-
------- Spring ------
--- Upon touching the spring, get launched in a set direction with a set speed, both horizontal and vertical.
-
----@param obj Object
-function bhv_Spring_init(obj)
-    obj_set_model_extended(obj, E_MODEL_SPRING)
-end
-
----@param obj Object
-function bhv_Spring_loop(obj)
-    local m = gMarioStates[0]
-    if is_bubbled(m) then return end
-
-    -- Initial y speed
-    local Yspd = 56.0
-    local y_vel = nil
-    local forward_vel = nil
-
-    if obj.oAction == SPRING_ACT_READY then
-        if obj_check_if_collided_with_object(obj, m.marioObj) ~= 0 then
-            set_mario_action(m, ACT_DOUBLE_JUMP, 0)
-            -- m.actionTimer = 1000 --Really doubt this is necessary
-            m.faceAngle.y = obj.oFaceAngleYaw
-
-            y_vel = repack(Yspd, "f", "I")
-            -- Calculates how fast Mario should go using oBehParams2ndByte
-            forward_vel = repack(y_vel + (obj.oBehParams & 0x00FF0000), "I", "f")
-            m.forwardVel = forward_vel
-
-            -- Calculates how high Mario should go using the 1st byte
-            y_vel = y_vel + (((obj.oBehParams >> 24) & 0xFF) << 16)
-            bounce_off_object(m, obj, repack(y_vel, "I", "f"))
-
-            -- Prevent interaction for some time
-            obj.oAction = SPRING_ACT_USED
-        end
-    else
-        if obj.oTimer == 15 then
-            obj.oAction = SPRING_ACT_READY
-        end
-    end
-end
-
---id_bhvSpring_MOP = hook_behavior(nil, OBJ_LIST_LEVEL, false, bhv_Spring_init, bhv_Spring_loop, "bhvSpring_MOP")
 
 ------ Flipblock ------
 -- Hitting this block will cause it to spin, losing its collision until it stops spinning.

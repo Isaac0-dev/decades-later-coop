@@ -71,7 +71,7 @@ const LevelScript level_bowser_3_entry[] = {
     AREA(1, bowser_3_area_1_geo_19001700),
         OBJECT(MODEL_NONE, /* posX */ 1800, /* posY */ -836, /* posZ */ 6450, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_TTC_CLOCK_HAND /* or MODEL_RR_TRICKY_TRIANGLES, MODEL_BITFS_TUMBLING_PLATFORM, ... (5 total) */, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x07000000, bhv_unknown_001CE08C),
-        OBJECT(0x92, /* posX */ 0, /* posY */ 750, /* posZ */ 8550, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x1e640000, bhv_unknown_130005B4),
+        OBJECT(0x92, /* posX */ 0, /* posY */ 750, /* posZ */ 8550, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x1e640000, bhvSpring),
         OBJECT(MODEL_NONE, /* posX */ -1200, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvCoinFormation),
         OBJECT(MODEL_NONE, /* posX */ 1200, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvCoinFormation),
         OBJECT(MODEL_NONE, /* posX */ -1125, /* posY */ 480, /* posZ */ -1155, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFireSpitter),
