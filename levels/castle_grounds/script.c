@@ -69,7 +69,7 @@ const LevelScript level_castle_grounds_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ -150, /* posY */ 56, /* posZ */ -17040, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x14960000, bhvWarp),
         OBJECT(MODEL_DL_CANNON_LID, /* posX */ 3296, /* posY */ -315, /* posZ */ 2851, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00490000, bhvCannonClosed),
         OBJECT(MODEL_BOBOMB_BUDDY, /* posX */ 4113, /* posY */ 550, /* posZ */ -15088, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBobombBuddyOpensCannon),
-        OBJECT(MODEL_NONE, /* posX */ 14, /* posY */ 514, /* posZ */ -9626, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x05000000, bhvHiddenStar),
+        OBJECT(MODEL_NONE, /* posX */ 14, /* posY */ 514, /* posZ */ -9626, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x05000000, bhvBowserCourseRedCoinStar),
         OBJECT(MODEL_RED_COIN, /* posX */ -1374, /* posY */ 602, /* posZ */ 4938, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ -8700, /* posY */ 664, /* posZ */ -11715, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ 7727, /* posY */ 814, /* posZ */ -8719, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
