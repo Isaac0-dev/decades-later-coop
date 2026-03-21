@@ -68,6 +68,7 @@ const LevelScript level_ccm_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, castle_door_geo),
     LOAD_MODEL_FROM_GEO(MODEL_PENGUIN, penguin_geo),
     LOAD_MODEL_FROM_GEO(MODEL_DL_CANNON_LID, cannon_lid_geo)
+    LOAD_MODEL_FROM_GEO(15, brodute_geo)
     AREA(1, ccm_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ 843, /* posY */ 4985, /* posZ */ 6065, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_BOBOMB_BUDDY, /* posX */ 2588, /* posY */ -886, /* posZ */ 5089, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBobombBuddyOpensCannon),
@@ -102,7 +103,6 @@ const LevelScript level_ccm_entry[] = {
         OBJECT(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, /* posX */ 1031, /* posY */ 4753, /* posZ */ 5564, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00470000, bhvDoorWarp),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, /* posX */ 1035, /* posY */ -5645, /* posZ */ 5564, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00500000, bhvDoorWarp),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, /* posX */ 883, /* posY */ -5645, /* posZ */ 5564, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00510000, bhvDoorWarp),
-        OBJECT(MODEL_YOSHI_EGG /* or MODEL_BULLY_BOSS, MODEL_DL_WHIRLPOOL, ... (8 total) */, /* posX */ 4643, /* posY */ -5840, /* posZ */ 8089, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02000000, bhv_unknown_13002088),
         OBJECT(MODEL_STAR, /* posX */ -1047, /* posY */ 8484, /* posZ */ 2393, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000000, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ -4659, /* posY */ -3084, /* posZ */ 472, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x03000000, bhvStar),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 8508, /* posY */ 954, /* posZ */ -6985, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000d0007, bhvExclamationBox),
@@ -173,7 +173,7 @@ const LevelScript level_ccm_entry[] = {
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ -5574, /* posY */ -5645, /* posZ */ 8095, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSpindrift),
         OBJECT(MODEL_NONE, /* posX */ 358, /* posY */ -5329, /* posZ */ 9375, /* angleX */ 0, /* angleY */ 135, /* angleZ */ 0, /* behParam */ 0x00450000, bhvFadingWarp),
         OBJECT(MODEL_NONE, /* posX */ -5113, /* posY */ -5645, /* posZ */ 8154, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00450000, bhvFadingWarp),
-        OBJECT(MODEL_YELLOW_COIN, /* posX */ -5113, /* posY */ -5615, /* posZ */ 8154, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_1300090C),
+        OBJECT(MODEL_YELLOW_COIN, /* posX */ -5113, /* posY */ -5615, /* posZ */ 8154, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvYellowCoin),
         OBJECT(MODEL_WOODEN_SIGNPOST, /* posX */ -470, /* posY */ 4753, /* posZ */ 6040, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00310000, bhvMessagePanel),
         OBJECT(MODEL_STAR, /* posX */ -7000, /* posY */ 3667, /* posZ */ -463, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x03000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 1551, /* posY */ 1968, /* posZ */ 4811, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02000001, bhvStar),
@@ -211,7 +211,7 @@ const LevelScript level_ccm_entry[] = {
         OBJECT(MODEL_STAR, /* posX */ 20743, /* posY */ -14993, /* posZ */ -18713, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStar),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, /* posX */ 20285, /* posY */ -15595, /* posZ */ -19502, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00140000, bhvDoorWarp),
         OBJECT(MODEL_NONE, /* posX */ -2371, /* posY */ 3640, /* posZ */ -2566, /* angleX */ 0, /* angleY */ 107, /* angleZ */ 0, /* behParam */ 0x001e0000, bhvSwimmingWarp),
-        OBJECT(MODEL_LEVEL_GEOMETRY_0F, /* posX */ 3107, /* posY */ 14470, /* posZ */ 18071, /* angleX */ 0, /* angleY */ 48, /* angleZ */ 0, /* behParam */ 0x00320000, bhvBobombBuddy),
+        OBJECT(15, /* posX */ 3107, /* posY */ 14470, /* posZ */ 18071, /* angleX */ 0, /* angleY */ 48, /* angleZ */ 0, /* behParam */ 0x00320000, bhvBobombBuddy),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -478, /* posY */ 13297, /* posZ */ 18020, /* angleX */ 0, /* angleY */ 315, /* angleZ */ 0, /* behParam */ 0x00000000, bhvMovingBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -13848, /* posY */ -4544, /* posZ */ 989, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvMovingBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ -11436, /* posY */ -7001, /* posZ */ -11287, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvMovingBlueCoin),
