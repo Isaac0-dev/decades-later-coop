@@ -3,7 +3,7 @@ set_exclamation_box_contents({
     { id = 0,  unused = 0, firstByte = 0, model = E_MODEL_MARIOS_WING_CAP,         behavior = id_bhvWingCap },
     { id = 1,  unused = 0, firstByte = 0, model = E_MODEL_MARIOS_METAL_CAP,        behavior = id_bhvMetalCap },
     { id = 2,  unused = 0, firstByte = 0, model = E_MODEL_MARIOS_CAP,              behavior = id_bhvVanishCap },
-    { id = 3,  unused = 0, firstByte = 0, model = E_MODEL_NONE,                    behavior = id_bhvWarp },
+    { id = 3,  unused = 0, firstByte = 0, model = E_MODEL_EXCLAMATION_BOX,         behavior = id_bhvWarp },
     { id = 4,  unused = 0, firstByte = 0, model = E_MODEL_KOOPA_SHELL,             behavior = id_bhvKoopaShell },
     { id = 5,  unused = 0, firstByte = 0, model = E_MODEL_NONE,                    behavior = id_bhvThreeCoinsSpawn },
     { id = 6,  unused = 0, firstByte = 0, model = E_MODEL_NONE,                    behavior = id_bhvTenCoinsSpawn },
@@ -51,6 +51,6 @@ set_exclamation_box_contents({
     { id = 48, unused = 0, firstByte = 0, model = E_MODEL_SNUFIT,                  behavior = id_bhvSnufit },
     { id = 49, unused = 0, firstByte = 0, model = E_MODEL_EXPLOSION,               behavior = id_bhvExplosion },
     { id = 50, unused = 0, firstByte = 0, model = E_MODEL_NONE,                    behavior = id_bhvHiddenStarTrigger },
-    { id = 51, unused = 0, firstByte = 0, model = E_MODEL_NONE,                    behavior = id_bhvWarp },
+    { id = 51, unused = 0, firstByte = 0, model = E_MODEL_EXCLAMATION_BOX,         behavior = id_bhvWarp },
     --{ id = 99, unused = 0, firstByte = 0, model = nil, behavior = nil },
 })
