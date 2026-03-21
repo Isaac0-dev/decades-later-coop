@@ -60,7 +60,7 @@ local function bhv_noteblock_loop(o)
     load_object_collision_model()
 
     if o.oAction == NOTEBLOCK_ACT_IDLE then
-        if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(m) then
+        if cur_obj_is_mario_on_platform() ~= 0 and not is_bubbled(m) then
             local y_spd = 64
 
             if (m.controller.buttonDown & A_BUTTON) ~= 0 then

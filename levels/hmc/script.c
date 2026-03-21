@@ -185,7 +185,7 @@ const LevelScript level_hmc_entry[] = {
         OBJECT(MODEL_STAR, /* posX */ -47, /* posY */ 1691, /* posZ */ -1426, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x04000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 11864, /* posY */ 3539, /* posZ */ 1712, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x05000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 9785, /* posY */ -80, /* posZ */ 13727, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x06000001, bhvStar),
-        OBJECT(0xe3, /* posX */ 1349, /* posY */ 4352, /* posZ */ -11699, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE050),
+        OBJECT(0xe3, /* posX */ 1349, /* posY */ 4352, /* posZ */ -11699, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),

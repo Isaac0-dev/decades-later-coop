@@ -202,7 +202,7 @@ const LevelScript level_rr_entry[] = {
         OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ 7600, /* posY */ 300, /* posZ */ -3150, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswap_Platform_MOP),
         OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ 8875, /* posY */ 3699, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswap_Platform_MOP),
         OBJECT(MODEL_NONE, /* posX */ -4820, /* posY */ 3479, /* posZ */ 1941, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000000, bhvGoombaTripletSpawner),
-        OBJECT(0xe3, /* posX */ 10500, /* posY */ 1502, /* posZ */ 1425, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE050),
+        OBJECT(0xe3, /* posX */ 10500, /* posY */ 1502, /* posZ */ 1425, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 2400, /* posY */ 2237, /* posZ */ 13050, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00060009, bhvExclamationBox),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -750, /* posY */ 1938, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00060009, bhvExclamationBox),
         OBJECT(MODEL_HEART, /* posX */ -4800, /* posY */ 4184, /* posZ */ -7650, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRecoveryHeart),

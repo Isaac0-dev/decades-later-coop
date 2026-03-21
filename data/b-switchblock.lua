@@ -209,7 +209,7 @@ local function bhv_Switchblock_Switch_loop(o)
     end
 
     -- update switch state and send a packet
-    if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(m) then
+    if cur_obj_is_mario_on_platform() ~= 0 and not is_bubbled(m) then
         if CURR_SWITCH_STATE ~= o.oBehParams2ndByte then
             CURR_SWITCH_STATE = o.oBehParams2ndByte
             o.oSwitchSyncState = CURR_SWITCH_STATE

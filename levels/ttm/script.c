@@ -210,7 +210,7 @@ const LevelScript level_ttm_entry[] = {
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -785, /* posY */ 3494, /* posZ */ 1444, /* angleX */ 0, /* angleY */ 40, /* angleZ */ 0, /* behParam */ 0x00060005, bhvExclamationBox),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -3252, /* posY */ 2771, /* posZ */ -898, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0010000c, bhvExclamationBox),
         OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ 4648, /* posY */ 1941, /* posZ */ 716, /* angleX */ 0, /* angleY */ -213, /* angleZ */ 0, /* behParam */ 0x790d0000, bhvGreenSwitchboard),
-        OBJECT(0xe3, /* posX */ 4080, /* posY */ 2085, /* posZ */ 1397, /* angleX */ 0, /* angleY */ -33, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE050),
+        OBJECT(0xe3, /* posX */ 4080, /* posY */ 2085, /* posZ */ 1397, /* angleX */ 0, /* angleY */ -33, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch),
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ 2589, /* posY */ 5231, /* posZ */ -2929, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSpindrift),
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ -1366, /* posY */ 2548, /* posZ */ 44, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSpindrift),
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ -1711, /* posY */ 1226, /* posZ */ 2184, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSpindrift),

@@ -78,7 +78,7 @@ const LevelScript level_thi_entry[] = {
         OBJECT(0xf2, /* posX */ -2425, /* posY */ -3737, /* posZ */ -10980, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchBlockSwitch),
         OBJECT(0xf2, /* posX */ -2425, /* posY */ -3737, /* posZ */ -14885, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchBlockSwitch),
         OBJECT(0xf2, /* posX */ 5125, /* posY */ -3737, /* posZ */ -10980, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlockSwitch),
-        OBJECT(0xe3, /* posX */ 1350, /* posY */ -3887, /* posZ */ -16550, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE050), //green switch
+        OBJECT(0xe3, /* posX */ 1350, /* posY */ -3887, /* posZ */ -16550, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch), //green switch
         OBJECT(0xf1, /* posX */ 1350, /* posY */ -4875, /* posZ */ -5205, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),
         OBJECT(0xf1, /* posX */ 1350, /* posY */ -4425, /* posZ */ -5655, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),
         OBJECT(0xf2, /* posX */ 1350, /* posY */ -4424, /* posZ */ -4550, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlockSwitch),
@@ -119,7 +119,7 @@ const LevelScript level_thi_entry[] = {
         OBJECT(0x92, /* posX */ 1770, /* posY */ -4150, /* posZ */ -9150, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x28840000, bhv_unknown_130005B4),
         OBJECT(0x92, /* posX */ 4675, /* posY */ -4125, /* posZ */ -12930, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x28840000, bhv_unknown_130005B4),
         OBJECT(0x92, /* posX */ -1975, /* posY */ -4125, /* posZ */ -12930, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x28840000, bhv_unknown_130005B4),
-        OBJECT(0xe3, /* posX */ -3725, /* posY */ -5024, /* posZ */ 5550, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE050),
+        OBJECT(0xe3, /* posX */ -3725, /* posY */ -5024, /* posZ */ 5550, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch),
         OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ 1350, /* posY */ -3850, /* posZ */ -11789, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x6f170000, bhvGreenSwitchboard),
         OBJECT(MODEL_DL_CANNON_LID, /* posX */ 2775, /* posY */ -4136, /* posZ */ 2850, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00830000, bhvCannonClosed),
         OBJECT(MODEL_BOBOMB_BUDDY, /* posX */ -1, /* posY */ -4299, /* posZ */ 5560, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBobombBuddyOpensCannon),

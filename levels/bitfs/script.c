@@ -144,8 +144,8 @@ const LevelScript level_bitfs_entry[] = {
         OBJECT(MODEL_STAR, /* posX */ 2480, /* posY */ 1151, /* posZ */ -3075, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ -1950, /* posY */ 4586, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x03000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 2325, /* posY */ 6880, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x04000001, bhvStar),
-        OBJECT(0xe3, /* posX */ 1350, /* posY */ 3602, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE050),  //greenboard switch
-        OBJECT(0xe3, /* posX */ -5175, /* posY */ 6000, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE050), //greenboard switch
+        OBJECT(0xe3, /* posX */ 1350, /* posY */ 3602, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch),  //greenboard switch
+        OBJECT(0xe3, /* posX */ -5175, /* posY */ 6000, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch), //greenboard switch
         OBJECT(0x98, /* posX */ -1650, /* posY */ 3600, /* posZ */ 850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform), //shrink platform
         OBJECT(0x98, /* posX */ -1950, /* posY */ 3600, /* posZ */ 850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform), 
         OBJECT(0x98, /* posX */ -2250, /* posY */ 3600, /* posZ */ 850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform),

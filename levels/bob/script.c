@@ -173,7 +173,7 @@ const LevelScript level_bob_entry[] = {
         OBJECT(MODEL_STAR, /* posX */ 5744, /* posY */ 3343, /* posZ */ -1837, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 3615, /* posY */ 1610, /* posZ */ 8805, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x05000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ -1916, /* posY */ -983, /* posZ */ -10087, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x04000001, bhvStar),
-        OBJECT(0xe3, /* posX */ -1650, /* posY */ 862, /* posZ */ -8167, /* angleX */ 0, /* angleY */ 11, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE050),
+        OBJECT(0xe3, /* posX */ -1650, /* posY */ 862, /* posZ */ -8167, /* angleX */ 0, /* angleY */ 11, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch),
         OBJECT(MODEL_WOODEN_SIGNPOST, /* posX */ -1715, /* posY */ 860, /* posZ */ -7943, /* angleX */ 0, /* angleY */ 53, /* angleZ */ 0, /* behParam */ 0x00570000, bhvMessagePanel),
         OBJECT(0xe4, /* posX */ -8867, /* posY */ -1376, /* posZ */ 2107, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE064),
         OBJECT(0xe4, /* posX */ -6791, /* posY */ 39, /* posZ */ 9332, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE064),
