@@ -1,4 +1,3 @@
-
 -------------------------
 -- Localized Functions --
 -------------------------
@@ -8,13 +7,16 @@ local cur_obj_hide = cur_obj_hide
 local cur_obj_is_mario_on_platform = cur_obj_is_mario_on_platform
 local cur_obj_play_sound_1 = cur_obj_play_sound_1
 local cur_obj_unhide = cur_obj_unhide
+local is_player_active = is_player_active
+local is_player_in_local_area = is_player_in_local_area
 local load_object_collision_model = load_object_collision_model
+local network_local_index_from_global = network_local_index_from_global
 local obj_copy_pos_and_angle = obj_copy_pos_and_angle
+local obj_has_behavior_id = obj_has_behavior_id
 local obj_set_model_extended = obj_set_model_extended
 local smlua_collision_util_get = smlua_collision_util_get
 local smlua_model_util_get_id = smlua_model_util_get_id
 local spawn_non_sync_object = spawn_non_sync_object
-local define_custom_obj_fields = define_custom_obj_fields
 
 -----------------------
 -- Model / Collision --
@@ -54,27 +56,11 @@ local SWITCHBLOCK_ACT_INACTIVE  = 1
 
 local CURR_SWITCH_STATE         = 0 -- switch state -this updates on level init
 
-----------------
--- Obj Fields --
-----------------
-
----@class Object
----@field oSwitchSyncState number
----@field oSwitchOldSyncState number
-define_custom_obj_fields({
-    oSwitchSyncState     = 'u32', -- current  sync state
-    oSwitchOldSyncState  = 'u32', -- previous sync state
-})
-
 -------------
 -- Helpers --
 -------------
 
----@param m MarioState
----@return boolean
-local function is_bubbled(m)
-    return m.action == ACT_BUBBLED
-end
+local id_bhvSwitchBlockSwitch
 
 ---@param parent Object
 ---@param model ModelExtendedId
@@ -87,6 +73,58 @@ local function spawn_object(parent, model, behaviorId)
     obj_copy_pos_and_angle(obj, parent)
     return obj
 end
+
+---@return boolean
+local function is_switch_locked()
+    for i = 0, MAX_PLAYERS - 1 do
+        local m = gMarioStates[i]
+        if is_player_in_local_area(m) ~= 0 then
+            if m and m.marioObj then
+                local platform = m.marioObj.platform
+                if platform ~= nil and obj_has_behavior_id(platform, id_bhvSwitchBlockSwitch) ~= 0 then
+                    if platform.oBehParams2ndByte == CURR_SWITCH_STATE then
+                        return true
+                    end
+                end
+            end
+        end
+    end
+    return false
+end
+
+-------------
+-- Packets --
+-------------
+
+local PACKET_TYPE_SWITCH = 0
+local PACKET_TYPE_SWITCH_REQUEST = 1
+
+local function network_send_on_same_level(packetType, data)
+    for i = 1, MAX_PLAYERS - 1 do
+        local m = gMarioStates[i]
+
+        if is_player_in_local_area(m) ~= 0 then
+            network_send_to(i, true, { type = packetType, data = data })
+        end
+    end
+end
+
+local function on_packet_receive(p)
+    if p.type == PACKET_TYPE_SWITCH then
+        CURR_SWITCH_STATE = p.data -- sync the switch state
+
+    elseif p.type == PACKET_TYPE_SWITCH_REQUEST then
+        local requesterGlobalIndex = p.data
+        local requesterLocalIndex = network_local_index_from_global(requesterGlobalIndex)
+
+        -- send the packet to the player who requested it
+        if requesterLocalIndex ~= nil and requesterLocalIndex >= 0 then
+            network_send_to(requesterLocalIndex, true, { type = PACKET_TYPE_SWITCH, data = CURR_SWITCH_STATE })
+        end
+    end
+end
+
+hook_event(HOOK_ON_PACKET_RECEIVE, on_packet_receive)
 
 -----------
 -- Setup --
@@ -188,12 +226,9 @@ hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_Switchblock_init, bhv_Switchblock
 
 ---@param o Object
 local function bhv_Switchblock_Switch_init(o)
-    o.collisionData         = COL_SWITCHBLOCK_SWITCH_MOP
-    o.oSwitchSyncState      = CURR_SWITCH_STATE
-    o.oSwitchOldSyncState   = CURR_SWITCH_STATE
+    o.collisionData = COL_SWITCHBLOCK_SWITCH_MOP
     o.header.gfx.skipInViewCheck = true
     obj_set_model_extended(o, E_MODEL_SWITCHBLOCK_SWITCH)
-    network_init_object(o, false, { "oSwitchSyncState" })
 end
 
 ---@param o Object
@@ -209,23 +244,14 @@ local function bhv_Switchblock_Switch_loop(o)
     end
 
     -- update switch state and send a packet
-    if cur_obj_is_mario_on_platform() ~= 0 and not is_bubbled(m) then
+    if cur_obj_is_mario_on_platform() ~= 0 and is_player_active(m) ~= 0 then
         if CURR_SWITCH_STATE ~= o.oBehParams2ndByte then
-            CURR_SWITCH_STATE = o.oBehParams2ndByte
-            o.oSwitchSyncState = CURR_SWITCH_STATE
-            o.oSwitchOldSyncState = CURR_SWITCH_STATE
-            cur_obj_play_sound_1(SOUND_GENERAL_DOOR_TURN_KEY)
-            network_send_object(o, true)
+            if not is_switch_locked() then
+                CURR_SWITCH_STATE = o.oBehParams2ndByte
+                cur_obj_play_sound_1(SOUND_GENERAL_DOOR_TURN_KEY)
+                network_send_on_same_level(PACKET_TYPE_SWITCH, CURR_SWITCH_STATE)
+            end
         end
-    end
-
-    -- compare the old state with the new one if it changed then sync
-    if o.oSwitchOldSyncState ~= o.oSwitchSyncState then
-        CURR_SWITCH_STATE     = o.oSwitchSyncState
-        o.oSwitchOldSyncState = o.oSwitchSyncState
-    else
-        o.oSwitchSyncState    = CURR_SWITCH_STATE
-        o.oSwitchOldSyncState = CURR_SWITCH_STATE
     end
 
     -- squish anim
@@ -237,13 +263,19 @@ local function bhv_Switchblock_Switch_loop(o)
     o.header.gfx.scale.y = approach_f32_asymptotic(o.header.gfx.scale.y, target_scale, 0.09)
 end
 
-hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_Switchblock_Switch_init, bhv_Switchblock_Switch_loop, "bhvSwitchBlockSwitch")
+id_bhvSwitchBlockSwitch = hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_Switchblock_Switch_init, bhv_Switchblock_Switch_loop, "bhvSwitchBlockSwitch")
 
 ----------------
 -- Level Init --
 ----------------
 
 local function on_level_init()
+
+    local switchExists = obj_get_first_with_behavior_id(id_bhvSwitchBlockSwitch)
+    if not switchExists then
+        return
+    end
+
     local np = gNetworkPlayers[0]
     local currLevel = np.currLevelNum
     local currArea = np.currAreaIndex
@@ -252,8 +284,18 @@ local function on_level_init()
     CURR_SWITCH_STATE = 0
 
     -- specific start for level and area
-    if LEVEL_START_STATES[currLevel] ~= nil and LEVEL_START_STATES[currLevel][currArea] ~= nil then
-        CURR_SWITCH_STATE = LEVEL_START_STATES[currLevel][currArea]
+    local levelData = LEVEL_START_STATES[currLevel]
+    if levelData and levelData[currArea] then
+        CURR_SWITCH_STATE = levelData[currArea]
+    end
+
+    -- find the first player on the same level and area then request the switch state
+    for i = 1, MAX_PLAYERS - 1 do
+        local m = gMarioStates[i]
+        if is_player_in_local_area(m) ~= 0 then
+            network_send_to(i, true, { type = PACKET_TYPE_SWITCH_REQUEST, data = np.globalIndex})
+            break
+        end
     end
 end
 
