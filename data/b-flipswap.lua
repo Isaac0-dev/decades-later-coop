@@ -1,13 +1,18 @@
+-----------
+-- Utils --
+-----------
+
+local BU = require("a-bhv-utils")
+
 -------------------------
 -- Localized Functions --
 -------------------------
 
+local spawn_object = BU.spawn_object
 local load_object_collision_model = load_object_collision_model
-local obj_copy_pos_and_angle = obj_copy_pos_and_angle
 local obj_set_model_extended = obj_set_model_extended
 local smlua_collision_util_get = smlua_collision_util_get
 local smlua_model_util_get_id = smlua_model_util_get_id
-local spawn_non_sync_object = spawn_non_sync_object
 
 -----------------------
 -- Model / Collision --
@@ -18,19 +23,15 @@ local E_MODEL_FLIPSWAP_PLATFORM_BORDER  = smlua_model_util_get_id("flipswap_bord
 local COL_FLIPSWAP_PLATFORM_MOP         = smlua_collision_util_get("flipswap_collision")
 
 -------------
--- Helpers --
+-- Actions --
 -------------
 
----@param parent Object
----@param model ModelExtendedId
----@param behaviorId BehaviorId
-local function spawn_object(parent, model, behaviorId)
-    local obj = spawn_non_sync_object(behaviorId, model, 0, 0, 0, nil)
-    if not obj then return nil end
+local FLIPSWAP_PLATFORM_ACT_IDLE = 0
+local FLIPSWAP_PLATFORM_ACT_FLIPPING = 1
 
-    obj_copy_pos_and_angle(obj, parent)
-    return obj
-end
+---------------------
+-- FlipSwap Border --
+---------------------
 
 ---@param o Object
 local function bhv_flipswap_border(o)
@@ -40,13 +41,6 @@ local function bhv_flipswap_border(o)
 end
 
 local id_bhvFlipswapBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_flipswap_border, nil)
-
--------------
--- Actions --
--------------
-
-local FLIPSWAP_PLATFORM_ACT_IDLE = 0
-local FLIPSWAP_PLATFORM_ACT_FLIPPING = 1
 
 --------------
 -- FlipSwap --

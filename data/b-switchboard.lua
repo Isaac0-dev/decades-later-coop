@@ -1,7 +1,16 @@
+-----------
+-- Utils --
+-----------
+
+local BU = require("a-bhv-utils")
+
 -------------------------
 -- Localized Functions --
 -------------------------
 
+local is_bubbled = BU.is_bubbled
+local spawn_object = BU.spawn_object
+local play_board_sound = BU.play_board_sound
 local approach_f32_asymptotic = approach_f32_asymptotic
 local approach_f32_symmetric = approach_f32_symmetric
 local coss = coss
@@ -12,14 +21,12 @@ local cur_obj_set_home_once = cur_obj_set_home_once
 local cur_obj_set_pos_to_home_and_stop = cur_obj_set_pos_to_home_and_stop
 local load_object_collision_model = load_object_collision_model
 local obj_copy_pos = obj_copy_pos
-local obj_copy_pos_and_angle = obj_copy_pos_and_angle
 local obj_get_first_with_behavior_id = obj_get_first_with_behavior_id
 local obj_get_next_with_same_behavior_id = obj_get_next_with_same_behavior_id
 local obj_set_model_extended = obj_set_model_extended
 local smlua_collision_util_get = smlua_collision_util_get
 local smlua_model_util_get_id = smlua_model_util_get_id
 local spawn_mist_particles = spawn_mist_particles
-local spawn_non_sync_object = spawn_non_sync_object
 
 -------------
 -- Actions --
@@ -41,34 +48,6 @@ local E_MODEL_GREEN_SWITCHBOARD_SWITCH  = smlua_model_util_get_id("greenboard_sw
 
 local COL_GREEN_SWITCHBOARD_MOP         = smlua_collision_util_get("greenboard_collision")
 local COL_GREEN_SWITCHBOARD_SWITCH      = smlua_collision_util_get("greenboard_switch_collision")
-
--------------
--- Helpers --
--------------
-
----@param parent Object
----@param model ModelExtendedId
----@param behaviorId BehaviorId
-local function spawn_object(parent, model, behaviorId)
-    local obj = spawn_non_sync_object(behaviorId, model, 0, 0, 0, nil)
-    if not obj then return nil end
-
-    obj_copy_pos_and_angle(obj, parent)
-    return obj
-end
-
----@param m MarioState
----@return boolean
-local function is_bubbled(m)
-    return m.action == ACT_BUBBLED
-end
-
----@param o Object
-local function play_board_sound(o)
-    if o.oTimer % 2 == 0 then
-        cur_obj_play_sound_1(SOUND_OBJ_KOOPA_WALK)
-    end
-end
 
 ----------
 -- Gear --

@@ -1,50 +1,26 @@
+-----------
+-- Utils --
+-----------
+
+local BU = require("a-bhv-utils")
+
 -------------------------
 -- Localized Functions --
 -------------------------
 
-local cur_obj_play_sound_2 = cur_obj_play_sound_2
+local is_bubbled = BU.is_bubbled
+local repack = BU.repack
+local bounce_off_object = BU.bounce_off_object
 local obj_check_hitbox_overlap = obj_check_hitbox_overlap
 local obj_set_model_extended = obj_set_model_extended
 local set_mario_action = set_mario_action
 local smlua_model_util_get_id = smlua_model_util_get_id
-local string_pack = string.pack
-local string_unpack = string.unpack
 
 -----------
 -- Model --
 -----------
 
 local E_MODEL_SPRING = smlua_model_util_get_id("spring_geo")
-
--------------
--- Helpers --
--------------
-
----@param m MarioState
----@return boolean
-local function is_bubbled(m)
-    return m.action == ACT_BUBBLED
-end
-
----@param value number
----@param pack_fmt string
----@param unpack_fmt string
-local function repack(value, pack_fmt, unpack_fmt)
-    return string_unpack(unpack_fmt, string_pack(pack_fmt, value))
-end
-
----@param m MarioState
----@param o Object
----@param velY number
----@param forwardVel number
-local function bounce_off_object(m, o, velY, forwardVel)
-    m.pos.y = o.oPosY + o.hitboxHeight
-    m.faceAngle.y = o.oFaceAngleYaw
-    m.vel.y = velY
-    m.forwardVel = forwardVel
-    m.flags = m.flags & ~MARIO_UNKNOWN_08
-    cur_obj_play_sound_2(SOUND_ACTION_BOUNCE_OFF_OBJECT)
-end
 
 -------------
 -- Actions --

@@ -1,15 +1,21 @@
+-----------
+-- Utils --
+-----------
+
+local BU = require("a-bhv-utils")
+
 -------------------------
 -- Localized Functions --
 -------------------------
 
+local is_bubbled = BU.is_bubbled
+local spawn_noteblock_particles = BU.spawn_noteblock_particles
 local cur_obj_is_mario_on_platform = cur_obj_is_mario_on_platform
 local load_object_collision_model = load_object_collision_model
-local obj_scale = obj_scale
 local obj_set_model_extended = obj_set_model_extended
 local set_mario_action = set_mario_action
 local smlua_collision_util_get = smlua_collision_util_get
 local smlua_model_util_get_id = smlua_model_util_get_id
-local spawn_non_sync_object = spawn_non_sync_object
 
 -----------------------
 -- Model / Collision --
@@ -17,22 +23,6 @@ local spawn_non_sync_object = spawn_non_sync_object
 
 local E_MODEL_NOTEBLOCK = smlua_model_util_get_id("noteblock_geo")
 local COL_NOTEBLOCK_MOP = smlua_collision_util_get("noteblock_collision")
-
--------------
--- Helpers --
--------------
-
----@param m MarioState
----@return boolean
-local function is_bubbled(m)
-    return m.action == ACT_BUBBLED
-end
-
----@param m MarioState
-local function spawn_noteblock_particles(m)
-    spawn_non_sync_object(id_bhvHorStarParticleSpawner, E_MODEL_NONE, m.pos.x, m.pos.y, m.pos.z, nil)
-    spawn_non_sync_object(id_bhvMistCircParticleSpawner, E_MODEL_NONE, m.pos.x, m.pos.y, m.pos.z, nil)
-end
 
 -------------
 -- Actions --

@@ -1,18 +1,23 @@
+-----------
+-- Utils --
+-----------
+
+local BU = require("a-bhv-utils")
 
 -------------------------
 -- Localized Functions --
 -------------------------
 
+local is_bubbled = BU.is_bubbled
+local spawn_object = BU.spawn_object
 local cur_obj_hide = cur_obj_hide
 local cur_obj_is_mario_on_platform = cur_obj_is_mario_on_platform
 local cur_obj_play_sound_1 = cur_obj_play_sound_1
 local cur_obj_unhide = cur_obj_unhide
 local load_object_collision_model = load_object_collision_model
-local obj_copy_pos_and_angle = obj_copy_pos_and_angle
 local obj_set_model_extended = obj_set_model_extended
 local smlua_collision_util_get = smlua_collision_util_get
 local smlua_model_util_get_id = smlua_model_util_get_id
-local spawn_non_sync_object = spawn_non_sync_object
 
 -----------------------
 -- Model / Collision --
@@ -23,25 +28,16 @@ local E_MODEL_SHRINK_PLATFORM_BORDER    = smlua_model_util_get_id("shrinkplat_bo
 local COL_SHRINK_PLATFORM               = smlua_collision_util_get("shrinkplat_collision")
 
 -------------
--- Helpers --
+-- Actions --
 -------------
 
----@param m MarioState
----@return boolean
-local function is_bubbled(m)
-    return m.action == ACT_BUBBLED
-end
+local SHRINK_PLATFORM_ACT_IDLE = 0
+local SHRINK_PLATFORM_ACT_SHRINKING = 1
+local SHRINK_PLATFORM_ACT_DISAPPEARED = 2
 
----@param parent Object
----@param model ModelExtendedId
----@param behaviorId BehaviorId
-local function spawn_object(parent, model, behaviorId)
-    local obj = spawn_non_sync_object(behaviorId, model, 0, 0, 0, nil)
-    if not obj then return nil end
-
-    obj_copy_pos_and_angle(obj, parent)
-    return obj
-end
+-------------------
+-- Shrink Border --
+-------------------
 
 ---@param o Object
 local function bhv_shrinkplat_border(o)
@@ -51,14 +47,6 @@ local function bhv_shrinkplat_border(o)
 end
 
 local id_bhvShrinkPlatBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_shrinkplat_border, nil)
-
--------------
--- Actions --
--------------
-
-local SHRINK_PLATFORM_ACT_IDLE = 0
-local SHRINK_PLATFORM_ACT_SHRINKING = 1
-local SHRINK_PLATFORM_ACT_DISAPPEARED = 2
 
 ------------
 -- Shrink --

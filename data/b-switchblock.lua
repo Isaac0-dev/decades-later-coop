@@ -1,7 +1,14 @@
+-----------
+-- Utils --
+-----------
+
+local BU = require("a-bhv-utils")
+
 -------------------------
 -- Localized Functions --
 -------------------------
 
+local spawn_object = BU.spawn_object
 local approach_f32_asymptotic = approach_f32_asymptotic
 local cur_obj_hide = cur_obj_hide
 local cur_obj_is_mario_on_platform = cur_obj_is_mario_on_platform
@@ -11,12 +18,10 @@ local is_player_active = is_player_active
 local is_player_in_local_area = is_player_in_local_area
 local load_object_collision_model = load_object_collision_model
 local network_local_index_from_global = network_local_index_from_global
-local obj_copy_pos_and_angle = obj_copy_pos_and_angle
 local obj_has_behavior_id = obj_has_behavior_id
 local obj_set_model_extended = obj_set_model_extended
 local smlua_collision_util_get = smlua_collision_util_get
 local smlua_model_util_get_id = smlua_model_util_get_id
-local spawn_non_sync_object = spawn_non_sync_object
 
 -----------------------
 -- Model / Collision --
@@ -61,18 +66,6 @@ local CURR_SWITCH_STATE         = 0 -- switch state -this updates on level init
 -------------
 
 local id_bhvSwitchBlockSwitch
-
----@param parent Object
----@param model ModelExtendedId
----@param behaviorId BehaviorId
-local function spawn_object(parent, model, behaviorId)
-    local obj = spawn_non_sync_object(behaviorId, model, 0, 0, 0, nil)
-    if not obj then return nil end
-
-    obj.parentObj = parent
-    obj_copy_pos_and_angle(obj, parent)
-    return obj
-end
 
 ---@return boolean
 local function is_switch_locked()

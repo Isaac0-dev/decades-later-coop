@@ -1,6 +1,7 @@
 -- more bhvs soon, mostly mops
 
 local behavior_files = {
+    "a-bhv-utils",
     "b-noteblock",
     "b-flipswap",
     "b-switchboard",
