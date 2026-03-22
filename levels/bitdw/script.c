@@ -48,13 +48,13 @@ const LevelScript level_bitdw_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_HMC_HAZY_MAZE_DOOR, bbh_geo_1600068C),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_0_STARS, bbh_geo_160007B4),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_1_STAR, bbh_geo_16000868),
-    LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_3_STARS, bbh_geo_1600091C),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_KEY_DOOR, bbh_geo_160009D0),
     LOAD_MODEL_FROM_GEO(MODEL_BITDW_SQUARE_PLATFORM, bitdw_geo_12000558),
     LOAD_MODEL_FROM_GEO(MODEL_BITDW_FERRIS_WHEEL_AXLE, bitdw_geo_12000570),
     LOAD_MODEL_FROM_GEO(MODEL_BITDW_BLUE_PLATFORM, bitdw_geo_12000588),
     LOAD_MODEL_FROM_GEO(MODEL_BITDW_SEESAW_PLATFORM, bitdw_geo_12000540),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, bbh_geo_160003A8),
+    LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_3_STARS, castle_staff_door_geo)
     AREA(1, bitdw_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ -9778, /* posY */ 376, /* posZ */ 2931, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_BITDW_STAIRCASE, /* posX */ 7780, /* posY */ 3635, /* posZ */ -2290, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvAnimatesOnFloorSwitchPress),
@@ -149,7 +149,7 @@ const LevelScript level_bitdw_entry[] = {
     END_AREA(),
     AREA(2, bitdw_area_1_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 960, /* posZ */ 0, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
-        OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 300, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000c0000, bhv_unknown_001CE008),
+        //OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 300, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000c0000, bhv_unknown_001CE008), ending scene 1
         WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_CASTLE, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x0b, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0c, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x0c, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0b, /* flags */ 0x00),
@@ -178,7 +178,7 @@ const LevelScript level_bitdw_entry[] = {
     END_AREA(),
     AREA(3, bitdw_area_1_area_2_area_3_geo_19000160),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 960, /* posZ */ 0, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
-        OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 300, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000c0000, bhv_unknown_001CE008),
+        //OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 300, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000c0000, bhv_unknown_001CE008), ending scene 2, some bhv
         WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_CASTLE, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x0b, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0c, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x0c, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0b, /* flags */ 0x00),
