@@ -1,4 +1,4 @@
-GeoLayout castle_door_94_star_geo[] = {
+GeoLayout castle_staff_door_geo[] = {
     GEO_TRANSLATE_NODE(LAYER_FORCE, 78, 0, 0),
     GEO_OPEN_NODE(),
         GEO_SCALE(LAYER_FORCE, 0x4000),
@@ -10,14 +10,14 @@ GeoLayout castle_door_94_star_geo[] = {
                     GEO_OPEN_NODE(),
                         GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, door_seg3_dl_03013E28),
                         GEO_OPEN_NODE(),
-                            GEO_DISPLAY_LIST(LAYER_TRANSPARENT, door_seg3_dl_03014250),
+                            GEO_DISPLAY_LIST(LAYER_TRANSPARENT, door_seg3_dl_03014310),
                         GEO_CLOSE_NODE(),
                     GEO_CLOSE_NODE(),
                     GEO_RENDER_RANGE(1000, 32767),
                     GEO_OPEN_NODE(),
                         GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, door_seg3_dl_03013E28),
                         GEO_OPEN_NODE(),
-                            GEO_DISPLAY_LIST(LAYER_TRANSPARENT_DECAL, door_seg3_dl_03014280),
+                            GEO_DISPLAY_LIST(LAYER_TRANSPARENT_DECAL, door_seg3_dl_03014340),
                         GEO_CLOSE_NODE(),
                     GEO_CLOSE_NODE(),
                 GEO_CLOSE_NODE(),

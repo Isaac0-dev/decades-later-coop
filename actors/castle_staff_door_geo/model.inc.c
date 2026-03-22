@@ -2,11 +2,11 @@ Lights1 door_seg3_lights_03009CE0 = gdSPDefLights1(0x3F, 0x3F, 0x3F, 0xFF, 0xFF,
 
 Lights1 door_seg3_lights_03009CF8 = gdSPDefLights1(0x3F, 0x3F, 0x00, 0xFF, 0xFF, 0x00, 0x28, 0x28, 0x28);
 
-Texture door_seg3_texture_0300AD10[] = "actors/castle_door_94_star_geo/door_seg3_texture_0300AD10";
+Texture door_seg3_texture_0300AD10[] = "actors/castle_staff_door_geo/door_seg3_texture_0300AD10";
 
-Texture door_seg3_texture_03009D10[] = "actors/castle_door_94_star_geo/door_seg3_texture_03009D10";
+Texture door_seg3_texture_03009D10[] = "actors/castle_staff_door_geo/door_seg3_texture_03009D10";
 
-Texture door_seg3_texture_03011D10[] = "actors/castle_door_94_star_geo/door_seg3_texture_03011D10";
+Texture door_seg3_texture_03012D10[] = "actors/castle_staff_door_geo/door_seg3_texture_03012D10";
 
 Vtx door_seg3_vertex_03013910[] = {
     {{{-12, 0, -58}, 0x0, {0, 0}, {0x81, 0x00, 0x00, 0xFF}}},
@@ -176,18 +176,18 @@ Gfx door_seg3_dl_03014218[] = {
     gsSPEndDisplayList(),
 };
 
-Gfx door_seg3_dl_03014250[] = {
+Gfx door_seg3_dl_03014310[] = {
     gsSPDisplayList(door_seg3_dl_030141C0),
-    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, door_seg3_texture_03011D10),
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, door_seg3_texture_03012D10),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 1023, 256),
     gsSPVertex(door_seg3_vertex_03014140 + 0, 4, 0),
     gsSPBranchList(door_seg3_dl_03014218),
 };
 
-Gfx door_seg3_dl_03014280[] = {
+Gfx door_seg3_dl_03014340[] = {
     gsSPDisplayList(door_seg3_dl_030141C0),
-    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, door_seg3_texture_03011D10),
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, door_seg3_texture_03012D10),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 1023, 256),
     gsSPVertex(door_seg3_vertex_03014180 + 0, 4, 0),
