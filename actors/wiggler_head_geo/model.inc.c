@@ -1,0 +1,587 @@
+Lights1 wiggler_seg5_lights_0500C890 = gdSPDefLights1(0x39, 0x11, 0x00, 0xE7, 0x47, 0x00, 0x28, 0x28, 0x28);
+
+Lights1 wiggler_seg5_lights_0500C878 = gdSPDefLights1(0x37, 0x00, 0x00, 0xDF, 0x00, 0x00, 0x28, 0x28, 0x28);
+
+Texture wiggler_seg5_texture_05005A30[] = "actors/wiggler_head_geo/wiggler_seg5_texture_05005A30";
+
+Texture wiggler_seg5_texture_05006A30[] = "actors/wiggler_head_geo/wiggler_seg5_texture_05006A30";
+
+Texture wiggler_seg5_texture_05009230[] = "actors/wiggler_head_geo/wiggler_seg5_texture_05009230";
+
+Texture wiggler_seg5_texture_0500A230[] = "actors/wiggler_head_geo/wiggler_seg5_texture_0500A230";
+
+Texture wiggler_seg5_texture_05008230[] = "actors/wiggler_head_geo/wiggler_seg5_texture_05008230";
+
+Texture wiggler_seg5_texture_05007A30[] = "actors/wiggler_head_geo/wiggler_seg5_texture_05007A30";
+
+Texture wiggler_seg5_texture_05008A30[] = "actors/wiggler_head_geo/wiggler_seg5_texture_05008A30";
+
+Vtx wiggler_seg5_vertex_0500C188[] = {
+    {{{0, 21, 0}, 0x0, {990, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{-20, -20, 0}, 0x0, {0, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{0, -20, 0}, 0x0, {990, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{-20, 21, 0}, 0x0, {0, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500C1C8[] = {
+    {{{21, 21, 0}, 0x0, {990, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{0, 21, 0}, 0x0, {0, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{0, -20, 0}, 0x0, {0, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{21, -20, 0}, 0x0, {990, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500E588[] = {
+    {{{0, 26, 0}, 0x0, {990, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{-26, -26, 0}, 0x0, {0, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{0, -26, 0}, 0x0, {990, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{-26, 26, 0}, 0x0, {0, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500E5C8[] = {
+    {{{26, 26, 0}, 0x0, {990, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{0, -26, 0}, 0x0, {0, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{26, -26, 0}, 0x0, {990, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{0, 26, 0}, 0x0, {0, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500E0E8[] = {
+    {{{0, 15, 0}, 0x0, {990, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{-15, -15, 0}, 0x0, {0, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{0, -15, 0}, 0x0, {990, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{-15, 15, 0}, 0x0, {0, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500E128[] = {
+    {{{15, 15, 0}, 0x0, {990, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{0, -15, 0}, 0x0, {0, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{15, -15, 0}, 0x0, {990, 2012}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{0, 15, 0}, 0x0, {0, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500E4A0[] = {
+    {{{-77, -98, 2}, 0x0, {990, 990}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{8, -83, 94}, 0x0, {0, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{-74, -53, 79}, 0x0, {0, 990}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{6, -128, 16}, 0x0, {990, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500E368[] = {
+    {{{58, -82, 0}, 0x0, {990, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{88, -35, -43}, 0x0, {0, 990}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{94, -40, 0}, 0x0, {990, 990}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{51, -77, -43}, 0x0, {0, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{94, -40, 0}, 0x0, {0, 990}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{51, -77, 44}, 0x0, {990, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{58, -82, 0}, 0x0, {0, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{88, -35, 44}, 0x0, {990, 990}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500E250[] = {
+    {{{58, 87, 0}, 0x0, {478, 990}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{84, 50, 23}, 0x0, {990, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{88, 54, 0}, 0x0, {478, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{54, 83, -21}, 0x0, {0, 990}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{84, 50, -21}, 0x0, {0, 0}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+    {{{54, 83, 23}, 0x0, {990, 990}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500CD08[] = {
+    {{{42, -2, -13}, 0x0, {0, 0}, {0x00, 0xD8, 0x88, 0x00}}},
+    {{{42, -12, 0}, 0x0, {0, 0}, {0x00, 0x81, 0x01, 0x00}}},
+    {{{-6, -12, 0}, 0x0, {0, 0}, {0x00, 0x81, 0x01, 0x00}}},
+    {{{-6, -2, -13}, 0x0, {0, 0}, {0x00, 0xD8, 0x88, 0xFF}}},
+    {{{42, -2, 13}, 0x0, {0, 0}, {0x00, 0xDA, 0x79, 0xFF}}},
+    {{{42, 13, 8}, 0x0, {0, 0}, {0x00, 0x67, 0x49, 0xFF}}},
+    {{{-6, 13, 8}, 0x0, {0, 0}, {0x00, 0x67, 0x49, 0xFF}}},
+    {{{-6, -2, 13}, 0x0, {0, 0}, {0x00, 0xDA, 0x79, 0xFF}}},
+    {{{42, 13, -8}, 0x0, {0, 0}, {0x00, 0x66, 0xB5, 0xFF}}},
+    {{{-6, 13, -8}, 0x0, {0, 0}, {0x00, 0x66, 0xB5, 0xFF}}},
+    {{{42, 13, -8}, 0x0, {0, 0}, {0x2F, 0x4B, 0xA6, 0xFF}}},
+    {{{42, 13, 8}, 0x0, {0, 0}, {0x2F, 0x6D, 0x2C, 0xFF}}},
+    {{{42, -2, 13}, 0x0, {0, 0}, {0x2F, 0xF8, 0x75, 0xFF}}},
+    {{{42, -12, 0}, 0x0, {0, 0}, {0x7F, 0x00, 0x00, 0xFF}}},
+    {{{42, -2, -13}, 0x0, {0, 0}, {0x2F, 0xC2, 0x9D, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500CC18[] = {
+    {{{53, -2, -13}, 0x0, {0, 0}, {0x00, 0xD8, 0x88, 0x00}}},
+    {{{53, -11, 0}, 0x0, {0, 0}, {0x01, 0x81, 0x01, 0x00}}},
+    {{{-3, -12, 0}, 0x0, {0, 0}, {0x01, 0x81, 0x01, 0x00}}},
+    {{{-3, -2, -13}, 0x0, {0, 0}, {0x00, 0xD8, 0x88, 0xFF}}},
+    {{{53, -1, 13}, 0x0, {0, 0}, {0x00, 0xDA, 0x79, 0xFF}}},
+    {{{53, 13, 8}, 0x0, {0, 0}, {0xFF, 0x67, 0x49, 0xFF}}},
+    {{{-4, 13, 8}, 0x0, {0, 0}, {0xFF, 0x67, 0x49, 0xFF}}},
+    {{{-3, -2, 13}, 0x0, {0, 0}, {0x00, 0xDA, 0x79, 0xFF}}},
+    {{{53, 13, -8}, 0x0, {0, 0}, {0xFF, 0x66, 0xB5, 0xFF}}},
+    {{{-4, 13, -8}, 0x0, {0, 0}, {0xFF, 0x66, 0xB5, 0xFF}}},
+    {{{-3, -2, 13}, 0x0, {0, 0}, {0x81, 0xFF, 0x00, 0xFF}}},
+    {{{-4, 13, 8}, 0x0, {0, 0}, {0x81, 0xFF, 0x00, 0xFF}}},
+    {{{-4, 13, -8}, 0x0, {0, 0}, {0xD0, 0x6B, 0xD3, 0xFF}}},
+    {{{-3, -2, -13}, 0x0, {0, 0}, {0xD2, 0xF6, 0x8B, 0xFF}}},
+    {{{-3, -12, 0}, 0x0, {0, 0}, {0xD3, 0x8D, 0xE6, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500C8D8[] = {
+    {{{19, 5, -31}, 0x0, {0, 0}, {0x40, 0x2B, 0x9D, 0x00}}},
+    {{{20, -37, -43}, 0x0, {0, 0}, {0x48, 0xEB, 0x9A, 0x00}}},
+    {{{-5, -36, -43}, 0x0, {0, 0}, {0xBD, 0xE4, 0x99, 0x00}}},
+    {{{-2, 5, -31}, 0x0, {0, 0}, {0xCA, 0x32, 0x9A, 0xFF}}},
+    {{{20, -66, -21}, 0x0, {0, 0}, {0x42, 0xA1, 0xCE, 0xFF}}},
+    {{{20, -66, 21}, 0x0, {0, 0}, {0x42, 0xA1, 0x32, 0xFF}}},
+    {{{0, -59, 21}, 0x0, {0, 0}, {0xB7, 0xA1, 0x27, 0xFF}}},
+    {{{0, -59, -21}, 0x0, {0, 0}, {0xB7, 0xA1, 0xD9, 0xFF}}},
+    {{{20, -37, 43}, 0x0, {0, 0}, {0x48, 0xEB, 0x66, 0xFF}}},
+    {{{19, 5, 31}, 0x0, {0, 0}, {0x40, 0x2B, 0x63, 0xFF}}},
+    {{{-2, 5, 31}, 0x0, {0, 0}, {0xCA, 0x32, 0x66, 0xFF}}},
+    {{{-5, -36, 43}, 0x0, {0, 0}, {0xBD, 0xE4, 0x67, 0xFF}}},
+    {{{18, 34, 15}, 0x0, {0, 0}, {0x41, 0x5B, 0x3A, 0xFF}}},
+    {{{18, 34, -15}, 0x0, {0, 0}, {0x41, 0x5B, 0xC6, 0xFF}}},
+    {{{0, 28, -15}, 0x0, {0, 0}, {0xBA, 0x5B, 0xCC, 0xFF}}},
+    {{{0, 28, 15}, 0x0, {0, 0}, {0xBA, 0x5B, 0x34, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500C9D8[] = {
+    {{{0, -59, 21}, 0x0, {0, 0}, {0xB7, 0xA1, 0x27, 0xFF}}},
+    {{{-5, -36, 43}, 0x0, {0, 0}, {0xBD, 0xE4, 0x67, 0x00}}},
+    {{{-17, -33, 21}, 0x0, {0, 0}, {0x89, 0xE3, 0x1F, 0x00}}},
+    {{{-2, 5, 31}, 0x0, {0, 0}, {0xCA, 0x32, 0x66, 0xFF}}},
+    {{{0, 28, 15}, 0x0, {0, 0}, {0xBA, 0x5B, 0x34, 0xFF}}},
+    {{{-15, 5, 15}, 0x0, {0, 0}, {0x8F, 0x2A, 0x26, 0xFF}}},
+    {{{-15, 5, -15}, 0x0, {0, 0}, {0x8F, 0x2A, 0xDA, 0xFF}}},
+    {{{-17, -33, -21}, 0x0, {0, 0}, {0x89, 0xE3, 0xE1, 0xFF}}},
+    {{{-2, 5, -31}, 0x0, {0, 0}, {0xCA, 0x32, 0x9A, 0xFF}}},
+    {{{-5, -36, -43}, 0x0, {0, 0}, {0xBD, 0xE4, 0x99, 0xFF}}},
+    {{{0, 28, -15}, 0x0, {0, 0}, {0xBA, 0x5B, 0xCC, 0xFF}}},
+    {{{18, 34, -15}, 0x0, {0, 0}, {0x41, 0x5B, 0xC6, 0xFF}}},
+    {{{19, 5, -31}, 0x0, {0, 0}, {0x40, 0x2B, 0x9D, 0xFF}}},
+    {{{0, -59, -21}, 0x0, {0, 0}, {0xB7, 0xA1, 0xD9, 0xFF}}},
+    {{{20, -66, -21}, 0x0, {0, 0}, {0x42, 0xA1, 0xCE, 0xFF}}},
+    {{{20, -37, -43}, 0x0, {0, 0}, {0x48, 0xEB, 0x9A, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500CAD8[] = {
+    {{{20, -37, 43}, 0x0, {0, 0}, {0x48, 0xEB, 0x66, 0xFF}}},
+    {{{-5, -36, 43}, 0x0, {0, 0}, {0xBD, 0xE4, 0x67, 0x00}}},
+    {{{0, -59, 21}, 0x0, {0, 0}, {0xB7, 0xA1, 0x27, 0x00}}},
+    {{{20, -66, 21}, 0x0, {0, 0}, {0x42, 0xA1, 0x32, 0xFF}}},
+    {{{-15, 5, 15}, 0x0, {0, 0}, {0x8F, 0x2A, 0x26, 0xFF}}},
+    {{{-17, -33, 21}, 0x0, {0, 0}, {0x89, 0xE3, 0x1F, 0xFF}}},
+    {{{-2, 5, 31}, 0x0, {0, 0}, {0xCA, 0x32, 0x66, 0xFF}}},
+    {{{18, 34, 15}, 0x0, {0, 0}, {0x41, 0x5B, 0x3A, 0xFF}}},
+    {{{19, 5, 31}, 0x0, {0, 0}, {0x40, 0x2B, 0x63, 0xFF}}},
+    {{{0, 28, 15}, 0x0, {0, 0}, {0xBA, 0x5B, 0x34, 0xFF}}},
+    {{{20, -66, -21}, 0x0, {0, 0}, {0x7F, 0x02, 0x00, 0xFF}}},
+    {{{20, -37, -43}, 0x0, {0, 0}, {0x3D, 0xED, 0x93, 0xFF}}},
+    {{{19, 5, -31}, 0x0, {0, 0}, {0x1B, 0x32, 0x8F, 0xFF}}},
+    {{{18, 34, -15}, 0x0, {0, 0}, {0x7F, 0x02, 0x00, 0xFF}}},
+    {{{18, 34, 15}, 0x0, {0, 0}, {0x06, 0x6E, 0x3E, 0xFF}}},
+    {{{19, 5, 31}, 0x0, {0, 0}, {0x39, 0x2B, 0x68, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500CBD8[] = {
+    {{{20, -66, -21}, 0x0, {0, 0}, {0x7F, 0x02, 0x00, 0xFF}}},
+    {{{19, 5, 31}, 0x0, {0, 0}, {0x39, 0x2B, 0x68, 0x00}}},
+    {{{20, -37, 43}, 0x0, {0, 0}, {0x1B, 0xE7, 0x79, 0x00}}},
+    {{{20, -66, 21}, 0x0, {0, 0}, {0x7F, 0x02, 0x00, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500D228[] = {
+    {{{-6, -2, 13}, 0x0, {0, 0}, {0x00, 0xD8, 0x78, 0x00}}},
+    {{{-6, -12, 0}, 0x0, {0, 0}, {0x00, 0x81, 0xFF, 0x00}}},
+    {{{42, -12, 0}, 0x0, {0, 0}, {0x00, 0x81, 0xFF, 0x00}}},
+    {{{42, -2, 13}, 0x0, {0, 0}, {0x00, 0xD8, 0x78, 0xFF}}},
+    {{{-6, -2, -13}, 0x0, {0, 0}, {0x00, 0xDA, 0x87, 0xFF}}},
+    {{{-6, 13, -8}, 0x0, {0, 0}, {0x00, 0x67, 0xB7, 0xFF}}},
+    {{{42, 13, -8}, 0x0, {0, 0}, {0x00, 0x67, 0xB7, 0xFF}}},
+    {{{42, -2, -13}, 0x0, {0, 0}, {0x00, 0xDA, 0x87, 0xFF}}},
+    {{{-6, 13, 8}, 0x0, {0, 0}, {0x00, 0x66, 0x4B, 0xFF}}},
+    {{{42, 13, 8}, 0x0, {0, 0}, {0x00, 0x66, 0x4B, 0xFF}}},
+    {{{42, 13, -8}, 0x0, {0, 0}, {0x2F, 0x4D, 0xA7, 0xFF}}},
+    {{{42, 13, 8}, 0x0, {0, 0}, {0x2F, 0x6C, 0x2D, 0xFF}}},
+    {{{42, -2, 13}, 0x0, {0, 0}, {0x7F, 0x00, 0x00, 0xFF}}},
+    {{{42, -12, 0}, 0x0, {0, 0}, {0x7F, 0x00, 0x00, 0xFF}}},
+    {{{42, -2, -13}, 0x0, {0, 0}, {0x2F, 0xC4, 0x9C, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500D138[] = {
+    {{{-3, -2, 13}, 0x0, {0, 0}, {0x00, 0xD8, 0x78, 0x00}}},
+    {{{-3, -12, 0}, 0x0, {0, 0}, {0x01, 0x81, 0xFF, 0x00}}},
+    {{{53, -11, 0}, 0x0, {0, 0}, {0x01, 0x81, 0xFF, 0x00}}},
+    {{{53, -2, 13}, 0x0, {0, 0}, {0x00, 0xD8, 0x78, 0xFF}}},
+    {{{-3, -2, -13}, 0x0, {0, 0}, {0x00, 0xDA, 0x87, 0xFF}}},
+    {{{-4, 13, -8}, 0x0, {0, 0}, {0xFF, 0x67, 0xB7, 0xFF}}},
+    {{{53, 13, -8}, 0x0, {0, 0}, {0xFF, 0x67, 0xB7, 0xFF}}},
+    {{{53, -1, -13}, 0x0, {0, 0}, {0x00, 0xDA, 0x87, 0xFF}}},
+    {{{-4, 13, 8}, 0x0, {0, 0}, {0xFF, 0x66, 0x4B, 0xFF}}},
+    {{{53, 13, 8}, 0x0, {0, 0}, {0xFF, 0x66, 0x4B, 0xFF}}},
+    {{{-3, -2, -13}, 0x0, {0, 0}, {0x81, 0xFF, 0x00, 0xFF}}},
+    {{{-3, -12, 0}, 0x0, {0, 0}, {0x81, 0xFF, 0x00, 0xFF}}},
+    {{{-3, -2, 13}, 0x0, {0, 0}, {0xD2, 0xC1, 0x63, 0xFF}}},
+    {{{-4, 13, 8}, 0x0, {0, 0}, {0xD0, 0x4B, 0x5A, 0xFF}}},
+    {{{-4, 13, -8}, 0x0, {0, 0}, {0xD0, 0x6C, 0xD5, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500CDF8[] = {
+    {{{-2, 5, 31}, 0x0, {0, 0}, {0xCA, 0x32, 0x66, 0x00}}},
+    {{{-5, -36, 43}, 0x0, {0, 0}, {0xBD, 0xE4, 0x67, 0x00}}},
+    {{{20, -37, 43}, 0x0, {0, 0}, {0x48, 0xEB, 0x66, 0x00}}},
+    {{{19, 5, 31}, 0x0, {0, 0}, {0x40, 0x2B, 0x63, 0xFF}}},
+    {{{0, -59, 21}, 0x0, {0, 0}, {0xB7, 0xA1, 0x27, 0xFF}}},
+    {{{0, -59, -21}, 0x0, {0, 0}, {0xB7, 0xA1, 0xD9, 0xFF}}},
+    {{{20, -66, -21}, 0x0, {0, 0}, {0x42, 0xA1, 0xCE, 0xFF}}},
+    {{{20, -66, 21}, 0x0, {0, 0}, {0x42, 0xA1, 0x32, 0xFF}}},
+    {{{-5, -36, -43}, 0x0, {0, 0}, {0xBD, 0xE4, 0x99, 0xFF}}},
+    {{{-2, 5, -31}, 0x0, {0, 0}, {0xCA, 0x32, 0x9A, 0xFF}}},
+    {{{19, 5, -31}, 0x0, {0, 0}, {0x40, 0x2B, 0x9D, 0xFF}}},
+    {{{20, -37, -43}, 0x0, {0, 0}, {0x48, 0xEB, 0x9A, 0xFF}}},
+    {{{0, 28, -15}, 0x0, {0, 0}, {0xBA, 0x5B, 0xCC, 0xFF}}},
+    {{{0, 28, 15}, 0x0, {0, 0}, {0xBA, 0x5B, 0x34, 0xFF}}},
+    {{{18, 34, 15}, 0x0, {0, 0}, {0x41, 0x5B, 0x3A, 0xFF}}},
+    {{{18, 34, -15}, 0x0, {0, 0}, {0x41, 0x5B, 0xC6, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500CEF8[] = {
+    {{{-17, -33, -21}, 0x0, {0, 0}, {0x89, 0xE3, 0xE1, 0xFF}}},
+    {{{-5, -36, -43}, 0x0, {0, 0}, {0xBD, 0xE4, 0x99, 0x00}}},
+    {{{0, -59, -21}, 0x0, {0, 0}, {0xB7, 0xA1, 0xD9, 0x00}}},
+    {{{-15, 5, -15}, 0x0, {0, 0}, {0x8F, 0x2A, 0xDA, 0xFF}}},
+    {{{0, 28, -15}, 0x0, {0, 0}, {0xBA, 0x5B, 0xCC, 0xFF}}},
+    {{{-2, 5, -31}, 0x0, {0, 0}, {0xCA, 0x32, 0x9A, 0xFF}}},
+    {{{-17, -33, 21}, 0x0, {0, 0}, {0x89, 0xE3, 0x1F, 0xFF}}},
+    {{{-15, 5, 15}, 0x0, {0, 0}, {0x8F, 0x2A, 0x26, 0xFF}}},
+    {{{-5, -36, 43}, 0x0, {0, 0}, {0xBD, 0xE4, 0x67, 0xFF}}},
+    {{{-2, 5, 31}, 0x0, {0, 0}, {0xCA, 0x32, 0x66, 0xFF}}},
+    {{{19, 5, 31}, 0x0, {0, 0}, {0x40, 0x2B, 0x63, 0xFF}}},
+    {{{18, 34, 15}, 0x0, {0, 0}, {0x41, 0x5B, 0x3A, 0xFF}}},
+    {{{0, 28, 15}, 0x0, {0, 0}, {0xBA, 0x5B, 0x34, 0xFF}}},
+    {{{0, -59, 21}, 0x0, {0, 0}, {0xB7, 0xA1, 0x27, 0xFF}}},
+    {{{20, -37, 43}, 0x0, {0, 0}, {0x48, 0xEB, 0x66, 0xFF}}},
+    {{{20, -66, 21}, 0x0, {0, 0}, {0x42, 0xA1, 0x32, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500CFF8[] = {
+    {{{20, -66, -21}, 0x0, {0, 0}, {0x42, 0xA1, 0xCE, 0xFF}}},
+    {{{0, -59, -21}, 0x0, {0, 0}, {0xB7, 0xA1, 0xD9, 0x00}}},
+    {{{-5, -36, -43}, 0x0, {0, 0}, {0xBD, 0xE4, 0x99, 0x00}}},
+    {{{20, -37, -43}, 0x0, {0, 0}, {0x48, 0xEB, 0x9A, 0xFF}}},
+    {{{-2, 5, -31}, 0x0, {0, 0}, {0xCA, 0x32, 0x9A, 0xFF}}},
+    {{{-17, -33, -21}, 0x0, {0, 0}, {0x89, 0xE3, 0xE1, 0xFF}}},
+    {{{-15, 5, -15}, 0x0, {0, 0}, {0x8F, 0x2A, 0xDA, 0xFF}}},
+    {{{19, 5, -31}, 0x0, {0, 0}, {0x40, 0x2B, 0x9D, 0xFF}}},
+    {{{0, 28, -15}, 0x0, {0, 0}, {0xBA, 0x5B, 0xCC, 0xFF}}},
+    {{{18, 34, -15}, 0x0, {0, 0}, {0x41, 0x5B, 0xC6, 0xFF}}},
+    {{{20, -37, 43}, 0x0, {0, 0}, {0x1B, 0xE7, 0x79, 0xFF}}},
+    {{{20, -66, 21}, 0x0, {0, 0}, {0x7F, 0x02, 0x00, 0xFF}}},
+    {{{20, -66, -21}, 0x0, {0, 0}, {0x7F, 0x02, 0x00, 0xFF}}},
+    {{{20, -37, -43}, 0x0, {0, 0}, {0x3D, 0xED, 0x93, 0xFF}}},
+    {{{19, 5, -31}, 0x0, {0, 0}, {0x1B, 0x32, 0x8F, 0xFF}}},
+    {{{18, 34, -15}, 0x0, {0, 0}, {0x7F, 0x02, 0x00, 0xFF}}},
+};
+
+Vtx wiggler_seg5_vertex_0500D0F8[] = {
+    {{{20, -37, 43}, 0x0, {0, 0}, {0x1B, 0xE7, 0x79, 0xFF}}},
+    {{{18, 34, -15}, 0x0, {0, 0}, {0x7F, 0x02, 0x00, 0x00}}},
+    {{{18, 34, 15}, 0x0, {0, 0}, {0x06, 0x6E, 0x3E, 0x00}}},
+    {{{19, 5, 31}, 0x0, {0, 0}, {0x39, 0x2B, 0x68, 0xFF}}},
+};
+
+Gfx wiggler_seg5_dl_0500C208[] = {
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wiggler_seg5_texture_05005A30),
+    gsDPLoadSync(),
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 2047, 256),
+    gsSPVertex(wiggler_seg5_vertex_0500C188 + 0, 4, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 3, 1, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500C240[] = {
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wiggler_seg5_texture_05006A30),
+    gsDPLoadSync(),
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 2047, 256),
+    gsSPVertex(wiggler_seg5_vertex_0500C1C8 + 0, 4, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 2, 3, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500C278[] = {
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_DECALRGBA, G_CC_DECALRGBA),
+    gsSPClearGeometryMode(G_LIGHTING),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_ON),
+    gsDPTileSync(),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 6, 0, G_TX_CLAMP, 5, 0),
+    gsDPSetTileSize(G_TX_RENDERTILE, 0, 0, 124, 252),
+    gsSPDisplayList(wiggler_seg5_dl_0500C208),
+    gsSPDisplayList(wiggler_seg5_dl_0500C240),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
+    gsSPSetGeometryMode(G_LIGHTING),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E608[] = {
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wiggler_seg5_texture_05005A30),
+    gsDPLoadSync(),
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 2047, 256),
+    gsSPVertex(wiggler_seg5_vertex_0500E588 + 0, 4, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 3, 1, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E640[] = {
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wiggler_seg5_texture_05006A30),
+    gsDPLoadSync(),
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 2047, 256),
+    gsSPVertex(wiggler_seg5_vertex_0500E5C8 + 0, 4, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 3, 1, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E678[] = {
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_DECALRGBA, G_CC_DECALRGBA),
+    gsSPClearGeometryMode(G_LIGHTING),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_ON),
+    gsDPTileSync(),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 6, 0, G_TX_CLAMP, 5, 0),
+    gsDPSetTileSize(G_TX_RENDERTILE, 0, 0, 124, 252),
+    gsSPDisplayList(wiggler_seg5_dl_0500E608),
+    gsSPDisplayList(wiggler_seg5_dl_0500E640),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
+    gsSPSetGeometryMode(G_LIGHTING),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E168[] = {
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wiggler_seg5_texture_05009230),
+    gsDPLoadSync(),
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 2047, 256),
+    gsSPVertex(wiggler_seg5_vertex_0500E0E8 + 0, 4, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 3, 1, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E1A0[] = {
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wiggler_seg5_texture_0500A230),
+    gsDPLoadSync(),
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 2047, 256),
+    gsSPVertex(wiggler_seg5_vertex_0500E128 + 0, 4, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 3, 1, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E1D8[] = {
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_DECALRGBA, G_CC_DECALRGBA),
+    gsSPClearGeometryMode(G_LIGHTING),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_ON),
+    gsDPTileSync(),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 6, 0, G_TX_CLAMP, 5, 0),
+    gsDPSetTileSize(G_TX_RENDERTILE, 0, 0, 124, 252),
+    gsSPDisplayList(wiggler_seg5_dl_0500E168),
+    gsSPDisplayList(wiggler_seg5_dl_0500E1A0),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
+    gsSPSetGeometryMode(G_LIGHTING),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E4E0[] = {
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wiggler_seg5_texture_05008230),
+    gsDPLoadSync(),
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 1023, 256),
+    gsSPVertex(wiggler_seg5_vertex_0500E4A0 + 0, 4, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 3, 1, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E518[] = {
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_DECALRGBA, G_CC_DECALRGBA),
+    gsSPClearGeometryMode(G_CULL_BACK|G_LIGHTING),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_ON),
+    gsDPTileSync(),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 5, 0, G_TX_CLAMP, 5, 0),
+    gsDPSetTileSize(G_TX_RENDERTILE, 0, 0, 124, 124),
+    gsSPDisplayList(wiggler_seg5_dl_0500E4E0),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
+    gsSPSetGeometryMode(G_CULL_BACK|G_LIGHTING),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E3E8[] = {
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wiggler_seg5_texture_05007A30),
+    gsDPLoadSync(),
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 1023, 256),
+    gsSPVertex(wiggler_seg5_vertex_0500E368 + 0, 8, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 3, 1, 0x0),
+    gsSP2Triangles(4, 5, 6, 0x0, 4, 7, 5, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E430[] = {
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_DECALRGBA, G_CC_DECALRGBA),
+    gsSPClearGeometryMode(G_LIGHTING),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_ON),
+    gsDPTileSync(),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 5, 0, G_TX_CLAMP, 5, 0),
+    gsDPSetTileSize(G_TX_RENDERTILE, 0, 0, 124, 124),
+    gsSPDisplayList(wiggler_seg5_dl_0500E3E8),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
+    gsSPSetGeometryMode(G_LIGHTING),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E2B0[] = {
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wiggler_seg5_texture_05008A30),
+    gsDPLoadSync(),
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 1023, 256),
+    gsSPVertex(wiggler_seg5_vertex_0500E250 + 0, 6, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 2, 3, 0, 0x0),
+    gsSP2Triangles(2, 4, 3, 0x0, 0, 5, 1, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E2F8[] = {
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_DECALRGBA, G_CC_DECALRGBA),
+    gsSPClearGeometryMode(G_LIGHTING),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_ON),
+    gsDPTileSync(),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 5, 0, G_TX_CLAMP, 5, 0),
+    gsDPSetTileSize(G_TX_RENDERTILE, 0, 0, 124, 124),
+    gsSPDisplayList(wiggler_seg5_dl_0500E2B0),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
+    gsSPSetGeometryMode(G_LIGHTING),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500DDF8[] = {
+    gsSPLight(&wiggler_seg5_lights_0500C890.l, 1),
+    gsSPLight(&wiggler_seg5_lights_0500C890.a, 2),
+    gsSPVertex(wiggler_seg5_vertex_0500CD08 + 0, 15, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 2, 3, 0x0),
+    gsSP2Triangles(4, 5, 6, 0x0, 4, 6, 7, 0x0),
+    gsSP2Triangles(8, 0, 3, 0x0, 8, 3, 9, 0x0),
+    gsSP2Triangles(1, 4, 7, 0x0, 1, 7, 2, 0x0),
+    gsSP2Triangles(5, 8, 9, 0x0, 5, 9, 6, 0x0),
+    gsSP2Triangles(10, 11, 12, 0x0, 10, 12, 13, 0x0),
+    gsSP1Triangle(10, 13, 14, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500DD70[] = {
+    gsSPLight(&wiggler_seg5_lights_0500C890.l, 1),
+    gsSPLight(&wiggler_seg5_lights_0500C890.a, 2),
+    gsSPVertex(wiggler_seg5_vertex_0500CC18 + 0, 15, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 2, 3, 0x0),
+    gsSP2Triangles(4, 5, 6, 0x0, 4, 6, 7, 0x0),
+    gsSP2Triangles(8, 0, 3, 0x0, 8, 3, 9, 0x0),
+    gsSP2Triangles(1, 4, 7, 0x0, 1, 7, 2, 0x0),
+    gsSP2Triangles(5, 8, 9, 0x0, 5, 9, 6, 0x0),
+    gsSP2Triangles(10, 11, 12, 0x0, 10, 12, 13, 0x0),
+    gsSP1Triangle(10, 13, 14, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500DC18[] = {
+    gsSPLight(&wiggler_seg5_lights_0500C878.l, 1),
+    gsSPLight(&wiggler_seg5_lights_0500C878.a, 2),
+    gsSPVertex(wiggler_seg5_vertex_0500C8D8 + 0, 16, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 2, 3, 0x0),
+    gsSP2Triangles(4, 5, 6, 0x0, 4, 6, 7, 0x0),
+    gsSP2Triangles(8, 9, 10, 0x0, 8, 10, 11, 0x0),
+    gsSP2Triangles(12, 13, 14, 0x0, 12, 14, 15, 0x0),
+    gsSPVertex(wiggler_seg5_vertex_0500C9D8 + 0, 16, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 3, 4, 5, 0x0),
+    gsSP2Triangles(6, 7, 2, 0x0, 6, 2, 5, 0x0),
+    gsSP2Triangles(7, 6, 8, 0x0, 7, 8, 9, 0x0),
+    gsSP2Triangles(10, 11, 12, 0x0, 10, 12, 8, 0x0),
+    gsSP2Triangles(9, 13, 7, 0x0, 10, 8, 6, 0x0),
+    gsSP2Triangles(14, 13, 9, 0x0, 14, 9, 15, 0x0),
+    gsSP2Triangles(2, 7, 13, 0x0, 2, 13, 0, 0x0),
+    gsSP2Triangles(6, 4, 10, 0x0, 6, 5, 4, 0x0),
+    gsSPVertex(wiggler_seg5_vertex_0500CAD8 + 0, 16, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 2, 3, 0x0),
+    gsSP2Triangles(4, 5, 1, 0x0, 4, 1, 6, 0x0),
+    gsSP2Triangles(7, 6, 8, 0x0, 7, 9, 6, 0x0),
+    gsSP2Triangles(10, 11, 12, 0x0, 10, 12, 13, 0x0),
+    gsSP2Triangles(10, 13, 14, 0x0, 10, 14, 15, 0x0),
+    gsSPVertex(wiggler_seg5_vertex_0500CBD8 + 0, 4, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 2, 3, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500E060[] = {
+    gsSPLight(&wiggler_seg5_lights_0500C890.l, 1),
+    gsSPLight(&wiggler_seg5_lights_0500C890.a, 2),
+    gsSPVertex(wiggler_seg5_vertex_0500D228 + 0, 15, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 2, 3, 0x0),
+    gsSP2Triangles(4, 5, 6, 0x0, 4, 6, 7, 0x0),
+    gsSP2Triangles(8, 0, 3, 0x0, 8, 3, 9, 0x0),
+    gsSP2Triangles(1, 4, 7, 0x0, 1, 7, 2, 0x0),
+    gsSP2Triangles(5, 8, 9, 0x0, 5, 9, 6, 0x0),
+    gsSP2Triangles(10, 11, 12, 0x0, 10, 12, 13, 0x0),
+    gsSP1Triangle(10, 13, 14, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500DFD8[] = {
+    gsSPLight(&wiggler_seg5_lights_0500C890.l, 1),
+    gsSPLight(&wiggler_seg5_lights_0500C890.a, 2),
+    gsSPVertex(wiggler_seg5_vertex_0500D138 + 0, 15, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 2, 3, 0x0),
+    gsSP2Triangles(4, 5, 6, 0x0, 4, 6, 7, 0x0),
+    gsSP2Triangles(8, 0, 3, 0x0, 8, 3, 9, 0x0),
+    gsSP2Triangles(1, 4, 7, 0x0, 1, 7, 2, 0x0),
+    gsSP2Triangles(5, 8, 9, 0x0, 5, 9, 6, 0x0),
+    gsSP2Triangles(10, 11, 12, 0x0, 10, 12, 13, 0x0),
+    gsSP1Triangle(10, 13, 14, 0x0),
+    gsSPEndDisplayList(),
+};
+
+Gfx wiggler_seg5_dl_0500DE80[] = {
+    gsSPLight(&wiggler_seg5_lights_0500C878.l, 1),
+    gsSPLight(&wiggler_seg5_lights_0500C878.a, 2),
+    gsSPVertex(wiggler_seg5_vertex_0500CDF8 + 0, 16, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 2, 3, 0x0),
+    gsSP2Triangles(4, 5, 6, 0x0, 4, 6, 7, 0x0),
+    gsSP2Triangles(8, 9, 10, 0x0, 8, 10, 11, 0x0),
+    gsSP2Triangles(12, 13, 14, 0x0, 12, 14, 15, 0x0),
+    gsSPVertex(wiggler_seg5_vertex_0500CEF8 + 0, 16, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 3, 4, 5, 0x0),
+    gsSP2Triangles(3, 0, 6, 0x0, 3, 6, 7, 0x0),
+    gsSP2Triangles(8, 9, 7, 0x0, 8, 7, 6, 0x0),
+    gsSP2Triangles(9, 10, 11, 0x0, 9, 11, 12, 0x0),
+    gsSP2Triangles(6, 13, 8, 0x0, 7, 9, 12, 0x0),
+    gsSP2Triangles(14, 8, 13, 0x0, 14, 13, 15, 0x0),
+    gsSP2Triangles(2, 13, 6, 0x0, 2, 6, 0, 0x0),
+    gsSP2Triangles(12, 3, 7, 0x0, 12, 4, 3, 0x0),
+    gsSPVertex(wiggler_seg5_vertex_0500CFF8 + 0, 16, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 2, 3, 0x0),
+    gsSP2Triangles(4, 2, 5, 0x0, 4, 5, 6, 0x0),
+    gsSP2Triangles(7, 8, 9, 0x0, 7, 4, 8, 0x0),
+    gsSP2Triangles(10, 11, 12, 0x0, 10, 12, 13, 0x0),
+    gsSP2Triangles(10, 13, 14, 0x0, 10, 14, 15, 0x0),
+    gsSPVertex(wiggler_seg5_vertex_0500D0F8 + 0, 4, 0),
+    gsSP2Triangles(0, 1, 2, 0x0, 0, 2, 3, 0x0),
+    gsSPEndDisplayList(),
+};
+
