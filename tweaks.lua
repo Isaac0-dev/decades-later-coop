@@ -1,11 +1,15 @@
 gLevelValues.entryLevel = LEVEL_CASTLE_GROUNDS
-gLevelValues.coinsRequiredForCoinStar = 80
 gLevelValues.exitCastleWarpNode = 16
+
+gLevelValues.coinsRequiredForCoinStar = 80
+
 gLevelValues.pssSlideStarTime = 840
 
 gLevelValues.wingCapDurationTotwc = 1
 gLevelValues.vanishCapDurationVcutm = 1
 gLevelValues.metalCapDurationCotmc = 1
+
+gLevelValues.mushroom1UpHeal = 1
 
 gLevelValues.cellHeightLimit = 32767
 gLevelValues.floorLowerLimit = -32768
