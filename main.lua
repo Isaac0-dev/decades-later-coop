@@ -5,6 +5,7 @@
 require("data/a-bhv-loader")
 
 --this kinda sucks, works
+--improve this code well as well since i skill issue a lot
 
 function bowser_dialog_entry(m)
     if gNetworkPlayers[0] and m.area.camera.cutscene == CUTSCENE_ENTER_BOWSER_ARENA then
