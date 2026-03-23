@@ -4,15 +4,12 @@
 
 require("data/a-bhv-loader")
 
--- Bowser dialog
+--this kinda sucks, works
 
--- function bowser_dialog(m)
+function bowser_dialog_entry(m)
+    if gNetworkPlayers[0] and m.area.camera.cutscene == CUTSCENE_ENTER_BOWSER_ARENA then
+        m.area.camera.cutscene = 0
+    end
+end
 
---     ---@type NetworkPlayer
---     local np = gNetworkPlayers[0]
---     if np.currLevelNum == LEVEL_BOWSER_1 or LEVEL_BOWSER_2 or LEVEL_BOWSER_3 and m.area.camera.cutscene == CUTSCENE_ENTER_BOWSER_ARENA then
---         m.area.camera.cutscene = 0
---     end
--- end
-
--- hook_event(HOOK_MARIO_UPDATE, bowser_dialog)
+hook_event(HOOK_MARIO_UPDATE, bowser_dialog_entry)
