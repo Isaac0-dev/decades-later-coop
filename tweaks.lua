@@ -1,5 +1,5 @@
 gLevelValues.entryLevel = LEVEL_CASTLE_GROUNDS
-gLevelValues.exitCastleWarpNode = 16
+gLevelValues.exitCastleWarpNode = 10
 
 gLevelValues.coinsRequiredForCoinStar = 80
 
