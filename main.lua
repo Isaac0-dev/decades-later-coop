@@ -13,4 +13,13 @@ function bowser_dialog_entry(m)
     end
 end
 
+---@param obj Object
+function six_reds(obj)
+    if obj.oHiddenStarTriggerCounter >= gMarioStates[0].area.numRedCoins - 2 then
+        obj.oAction = 1
+    end
+end
+
 hook_event(HOOK_MARIO_UPDATE, bowser_dialog_entry)
+hook_behavior(id_bhvHiddenRedCoinStar, OBJ_LIST_LEVEL, false, nil, six_reds)
+hook_behavior(id_bhvBowserCourseRedCoinStar, OBJ_LIST_LEVEL, false, nil, six_reds)
