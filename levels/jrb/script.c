@@ -41,7 +41,6 @@ const LevelScript level_jrb_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_JRB_FALLING_PILLAR, jrb_geo_12000900),
     LOAD_MODEL_FROM_GEO(MODEL_JRB_FALLING_PILLAR_BASE, jrb_geo_12000918),
     LOAD_MODEL_FROM_GEO(MODEL_DL_CANNON_LID, cannon_lid_geo)
-    LOAD_MODEL_FROM_GEO(42, Flipswitch_Panel_MOP)
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, bbh_geo_160003A8),
     AREA(1, jrb_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ 3804, /* posY */ 654, /* posZ */ 6260, /* angleX */ 0, /* angleY */ 135, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
@@ -197,8 +196,8 @@ const LevelScript level_jrb_entry[] = {
     END_AREA(),
     AREA(2, jrb_area_1_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 2502, /* posZ */ 2425, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
-        OBJECT(0, /* posX */ -1, /* posY */ 1760, /* posZ */ 3021, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02000000, bhvFlipswitch_Panel_StarSpawn_MOP), 
-        OBJECT(42, /* posX */ 779, /* posY */ -1740, /* posZ */ -2447, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswitch_Panel_MOP), // you can improve this mop as well if you want fearl :3
+        OBJECT(0, /* posX */ -1, /* posY */ 1760, /* posZ */ 3021, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02000000, bhvFlipSwitchStarSpawn), 
+        OBJECT(42, /* posX */ 779, /* posY */ -1740, /* posZ */ -2447, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipSwitchPanel), // you can improve this mop as well if you want fearl :3
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 0, /* posY */ -1227, /* posZ */ -5290, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00060009, bhvExclamationBox),
         OBJECT(MODEL_BOWLING_BALL, /* posX */ 707, /* posY */ -584, /* posZ */ -537, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFireSpitter),
         OBJECT(MODEL_BOWLING_BALL, /* posX */ -1118, /* posY */ -58, /* posZ */ 489, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFireSpitter),
