@@ -69,6 +69,7 @@ const LevelScript level_bowser_2_entry[] = {
     // SKIP_NOP(),
     // SKIP_NOP(),
     AREA(1, bowser_2_area_1_geo_19001700),
+        OBJECT(MODEL_NONE, 0, 0, 0, 0, 0, 0, 0, bhvBowser),
         OBJECT(MODEL_NONE, /* posX */ 4225, /* posY */ 492, /* posZ */ 6300, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_NONE, /* posX */ 1573, /* posY */ 0, /* posZ */ 6427, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGoombaTripletSpawner),
         OBJECT(MODEL_NONE, /* posX */ 1480, /* posY */ 0, /* posZ */ 6076, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGoombaTripletSpawner),

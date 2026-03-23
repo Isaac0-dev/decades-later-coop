@@ -6,7 +6,9 @@ local behavior_files = {
     "b-shrinkplat",
     "b-switchblock",
     "b-spring",
-    "b-flipswitch"
+    "b-flipswitch",
+    "c-bowser-cutscene",
+    "c-six-reds"
 }
 
 for _, file in ipairs(behavior_files) do
