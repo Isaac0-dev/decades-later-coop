@@ -68,7 +68,7 @@ const LevelScript level_pss_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, bbh_geo_160003A8),
     LOAD_MODEL_FROM_GEO(15, brodute_geo)
     AREA(1, pss_area_1_geo_19000000),
-        OBJECT(MODEL_NONE, /* posX */ -20230, /* posY */ 6525, /* posZ */ 6475, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
+        OBJECT(MODEL_NONE, /* posX */ -20230, /* posY */ 6525, /* posZ */ 6475, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSpinAirborneWarp),
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ -19434, /* posY */ 6300, /* posZ */ 7994, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBoo),
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ -20737, /* posY */ 6300, /* posZ */ 7556, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBoo),
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ -20843, /* posY */ 6300, /* posZ */ 5570, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBoo),
@@ -85,7 +85,7 @@ const LevelScript level_pss_entry[] = {
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ 14230, /* posY */ -7712, /* posZ */ 1257, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBoo),
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ 15988, /* posY */ -7712, /* posZ */ -800, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBoo),
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ 14226, /* posY */ -7712, /* posZ */ -799, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBoo),
-        OBJECT(MODEL_YELLOW_COIN, /* posX */ -6669, /* posY */ 2842, /* posZ */ -4881, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvYellowCoin),
+        OBJECT(MODEL_YELLOW_COIN, /* posX */ -6669, /* posY */ 2842, /* posZ */ -4881, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvOneCoin),
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ -5825, /* posY */ 2479, /* posZ */ -7141, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBoo),
         OBJECT(MODEL_BULLET_BILL /* or MODEL_BLARGG, MODEL_WATER_BOMB, ... (12 total) */, /* posX */ -9124, /* posY */ 2479, /* posZ */ -7117, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBoo),
         OBJECT(MODEL_NONE, /* posX */ -13511, /* posY */ 5304, /* posZ */ 4781, /* angleX */ 0, /* angleY */ -45, /* angleZ */ 0, /* behParam */ 0x00000000, bhvCoinFormation),

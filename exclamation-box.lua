@@ -40,7 +40,7 @@ set_exclamation_box_contents({
     { id = 37, unused = 0, firstByte = 0, model = E_MODEL_HEAVE_HO,                behavior = id_bhvHeaveHo },
     { id = 38, unused = 0, firstByte = 0, model = E_MODEL_WF_BREAKABLE_WALL_RIGHT, behavior = id_bhvWfBreakableWallRight }, -- Shrink Platform
     { id = 39, unused = 0, firstByte = 0, model = E_MODEL_NONE,                    behavior = 0x130050d0 },                 -- Not sure what this is
-    { id = 40, unused = 0, firstByte = 0, model = E_MODEL_TREASURE_CHEST_BASE,     behavior = id_bhvBetaChestBottom },
+    { id = 40, unused = 0, firstByte = 0, model = E_MODEL_TREASURE_CHEST_BASE,     behavior = id_bhvFlipswap_Platform_MOP },
     { id = 41, unused = 0, firstByte = 0, model = E_MODEL_WOODEN_POST,             behavior = id_bhvMessagePanel },
     { id = 42, unused = 0, firstByte = 0, model = E_MODEL_BOWLING_BALL,            behavior = id_bhvPitBowlingBall },
     { id = 43, unused = 0, firstByte = 0, model = E_MODEL_KLEPTO,                  behavior = id_bhvKlepto },

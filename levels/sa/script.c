@@ -69,7 +69,7 @@ const LevelScript level_sa_entry[] = {
     // SKIP_NOP(),
     // SKIP_NOP(),
     AREA(1, sa_area_1_geo_19001700),
-        OBJECT(MODEL_NONE, /* posX */ -3900, /* posY */ 1770, /* posZ */ 1500, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
+        OBJECT(MODEL_NONE, /* posX */ -3900, /* posY */ 1770, /* posZ */ 1500, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSpinAirborneWarp),
         OBJECT(MODEL_STAR, /* posX */ 1200, /* posY */ 3275, /* posZ */ -1525, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 4800, /* posY */ 3300, /* posZ */ -5625, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000000, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ -2500, /* posY */ 6540, /* posZ */ -1350, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02000000, bhvStar),
