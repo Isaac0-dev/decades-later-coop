@@ -37,7 +37,7 @@ local function bhv_flipswap_border(o)
     o.header.gfx.skipInViewCheck = true
 end
 
-local id_bhvFlipswapBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_flipswap_border, nil)
+id_bhvFlipswapBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_flipswap_border, nil)
 
 --------------
 -- FlipSwap --
