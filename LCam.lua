@@ -5,9 +5,8 @@ local L_Cam = false
 
 ---@param m MarioState
 local function mario_update(m)
-
-    if camera_config_is_free_cam_enabled() then return end
     if m.playerIndex ~= 0 then return end
+    if camera_config_is_free_cam_enabled() then return end
 
     local camMode = gLakituState.mode
     local swimFly = (m.action & ACT_FLAG_SWIMMING_OR_FLYING) ~= 0

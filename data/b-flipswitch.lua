@@ -7,16 +7,10 @@ local cur_obj_is_any_player_on_platform = cur_obj_is_any_player_on_platform
 local cur_obj_play_sound_1 = cur_obj_play_sound_1
 local is_player_active = is_player_active
 local load_object_collision_model = load_object_collision_model
-local network_init_object = network_init_object
 local network_send_object = network_send_object
 local obj_count_objects_with_behavior_id = obj_count_objects_with_behavior_id
 local obj_get_first_with_behavior_id = obj_get_first_with_behavior_id
 local obj_get_next_with_same_behavior_id = obj_get_next_with_same_behavior_id
-local obj_mark_for_deletion = obj_mark_for_deletion
-local obj_set_model_extended = obj_set_model_extended
-local smlua_collision_util_get = smlua_collision_util_get
-local smlua_model_util_get_id = smlua_model_util_get_id
-local spawn_red_coin_cutscene_star = spawn_red_coin_cutscene_star
 
 -----------------------
 -- Model / Collision --

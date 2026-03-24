@@ -23,9 +23,6 @@ local load_object_collision_model = load_object_collision_model
 local obj_copy_pos = obj_copy_pos
 local obj_get_first_with_behavior_id = obj_get_first_with_behavior_id
 local obj_get_next_with_same_behavior_id = obj_get_next_with_same_behavior_id
-local obj_set_model_extended = obj_set_model_extended
-local smlua_collision_util_get = smlua_collision_util_get
-local smlua_model_util_get_id = smlua_model_util_get_id
 local spawn_mist_particles = spawn_mist_particles
 
 -------------

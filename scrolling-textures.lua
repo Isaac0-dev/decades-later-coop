@@ -1,6 +1,3 @@
-local movtexqc_register = movtexqc_register
-local add_scroll_target = add_scroll_target
-
 -- Movtexqc
 
 movtexqc_register('thi_area_1_area_2_movtex_00E2BC_collection', LEVEL_THI, 1, 20481) -- TODO

@@ -12,10 +12,7 @@ local is_bubbled = BU.is_bubbled
 local spawn_noteblock_particles = BU.spawn_noteblock_particles
 local cur_obj_is_mario_on_platform = cur_obj_is_mario_on_platform
 local load_object_collision_model = load_object_collision_model
-local obj_set_model_extended = obj_set_model_extended
 local set_mario_action = set_mario_action
-local smlua_collision_util_get = smlua_collision_util_get
-local smlua_model_util_get_id = smlua_model_util_get_id
 
 -----------------------
 -- Model / Collision --

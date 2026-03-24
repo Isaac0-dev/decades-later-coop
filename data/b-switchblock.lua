@@ -19,9 +19,6 @@ local is_player_in_local_area = is_player_in_local_area
 local load_object_collision_model = load_object_collision_model
 local network_local_index_from_global = network_local_index_from_global
 local obj_has_behavior_id = obj_has_behavior_id
-local obj_set_model_extended = obj_set_model_extended
-local smlua_collision_util_get = smlua_collision_util_get
-local smlua_model_util_get_id = smlua_model_util_get_id
 
 -----------------------
 -- Model / Collision --

@@ -15,9 +15,6 @@ local cur_obj_is_mario_on_platform = cur_obj_is_mario_on_platform
 local cur_obj_play_sound_1 = cur_obj_play_sound_1
 local cur_obj_unhide = cur_obj_unhide
 local load_object_collision_model = load_object_collision_model
-local obj_set_model_extended = obj_set_model_extended
-local smlua_collision_util_get = smlua_collision_util_get
-local smlua_model_util_get_id = smlua_model_util_get_id
 
 -----------------------
 -- Model / Collision --

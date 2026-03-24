@@ -14,7 +14,6 @@ local bounce_off_object = BU.bounce_off_object
 local obj_check_hitbox_overlap = obj_check_hitbox_overlap
 local obj_set_model_extended = obj_set_model_extended
 local set_mario_action = set_mario_action
-local smlua_model_util_get_id = smlua_model_util_get_id
 
 -----------
 -- Model --
