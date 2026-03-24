@@ -3,10 +3,15 @@ local add_scroll_target = add_scroll_target
 
 -- Movtexqc
 
-movtexqc_register('hmc_area_1_movtex_0174C4_collection', LEVEL_HMC, 1, 20481)
-movtexqc_register('wdw_area_1_movtex_018748_collection', LEVEL_WDW, 1, 20480)
-movtexqc_register('thi_area_1_area_2_movtex_00E2BC_collection', LEVEL_THI, 1, 20481)
-movtexqc_register('castle_grounds_area_1_movtex_017574_collection', LEVEL_CASTLE_GROUNDS, 1, 20480)
+movtexqc_register('thi_area_1_area_2_movtex_00E2BC_collection', LEVEL_THI, 1, 20481) -- TODO
+
+movtexqc_register('hmc_area_1_water_type_0_collection', LEVEL_HMC, 1, 0)
+movtexqc_register('sl_area_1_water_manual_collection', LEVEL_SL, 1, 0)
+movtexqc_register('wdw_area_1_water_type_0_collection', LEVEL_WDW, 1, 0)
+movtexqc_register('rr_area_1_water_type_0_collection', LEVEL_RR, 1, 0)
+movtexqc_register('castle_grounds_area_1_water_type_0_collection', LEVEL_CASTLE_GROUNDS, 1, 0)
+movtexqc_register('sa_area_1_water_type_0_collection', LEVEL_SA, 1, 0)
+movtexqc_register('ddd_area_1_water_manual_collection', LEVEL_DDD, 1, 0)
 
 -- Scrolling Textures
 

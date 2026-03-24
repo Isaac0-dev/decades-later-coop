@@ -1,4 +1,4 @@
-static Movtex castle_grounds_area_1_movtex_water_0[] = {
+static Movtex sl_area_1_movtex_water_0[] = {
     MOV_TEX_INIT_LOAD(1),
     MOV_TEX_ROT_SPEED(15),
     MOV_TEX_ROT_SCALE(16),
@@ -12,8 +12,8 @@ static Movtex castle_grounds_area_1_movtex_water_0[] = {
     MOV_TEX_END(),
 };
 
-const struct MovtexQuadCollection castle_grounds_area_1_water_type_0_collection[] = {
-    { 0, castle_grounds_area_1_movtex_water_0 },
+const struct MovtexQuadCollection sl_area_1_water_manual_collection[] = {
+    { 0, sl_area_1_movtex_water_0 },
     { -1, NULL },
 };
 
