@@ -1,4 +1,4 @@
-// ['ttc_script_0x1fc0160', 'ttc', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> ttc -> ttc_script_0x1fc0160
 const LevelScript level_ttc_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x00437400, /* end */ 0x00437870),
@@ -214,7 +214,7 @@ const LevelScript level_ttc_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0035),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(2, ttc_area_1_area_2_geo_190000B0),
+    AREA(2, ttc_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ -2175, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(0xf1, /* posX */ 0, /* posY */ 450, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),
         OBJECT(0xf1, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),
@@ -286,7 +286,7 @@ const LevelScript level_ttc_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 8, /* posY */ 5, /* posZ */ 26, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000003e, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 8, /* posY */ 5, /* posZ */ 26, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000003f, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 5, /* posZ */ 42, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000040, editor_Scroll_Texture),
-        TERRAIN(ttc_area_1_area_2_collision_0x0E0D6700),
+        TERRAIN(ttc_area_2_collision_0x0E0D6700),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0035),
         TERRAIN_TYPE(/* terrainType */ 0x0000),

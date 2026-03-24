@@ -1,4 +1,4 @@
-// ['bitfs_script_0x26a0160', 'bitfs', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bitfs -> bitfs_script_0x26a0160
 const LevelScript level_bitfs_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x0044a140, /* end */ 0x0044abc0),
@@ -147,7 +147,7 @@ const LevelScript level_bitfs_entry[] = {
         OBJECT(0xe3, /* posX */ 1350, /* posY */ 3602, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch),  //greenboard switch
         OBJECT(0xe3, /* posX */ -5175, /* posY */ 6000, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch), //greenboard switch
         OBJECT(0x98, /* posX */ -1650, /* posY */ 3600, /* posZ */ 850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform), //shrink platform
-        OBJECT(0x98, /* posX */ -1950, /* posY */ 3600, /* posZ */ 850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform), 
+        OBJECT(0x98, /* posX */ -1950, /* posY */ 3600, /* posZ */ 850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform),
         OBJECT(0x98, /* posX */ -2250, /* posY */ 3600, /* posZ */ 850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform),
         WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x45, /* destLevel */ LEVEL_BOWSER_2, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
@@ -179,7 +179,7 @@ const LevelScript level_bitfs_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x003f),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(2, bitfs_area_1_area_2_geo_190000B0),
+    AREA(2, bitfs_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 1000, /* posZ */ 2470, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 1000, /* posZ */ 2470, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00f00000, bhvSwimmingWarp),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 1000, /* posZ */ 2470, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00f10000, bhvSwimmingWarp),
@@ -223,7 +223,7 @@ const LevelScript level_bitfs_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 32, /* posY */ 5, /* posZ */ 8, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000006f, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 32, /* posY */ 5, /* posZ */ 235, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000070, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 5, /* posZ */ 76, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000071, editor_Scroll_Texture),
-        TERRAIN(bitfs_area_1_area_2_collision_0x0E1050A0),
+        TERRAIN(bitfs_area_2_collision_0x0E1050A0),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0039),
         TERRAIN_TYPE(/* terrainType */ 0x0000),

@@ -1,4 +1,4 @@
-// ['jrb_script_0x1d00160', 'jrb', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> jrb -> jrb_script_0x1d00160
 const LevelScript level_jrb_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x00423b20, /* end */ 0x004246d0),
@@ -194,9 +194,9 @@ const LevelScript level_jrb_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0028),
         TERRAIN_TYPE(/* terrainType */ 0x0005),
     END_AREA(),
-    AREA(2, jrb_area_1_area_2_geo_190000B0),
+    AREA(2, jrb_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 2502, /* posZ */ 2425, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
-        OBJECT(0, /* posX */ -1, /* posY */ 1760, /* posZ */ 3021, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02000000, bhvFlipSwitchStarSpawn), 
+        OBJECT(0, /* posX */ -1, /* posY */ 1760, /* posZ */ 3021, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02000000, bhvFlipSwitchStarSpawn),
         OBJECT(42, /* posX */ 779, /* posY */ -1740, /* posZ */ -2447, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipSwitchPanel), // you can improve this mop as well if you want fearl :3
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 0, /* posY */ -1227, /* posZ */ -5290, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00060009, bhvExclamationBox),
         OBJECT(MODEL_BOWLING_BALL, /* posX */ 707, /* posY */ -584, /* posZ */ -537, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFireSpitter),
@@ -208,7 +208,7 @@ const LevelScript level_jrb_entry[] = {
         // OBJECT(0xe4, /* posX */ -1200, /* posY */ -750, /* posZ */ -2000, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE064),
         // OBJECT(0xe4, /* posX */ -900, /* posY */ -450, /* posZ */ -2000, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE064),
         // OBJECT(0xe4, /* posX */ -600, /* posY */ -150, /* posZ */ -2000, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE064),    Blue star blocks
-        // OBJECT(0xe4, /* posX */ -300, /* posY */ 150, /* posZ */ -2000, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE064), 
+        // OBJECT(0xe4, /* posX */ -300, /* posY */ 150, /* posZ */ -2000, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE064),
         // OBJECT(0xe4, /* posX */ 0, /* posY */ 150, /* posZ */ -2000, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE064),
         // OBJECT(0xe4, /* posX */ 300, /* posY */ 150, /* posZ */ -2000, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE064),
         OBJECT(MODEL_1UP, /* posX */ -1793, /* posY */ -1683, /* posZ */ -2282, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv1Up),
@@ -233,7 +233,7 @@ const LevelScript level_jrb_entry[] = {
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 5, /* posZ */ 8, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000002b, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 32, /* posY */ 5, /* posZ */ 42, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000002c, editor_Scroll_Texture),
-        TERRAIN(jrb_area_1_area_2_collision_0x0E115830),
+        TERRAIN(jrb_area_2_collision_0x0E115830),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0042),
         TERRAIN_TYPE(/* terrainType */ 0x0005),

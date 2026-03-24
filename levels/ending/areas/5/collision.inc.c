@@ -1,0 +1,17 @@
+const Collision ending_area_5_collision_0x0E12C3E0[] = {
+    COL_INIT(),
+    COL_VERTEX_INIT(8),
+    COL_VERTEX(145, 0, 145),
+    COL_VERTEX(-145, 0, -145),
+    COL_VERTEX(-145, 0, 145),
+    COL_VERTEX(145, 0, -145),
+    COL_VERTEX(8192, -8192, 8192),
+    COL_VERTEX(-8193, -8192, -8448),
+    COL_VERTEX(-8193, -8192, 8192),
+    COL_VERTEX(8192, -8192, -8193),
+    COL_TRI_INIT(SURFACE_DEFAULT, 2),
+    COL_TRI(0, 1, 2),
+    COL_TRI(1, 0, 3),
+    COL_TRI_STOP(),
+    COL_END(),
+};

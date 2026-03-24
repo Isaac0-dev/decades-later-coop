@@ -1,4 +1,4 @@
-// ['bbh_script_0x2ac318', 'bbh_script_0xad4ac0', 'bbh_script_0x2ac300', 'bbh_script_0x3efe210', 'bbh', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bbh -> bbh_script_0x3efe210 -> bbh_script_0x2ac300 -> bbh_script_0xad4ac0 -> bbh_script_0x2ac318
 const LevelScript bbh_script_0x2ac318_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CHECKERBOARD_PLATFORM, bbh_geo_0F0004E4),
     LOAD_MODEL_FROM_GEO(MODEL_BREAKABLE_BOX, bbh_geo_0F0005D0),
@@ -24,7 +24,7 @@ const LevelScript bbh_script_0x2ac318_entry[] = {
 };
 
 
-// ['bbh_script_0xad4ac0', 'bbh_script_0x2ac300', 'bbh_script_0x3efe210', 'bbh', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bbh -> bbh_script_0x3efe210 -> bbh_script_0x2ac300 -> bbh_script_0xad4ac0
 const LevelScript bbh_script_0xad4ac0_entry[] = {
     LOAD_MODEL_FROM_GEO(0x9b, bbh_geo_0F000ADC),
     LOAD_MODEL_FROM_GEO(0x9d, bbh_geo_0F000B08),
@@ -33,7 +33,7 @@ const LevelScript bbh_script_0xad4ac0_entry[] = {
 };
 
 
-// ['bbh_script_0x2ac300', 'bbh_script_0x3efe210', 'bbh', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bbh -> bbh_script_0x3efe210 -> bbh_script_0x2ac300
 const LevelScript bbh_script_0x2ac300_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_BLUE_COIN_SWITCH, bbh_geo_0F000000),
     LOAD_MODEL_FROM_GEO(MODEL_AMP, bbh_geo_0F000028),
@@ -41,7 +41,7 @@ const LevelScript bbh_script_0x2ac300_entry[] = {
 };
 
 
-// ['bbh_script_0x3efe210', 'bbh', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bbh -> bbh_script_0x3efe210
 const LevelScript level_bbh_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x003828c0, /* end */ 0x00383950),
@@ -204,7 +204,7 @@ const LevelScript level_bbh_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x002a),
         TERRAIN_TYPE(/* terrainType */ 0x0004),
     END_AREA(),
-    AREA(2, bbh_area_1_area_2_geo_190000B0),
+    AREA(2, bbh_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ 2466, /* posY */ -24, /* posZ */ 6132, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_NONE, /* posX */ -9770, /* posY */ 883, /* posZ */ -7564, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenRedCoinStar),
         OBJECT(MODEL_BBH_HAUNTED_DOOR, /* posX */ -73, /* posY */ 0, /* posZ */ 116, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00140000, bhvDoorWarp),
@@ -293,12 +293,12 @@ const LevelScript level_bbh_entry[] = {
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT(MODEL_NONE, /* posX */ 8, /* posY */ 5, /* posZ */ 92, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000001, editor_Scroll_Texture),
-        TERRAIN(bbh_area_1_area_2_collision_0x0E0F0570),
+        TERRAIN(bbh_area_2_collision_0x0E0F0570),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x002a),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(3, bbh_area_1_area_2_area_3_geo_19000160),
+    AREA(3, bbh_area_3_geo_19000160),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 210, /* posZ */ -995, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_STAR, /* posX */ 6000, /* posY */ 2180, /* posZ */ 2093, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x05000000, bhvStar),
         OBJECT(MODEL_BBH_MERRY_GO_ROUND, /* posX */ 0, /* posY */ 1, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvMerryGoRound),
@@ -359,7 +359,7 @@ const LevelScript level_bbh_entry[] = {
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT(MODEL_NONE, /* posX */ 8, /* posY */ 5, /* posZ */ 28, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000002, editor_Scroll_Texture),
-        TERRAIN(bbh_area_1_area_2_area_3_collision_0x0E12C460),
+        TERRAIN(bbh_area_3_collision_0x0E12C460),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x002a),
         TERRAIN_TYPE(/* terrainType */ 0x0004),

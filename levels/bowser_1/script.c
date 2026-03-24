@@ -1,4 +1,4 @@
-// ['bowser_1_script_0x35c0160', 'bowser_1', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bowser_1 -> bowser_1_script_0x35c0160
 const LevelScript level_bowser_1_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x0045bf60, /* end */ 0x0045c600),
@@ -118,7 +118,7 @@ const LevelScript level_bowser_1_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0044),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(2, bowser_1_area_1_area_2_geo_190000B0),
+    AREA(2, bowser_1_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, 0, 0, 0, 0, 0, 0, 0, bhvBowser),
         OBJECT(MODEL_NONE, /* posX */ -4321, /* posY */ -404, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_YOSHI_EGG /* or MODEL_BULLY_BOSS, MODEL_DL_WHIRLPOOL, ... (8 total) */, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvWigglerHead),
@@ -165,7 +165,7 @@ const LevelScript level_bowser_1_entry[] = {
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
-        TERRAIN(bowser_1_area_1_area_2_collision_0x0E0F6BD0),
+        TERRAIN(bowser_1_area_2_collision_0x0E0F6BD0),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0044),
         TERRAIN_TYPE(/* terrainType */ 0x0000),

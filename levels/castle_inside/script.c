@@ -1,4 +1,4 @@
-// ['castle_inside_script_0x14c0160', 'castle_inside', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> castle_inside -> castle_inside_script_0x14c0160
 const LevelScript level_castle_inside_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x0044a140, /* end */ 0x0044abc0),
@@ -154,7 +154,7 @@ const LevelScript level_castle_inside_entry[] = {
         WARP_NODE(/* id */ 0x00, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x00, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x00, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
-        
+
         //OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 6090, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE0B0), // useless behavior
 
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
@@ -184,7 +184,7 @@ const LevelScript level_castle_inside_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0004),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(2, castle_inside_area_1_area_2_geo_190000B0),
+    AREA(2, castle_inside_area_2_geo_190000B0),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR, /* posX */ -303, /* posY */ 0, /* posZ */ 785, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvDoorWarp),
         OBJECT(34, /* posX */ -110, /* posY */ 0, /* posZ */ -595, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x5e000000, bhvDoor),
         OBJECT(15, /* posX */ 495, /* posY */ 37, /* posZ */ 28, /* angleX */ 0, /* angleY */ 338, /* angleZ */ 0, /* behParam */ 0x52000000, bhvToadMessage),
@@ -215,7 +215,7 @@ const LevelScript level_castle_inside_entry[] = {
         WARP_NODE(/* id */ 0x06, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         OBJECT(MODEL_NONE, /* posX */ 8, /* posY */ 4, /* posZ */ 26, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000000b, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 16, /* posY */ 5, /* posZ */ 141, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000000c, editor_Scroll_Texture),
-        TERRAIN(castle_inside_area_1_area_2_collision_0x0E13A2F0),
+        TERRAIN(castle_inside_area_2_collision_0x0E13A2F0),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0027),
         TERRAIN_TYPE(/* terrainType */ 0x0000),

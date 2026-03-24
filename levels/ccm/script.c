@@ -1,4 +1,4 @@
-// ['ccm_script_0x1360160', 'ccm', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> ccm -> ccm_script_0x1360160
 const LevelScript level_ccm_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x0044a140, /* end */ 0x0044abc0),
@@ -110,7 +110,7 @@ const LevelScript level_ccm_entry[] = {
 
         OBJECT(0, /* posX */ -3265, /* posY */ 6187, /* posZ */ 653, /* angleX */ 0, /* angleY */ 345, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswap_Platform_MOP),
         OBJECT(0, /* posX */ -3445, /* posY */ 6187, /* posZ */ 1385, /* angleX */ 0, /* angleY */ 345, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswap_Platform_MOP),
-        
+
         OBJECT(MODEL_YOSHI_EGG /* or MODEL_BULLY_BOSS, MODEL_DL_WHIRLPOOL, ... (8 total) */, /* posX */ -6209, /* posY */ -1955, /* posZ */ 4362, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSmallPenguin),
         OBJECT(MODEL_YOSHI_EGG /* or MODEL_BULLY_BOSS, MODEL_DL_WHIRLPOOL, ... (8 total) */, /* posX */ -2708, /* posY */ 5293, /* posZ */ 5265, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSmallPenguin),
         OBJECT(MODEL_PENGUIN /* or MODEL_BULLY_BOSS, MODEL_DL_WHIRLPOOL, ... (8 total) */, /* posX */ 4643, /* posY */ -5840, /* posZ */ 8089, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvTuxiesMother),
@@ -206,7 +206,7 @@ const LevelScript level_ccm_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0029),
         TERRAIN_TYPE(/* terrainType */ 0x0002),
     END_AREA(),
-    AREA(2, ccm_area_1_area_2_geo_190000B0),
+    AREA(2, ccm_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ 3716, /* posY */ 15383, /* posZ */ 18667, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_STAR, /* posX */ 20743, /* posY */ -14993, /* posZ */ -18713, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStar),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, /* posX */ 20285, /* posY */ -15595, /* posZ */ -19502, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00140000, bhvDoorWarp),
@@ -250,7 +250,7 @@ const LevelScript level_ccm_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 16, /* posY */ 5, /* posZ */ 93, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000004, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 16, /* posY */ 4, /* posZ */ 44, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000005, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 32, /* posY */ 5, /* posZ */ 52, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000006, editor_Scroll_Texture),
-        TERRAIN(ccm_area_1_area_2_collision_0x0E0F8CC0),
+        TERRAIN(ccm_area_2_collision_0x0E0F8CC0),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0043),
         TERRAIN_TYPE(/* terrainType */ 0x0006),

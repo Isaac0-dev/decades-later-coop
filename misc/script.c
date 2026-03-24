@@ -1,15 +1,15 @@
-// ['level_script_0x1ce020', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x1ce020
 const LevelScript level_script_0x1ce020_entry[] = {
 };
 
 
-// ['level_script_0x2a62e0', 'level_script_0x2a6238', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2a6238 -> level_script_0x2a62e0
 const LevelScript level_script_0x2a62e0_entry[] = {
     EXIT(),
 };
 
 
-// ['level_script_0x2a6238', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2a6238
 const LevelScript level_script_0x2a6238_entry[] = {
     CALL(/* arg */ 0x0000, /* func */ 0x8024be14),
     JUMP_IF(/* op */ 0x02, /* arg */ 0x00000000, level_script_0x2a62e0_entry),
@@ -38,7 +38,7 @@ const LevelScript level_script_0x2a6238_entry[] = {
 };
 
 
-// ['script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table
 const LevelScript level_script_0x2abf18_entry[] = {
     GET_OR_SET(/* op */ 0x01, /* var */ 0x03),
     JUMP_IF(/* op */ 0x02, /* arg */ 0x00000004, bbh_entry),
@@ -76,24 +76,24 @@ const LevelScript level_script_0x2abf18_entry[] = {
 };
 
 
-// ['level_script_0x4ac4b0', 'level_script_0x2abed8', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abed8 -> level_script_0x4ac4b0
 const LevelScript level_script_0x4ac4b0_entry[] = {
 };
 
 
-// ['level_script_0x2abed8', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abed8
 const LevelScript level_script_0x2abed8_entry[] = {
     EXIT_AND_EXECUTE(/* seg */ 0x000e, /* start */ 0x004ac4b0, /* end */ 0x004ac570, level_script_0x4ac4b0_entry),
 };
 
 
-// ['level_script_0x2abee8', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abee8
 const LevelScript level_script_0x2abee8_entry[] = {
     EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x269f18_entry),
 };
 
 
-// ['level_script_0x269fa4', 'level_script_0x2abef8', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abef8 -> level_script_0x269fa4
 const LevelScript level_script_0x269fa4_entry[] = {
     INIT_LEVEL(),
     BLACKOUT(/* active */ 0x01),
@@ -105,19 +105,19 @@ const LevelScript level_script_0x269fa4_entry[] = {
 };
 
 
-// ['level_script_0x2abef8', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abef8
 const LevelScript level_script_0x2abef8_entry[] = {
     EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x269fa4_entry),
 };
 
 
-// ['level_script_0x2abec8', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abec8
 const LevelScript level_script_0x2abec8_entry[] = {
     EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x269ea0_entry),
 };
 
 
-// ['level_script_0x26a148', 'level_script_0x26a030', 'level_script_0x2abf08', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abf08 -> level_script_0x26a030 -> level_script_0x26a148
 const LevelScript level_script_0x26a148_entry[] = {
     STOP_MUSIC(/* fadeOutTime */ 0x00be),
     TRANSITION(/* transType */ 0x01, /* time */ 0x10, /* colorR */ 0x00, /* colorG */ 0x00, /* colorB */ 0x00),
@@ -128,7 +128,7 @@ const LevelScript level_script_0x26a148_entry[] = {
 };
 
 
-// ['level_script_0x26a0fc', 'level_script_0x26a030', 'level_script_0x2abf08', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abf08 -> level_script_0x26a030 -> level_script_0x26a0fc
 const LevelScript level_script_0x26a0fc_entry[] = {
     STOP_MUSIC(/* fadeOutTime */ 0x00be),
     TRANSITION(/* transType */ 0x01, /* time */ 0x10, /* colorR */ 0xff, /* colorG */ 0xff, /* colorB */ 0xff),
@@ -139,7 +139,7 @@ const LevelScript level_script_0x26a0fc_entry[] = {
 };
 
 
-// ['level_script_0x26a030', 'level_script_0x2abf08', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abf08 -> level_script_0x26a030
 const LevelScript level_script_0x26a030_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0013, /* start */ 0x00219e00, /* end */ 0x0021f4c0),
@@ -160,13 +160,13 @@ const LevelScript level_script_0x26a030_entry[] = {
 };
 
 
-// ['level_script_0x2abf08', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abf08
 const LevelScript level_script_0x2abf08_entry[] = {
     EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x26a030_entry),
 };
 
 
-// ['level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58
 const LevelScript level_script_0x2abe58_entry[] = {
     FREE_LEVEL_POOL(),
     CALL(/* arg */ 0x0000, /* func */ 0x8024bd5c),
@@ -184,7 +184,7 @@ const LevelScript level_script_0x2abe58_entry[] = {
 };
 
 
-// ['level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20
 const LevelScript level_script_0xad4a20_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_DIRT_ANIMATION, geo_16000ED4),
     LOAD_MODEL_FROM_GEO(MODEL_CARTOON_STAR, geo_16000F24),
@@ -209,7 +209,7 @@ const LevelScript level_script_0xad4a20_entry[] = {
 };
 
 
-// ['level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0
 const LevelScript level_script_0x2abca0_entry[] = {
     // LOAD_RAW(/* seg */ 0x0004, /* start */ 0x03f00000, /* end */ 0x03f91400),
     // LOAD_RAW(/* seg */ 0x0003, /* start */ 0x00ab240c, /* end */ 0x00ae5714),
@@ -267,7 +267,7 @@ const LevelScript level_script_0x2abca0_entry[] = {
 };
 
 
-// ['level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120
 const LevelScript level_script_0x2a6120_entry[] = {
     INIT_LEVEL(),
     // FIXED_LOAD(/* loadAddr */ 0x8016f000, /* start */ 0x0021f4c0, /* end */ 0x00269ea0),
@@ -306,7 +306,7 @@ const LevelScript level_script_0x2a6120_entry[] = {
 };
 
 
-// ['level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac
 const LevelScript level_script_0x26a0ac_entry[] = {
     STOP_MUSIC(/* fadeOutTime */ 0x00be),
     TRANSITION(/* transType */ 0x01, /* time */ 0x10, /* colorR */ 0xff, /* colorG */ 0xff, /* colorB */ 0xff),
@@ -318,7 +318,7 @@ const LevelScript level_script_0x26a0ac_entry[] = {
 };
 
 
-// ['level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18
 const LevelScript level_script_0x269f18_entry[] = {
     INIT_LEVEL(),
     BLACKOUT(/* active */ 0x01),
@@ -330,7 +330,7 @@ const LevelScript level_script_0x269f18_entry[] = {
 };
 
 
-// ['level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0
 const LevelScript level_script_0x269ea0_entry[] = {
     INIT_LEVEL(),
     // FIXED_LOAD(/* loadAddr */ 0x8016f000, /* start */ 0x0021f4c0, /* end */ 0x00269ea0),
@@ -352,12 +352,17 @@ const LevelScript level_script_0x269ea0_entry[] = {
 };
 
 
-// ['level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x0
+const LevelScript level_script_0x0_entry[] = {
+};
+
+
+// level_script_0x108a10
 const LevelScript level_script_0x108a10_entry[] = {
     INIT_LEVEL(),
     SLEEP(/* frames */ 0x0002),
     BLACKOUT(/* active */ 0x00),
     SET_REG(/* value */ 0x0000),
     EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x269ea0_entry),
-    JUMP(level_script_0x108a10_entry),
+    JUMP(level_script_0x0_entry),
 };

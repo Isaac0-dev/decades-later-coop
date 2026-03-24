@@ -1,4 +1,4 @@
-// ['sl_script_0x1a40210', 'sl', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> sl -> sl_script_0x1a40210
 const LevelScript level_sl_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x0040e840, /* end */ 0x0040ed70),
@@ -165,7 +165,7 @@ const LevelScript level_sl_entry[] = {
         WARP_NODE(/* id */ 0x06, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
 
         // OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 10230, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE0B0), // useless behavior
-        
+
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
@@ -179,7 +179,7 @@ const LevelScript level_sl_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0030),
         TERRAIN_TYPE(/* terrainType */ 0x0002),
     END_AREA(),
-    AREA(2, sl_area_1_area_2_geo_190000B0),
+    AREA(2, sl_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ 3093, /* posY */ -1064, /* posZ */ -696, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, /* posX */ 4007, /* posY */ -1331, /* posZ */ -326, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00140000, bhvDoorWarp),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, /* posX */ -1613, /* posY */ -66, /* posZ */ -3695, /* angleX */ 0, /* angleY */ 30, /* angleZ */ 0, /* behParam */ 0x001e0000, bhvDoorWarp),
@@ -222,12 +222,12 @@ const LevelScript level_sl_entry[] = {
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
-        TERRAIN(sl_area_1_area_2_collision_0x0E0EA5E0),
+        TERRAIN(sl_area_2_collision_0x0E0EA5E0),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0043),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(3, sl_area_1_area_2_area_3_geo_19000160),
+    AREA(3, sl_area_3_geo_19000160),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, /* posX */ -247, /* posY */ 0, /* posZ */ 4006, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00280000, bhvDoorWarp),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -1161, /* posY */ 376, /* posZ */ -2958, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00020000, bhvExclamationBox),
         OBJECT(MODEL_STAR, /* posX */ -749, /* posY */ 631, /* posZ */ 3144, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x05000000, bhvStar),
@@ -266,7 +266,7 @@ const LevelScript level_sl_entry[] = {
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 5, /* posZ */ 6, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000025, editor_Scroll_Texture),
-        TERRAIN(sl_area_1_area_2_area_3_collision_0x0E104D40),
+        TERRAIN(sl_area_3_collision_0x0E104D40),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0043),
         TERRAIN_TYPE(/* terrainType */ 0x0002),

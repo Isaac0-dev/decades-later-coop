@@ -1,4 +1,4 @@
-// ['castle_grounds_script_0x2280220', 'castle_grounds', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> castle_grounds -> castle_grounds_script_0x2280220
 const LevelScript level_castle_grounds_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x003e6a00, /* end */ 0x003e76b0),
@@ -123,7 +123,7 @@ const LevelScript level_castle_grounds_entry[] = {
         OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 8250, /* posY */ 389, /* posZ */ -625, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00500000, bhvExitPodiumWarp),
 
         //OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 8760, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE0B0), // useless behavior
-        
+
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
@@ -135,7 +135,7 @@ const LevelScript level_castle_grounds_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0026),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(2, castle_grounds_area_1_area_2_geo_190000C0),
+    AREA(2, castle_grounds_area_2_geo_190000C0),
         OBJECT(MODEL_NONE, /* posX */ 6000, /* posY */ 732, /* posZ */ 0, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_NONE, /* posX */ 6000, /* posY */ 300, /* posZ */ 150, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00640000, bhvSwimmingWarp),
         OBJECT(MODEL_NONE, /* posX */ 6000, /* posY */ 300, /* posZ */ 150, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00650000, bhvSwimmingWarp),
@@ -184,12 +184,12 @@ const LevelScript level_castle_grounds_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 8, /* posY */ 5, /* posZ */ 18, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000004b, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 8, /* posY */ 5, /* posZ */ 18, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000004c, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 8, /* posY */ 5, /* posZ */ 18, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000004d, editor_Scroll_Texture),
-        TERRAIN(castle_grounds_area_1_area_2_collision_0x0E108A90),
+        TERRAIN(castle_grounds_area_2_collision_0x0E108A90),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0025),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(3, castle_grounds_area_1_area_2_area_3_geo_19000170),
+    AREA(3, castle_grounds_area_3_geo_19000170),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 242, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_CASTLE_GROUNDS_CASTLE_DOOR, /* posX */ -592, /* posY */ 0, /* posZ */ -3, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvDoorWarp),
         OBJECT(MODEL_CASTLE_GROUNDS_CASTLE_DOOR, /* posX */ 8213, /* posY */ 2099, /* posZ */ 3, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x90000000, bhvDoor),
@@ -230,7 +230,7 @@ const LevelScript level_castle_grounds_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 32, /* posY */ 5, /* posZ */ 1221, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000004e, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 5, /* posZ */ 444, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000004f, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 32, /* posY */ 5, /* posZ */ 23, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000050, editor_Scroll_Texture),
-        TERRAIN(castle_grounds_area_1_area_2_area_3_collision_0x0E129CE0),
+        TERRAIN(castle_grounds_area_3_collision_0x0E129CE0),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0039),
         TERRAIN_TYPE(/* terrainType */ 0x0000),

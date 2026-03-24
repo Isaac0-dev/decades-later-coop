@@ -1,4 +1,4 @@
-// ['lll_script_0x2ac0210', 'lll', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> lll -> lll_script_0x2ac0210
 const LevelScript level_lll_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x0048c9b0, /* end */ 0x0048d930),
@@ -237,7 +237,7 @@ const LevelScript level_lll_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x002c),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(2, lll_area_1_area_2_geo_190000B0),
+    AREA(2, lll_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 1979, /* posZ */ 0, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_LLL_TILTING_SQUARE_PLATFORM, /* posX */ 1870, /* posY */ 2310, /* posZ */ 3680, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvLLLTiltingInvertedPyramid),
         OBJECT(MODEL_LLL_TILTING_SQUARE_PLATFORM, /* posX */ 1462, /* posY */ 2360, /* posZ */ 2857, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvLLLTiltingInvertedPyramid),
@@ -286,12 +286,12 @@ const LevelScript level_lll_entry[] = {
         WARP_NODE(/* id */ 0x06, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         OBJECT(MODEL_NONE, /* posX */ 8, /* posY */ 5, /* posZ */ 24, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000078, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 8, /* posY */ 5, /* posZ */ 80, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000079, editor_Scroll_Texture),
-        TERRAIN(lll_area_1_area_2_collision_0x0E0D2050),
+        TERRAIN(lll_area_2_collision_0x0E0D2050),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x002c),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(3, lll_area_1_area_2_area_3_geo_19000160),
+    AREA(3, lll_area_3_geo_19000160),
         OBJECT(MODEL_NONE, /* posX */ -825, /* posY */ 375, /* posZ */ 1344, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(MODEL_NONE, /* posX */ -39, /* posY */ 0, /* posZ */ 82, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvLLLBowserPuzzle),
         OBJECT(MODEL_NONE, /* posX */ 675, /* posY */ 432, /* posZ */ -675, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x04000000, bhvHiddenRedCoinStar),
@@ -334,7 +334,7 @@ const LevelScript level_lll_entry[] = {
         WARP_NODE(/* id */ 0x05, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x06, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 5, /* posZ */ 4, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000007a, editor_Scroll_Texture),
-        TERRAIN(lll_area_1_area_2_area_3_collision_0x0E0DC820),
+        TERRAIN(lll_area_3_collision_0x0E0DC820),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x002c),
         TERRAIN_TYPE(/* terrainType */ 0x0000),

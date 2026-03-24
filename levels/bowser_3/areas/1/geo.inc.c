@@ -5,7 +5,7 @@ const GeoLayout bowser_3_area_1_geo_19001700[] = {
         GEO_OPEN_NODE(),
             GEO_NODE_ORTHO(100),
             GEO_OPEN_NODE(),
-                GEO_BACKGROUND(bowser_3_skybox_ptrlist, geo_skybox_main),
+                GEO_BACKGROUND(0x0009, geo_skybox_main),
                 GEO_CLOSE_NODE(),
             GEO_CLOSE_NODE(),
         GEO_ZBUFFER(1),

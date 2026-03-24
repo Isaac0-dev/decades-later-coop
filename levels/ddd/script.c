@@ -1,4 +1,4 @@
-// ['ddd_script_0x2c20160', 'ddd', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> ddd -> ddd_script_0x2c20160
 const LevelScript level_ddd_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x0045bf60, /* end */ 0x0045c600),
@@ -229,7 +229,7 @@ const LevelScript level_ddd_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x002f),
         TERRAIN_TYPE(/* terrainType */ 0x0005),
     END_AREA(),
-    AREA(2, ddd_area_1_area_2_geo_190000B0),
+    AREA(2, ddd_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ -2237, /* posY */ 1432, /* posZ */ -13880, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         OBJECT(0x92, /* posX */ -5511, /* posY */ 75, /* posZ */ -13464, /* angleX */ 0, /* angleY */ 45, /* angleZ */ 0, /* behParam */ 0x32640000, bhvSpring),
         OBJECT(MODEL_NONE, /* posX */ 475, /* posY */ 100, /* posZ */ -1260, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00460000, bhvSwimmingWarp),
@@ -318,7 +318,7 @@ const LevelScript level_ddd_entry[] = {
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 5, /* posZ */ 18, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000007d, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 2, /* posY */ 5, /* posZ */ 154, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0000007e, editor_Scroll_Texture),
-        TERRAIN(ddd_area_1_area_2_collision_0x0E11AE70),
+        TERRAIN(ddd_area_2_collision_0x0E11AE70),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x002f),
         TERRAIN_TYPE(/* terrainType */ 0x0005),

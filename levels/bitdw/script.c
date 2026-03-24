@@ -1,4 +1,4 @@
-// ['bitdw_script_0x23e0210', 'bitdw', 'script_exec_level_table', 'level_script_0x2abe58', 'level_script_0xad4a20', 'level_script_0x2abca0', 'level_script_0x2a6120', 'level_script_0x26a0ac', 'level_script_0x269f18', 'level_script_0x269ea0', 'level_script_0x108a10']
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bitdw -> bitdw_script_0x23e0210
 const LevelScript level_bitdw_entry[] = {
     INIT_LEVEL(),
     // LOAD_RAW(/* seg */ 0x0012, /* start */ 0x0045bf60, /* end */ 0x0045c600),
@@ -147,7 +147,7 @@ const LevelScript level_bitdw_entry[] = {
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x003e),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(2, bitdw_area_1_area_2_geo_190000B0),
+    AREA(2, bitdw_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 960, /* posZ */ 0, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         //OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 300, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000c0000, bhv_unknown_001CE008), ending scene 1
         WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_CASTLE, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
@@ -171,12 +171,12 @@ const LevelScript level_bitdw_entry[] = {
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvStarDoor, /* acts */ 0x00),
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 4, /* posZ */ 516, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000052, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 4, /* posZ */ 77, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000053, editor_Scroll_Texture),
-        TERRAIN(bitdw_area_1_area_2_collision_0x0E0E2600),
+        TERRAIN(bitdw_area_2_collision_0x0E0E2600),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x001a),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
-    AREA(3, bitdw_area_1_area_2_area_3_geo_19000160),
+    AREA(3, bitdw_area_3_geo_19000160),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 960, /* posZ */ 0, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
         //OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 300, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000c0000, bhv_unknown_001CE008), ending scene 2, some bhv
         WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_CASTLE, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
@@ -202,7 +202,7 @@ const LevelScript level_bitdw_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 4, /* posZ */ 188, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000055, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 4, /* posZ */ 146, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000056, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 4, /* posY */ 4, /* posZ */ 178, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000057, editor_Scroll_Texture),
-        TERRAIN(bitdw_area_1_area_2_area_3_collision_0x0E0FB4B0),
+        TERRAIN(bitdw_area_3_collision_0x0E0FB4B0),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x001a),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
