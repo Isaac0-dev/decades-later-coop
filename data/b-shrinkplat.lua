@@ -43,7 +43,7 @@ local function bhv_shrinkplat_border(o)
     o.header.gfx.skipInViewCheck = true
 end
 
-local id_bhvShrinkPlatBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_shrinkplat_border, nil)
+id_bhvShrinkPlatBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_shrinkplat_border, nil)
 
 ------------
 -- Shrink --
