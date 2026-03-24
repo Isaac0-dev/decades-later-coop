@@ -367,7 +367,7 @@ const LevelScript level_totwc_entry[] = {
         // OBJECT(0xe4, /* posX */ 1340, /* posY */ -355, /* posZ */ 9635, /* angleX */ 30, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE064),
         // OBJECT(0xe4, /* posX */ 1850, /* posY */ 749, /* posZ */ 9975, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 45, /* behParam */ 0x00000000, bhv_unknown_001CE064),
         OBJECT(MODEL_NONE, /* posX */ 32, /* posY */ 5, /* posZ */ 76, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000000ce, editor_Scroll_Texture),
-        TERRAIN(totwc_area_1_area_2_area_3_collision_0x0E0A0EE0),
+        TERRAIN(totwc_area_3_collision_0x0E0A0EE0),
         SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0038),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
