@@ -29,5 +29,6 @@ vec3f_set(gLevelValues.starPositions.WigglerStarPos, 0, 400, 0)
 vec3f_set(gLevelValues.starPositions.GhostHuntBooStarPos, 150, -2210, -4260)
 vec3f_set(gLevelValues.starPositions.BalconyBooStarPos, 4090, 5060, -2360)
 vec3f_set(gLevelValues.starPositions.KingWhompStarPos, 0, 500, -1200)
+vec3f_set(gLevelValues.starPositions.EyerockStarPos, -12600, -900, -8400)
 
 gBehaviorValues.trajectories.KoopaBobTrajectory = get_trajectory('KoopaBoB_path')
