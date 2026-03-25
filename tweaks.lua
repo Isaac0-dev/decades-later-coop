@@ -5,6 +5,10 @@ gLevelValues.coinsRequiredForCoinStar = 80
 
 gLevelValues.pssSlideStarTime = 840
 
+gLevelValues.wingCapDuration = 1770
+gLevelValues.vanishCapDuration = 570
+gLevelValues.metalCapDuration = 720
+
 gLevelValues.wingCapDurationTotwc = 1
 gLevelValues.vanishCapDurationVcutm = 1
 gLevelValues.metalCapDurationCotmc = 1
