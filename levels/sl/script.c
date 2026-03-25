@@ -61,7 +61,7 @@ const LevelScript level_sl_entry[] = {
         OBJECT(0xf2, /* posX */ -1665, /* posY */ 901, /* posZ */ -12905, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchBlockSwitch),
         OBJECT(0xf1, /* posX */ -716, /* posY */ 445, /* posZ */ -8150, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00020000, bhvSwitchBlock),
         OBJECT(0xf1, /* posX */ 90, /* posY */ 1050, /* posZ */ -8150, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),
-        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 90, /* posY */ 1050, /* posZ */ -8150, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00690000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 90, /* posY */ 1050, /* posZ */ -8150, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00690000, bhvThiHugeIslandTop),
         OBJECT(MODEL_1UP, /* posX */ -1666, /* posY */ 3297, /* posZ */ -13654, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv1Up),
         OBJECT(MODEL_GOOMBA, /* posX */ -1657, /* posY */ 2250, /* posZ */ -8608, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGoomba),
         OBJECT(MODEL_BOWLING_BALL, /* posX */ -1675, /* posY */ 2694, /* posZ */ -10201, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFireSpitter),

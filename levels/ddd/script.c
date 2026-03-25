@@ -156,7 +156,7 @@ const LevelScript level_ddd_entry[] = {
         OBJECT(MODEL_HEAVE_HO /* or MODEL_EYEROK_RIGHT_HAND, MODEL_BOOKEND, ... (4 total) */, /* posX */ 3114, /* posY */ 0, /* posZ */ 3527, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHeaveHo),
         OBJECT(MODEL_HEAVE_HO /* or MODEL_EYEROK_RIGHT_HAND, MODEL_BOOKEND, ... (4 total) */, /* posX */ -5426, /* posY */ 0, /* posZ */ 69, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHeaveHo),
         OBJECT(MODEL_HEAVE_HO /* or MODEL_EYEROK_RIGHT_HAND, MODEL_BOOKEND, ... (4 total) */, /* posX */ -11359, /* posY */ 647, /* posZ */ -3996, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHeaveHo),
-        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 4305, /* posY */ 240, /* posZ */ -2865, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00460000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 4305, /* posY */ 240, /* posZ */ -2865, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00460000, bhvThiHugeIslandTop),
         OBJECT(MODEL_HEAVE_HO /* or MODEL_EYEROK_RIGHT_HAND, MODEL_BOOKEND, ... (4 total) */, /* posX */ 10034, /* posY */ 974, /* posZ */ -8581, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHeaveHo),
         OBJECT(MODEL_NONE, /* posX */ 6653, /* posY */ 0, /* posZ */ 3820, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGoombaTripletSpawner),
         OBJECT(MODEL_NONE, /* posX */ 6595, /* posY */ 28, /* posZ */ 1002, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGoombaTripletSpawner),

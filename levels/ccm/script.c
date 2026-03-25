@@ -226,7 +226,7 @@ const LevelScript level_ccm_entry[] = {
         OBJECT(MODEL_BLUE_COIN, /* posX */ 16237, /* posY */ -14584, /* posZ */ -18720, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvMovingBlueCoin),
         OBJECT(MODEL_STAR, /* posX */ 625, /* posY */ 8340, /* posZ */ 6811, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ -13860, /* posY */ -4702, /* posZ */ -3514, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000001, bhvStar),
-        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ -13860, /* posY */ -6391, /* posZ */ -3840, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00640000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ -13860, /* posY */ -6391, /* posZ */ -3840, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00640000, bhvThiHugeIslandTop),
         OBJECT(MODEL_1UP, /* posX */ -13860, /* posY */ -5946, /* posZ */ -3840, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv1Up),
         WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x14, /* destLevel */ LEVEL_CCM, /* destArea */ 0x01, /* destNode */ 0x1e, /* flags */ 0x00),

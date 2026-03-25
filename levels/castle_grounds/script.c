@@ -88,7 +88,7 @@ const LevelScript level_castle_grounds_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 4637, /* posY */ -1638, /* posZ */ -435, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFishSpawner),
         OBJECT(MODEL_NONE, /* posX */ 5998, /* posY */ -1189, /* posZ */ -6165, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFishSpawner),
         OBJECT(MODEL_NONE, /* posX */ 6013, /* posY */ -1638, /* posZ */ 4999, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFishSpawner),
-        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 2264, /* posY */ 220, /* posZ */ -13240, /* angleX */ 0, /* angleY */ 45, /* angleZ */ 0, /* behParam */ 0x008c0000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 2264, /* posY */ 220, /* posZ */ -13240, /* angleX */ 0, /* angleY */ 45, /* angleZ */ 0, /* behParam */ 0x008c0000, bhvThiHugeIslandTop),
         OBJECT(MODEL_TOAD, /* posX */ 1260, /* posY */ 2699, /* posZ */ -14402, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x13000000, bhvToadMessage),
         OBJECT(MODEL_BOBOMB_BUDDY, /* posX */ 3569, /* posY */ -300, /* posZ */ 3170, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x001e0000, bhvBobombBuddy),
         OBJECT(MODEL_TOAD, /* posX */ -5342, /* posY */ -300, /* posZ */ 95, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x20000000, bhvToadMessage),
@@ -120,7 +120,7 @@ const LevelScript level_castle_grounds_entry[] = {
         OBJECT(MODEL_1UP, /* posX */ 0, /* posY */ -546, /* posZ */ -150, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv1Up),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 3666, /* posZ */ -7400, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x004e0000, bhvFadingWarp),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ -600, /* posZ */ -150, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x004e0000, bhvFadingWarp),
-        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 8250, /* posY */ 389, /* posZ */ -625, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00500000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 8250, /* posY */ 389, /* posZ */ -625, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00500000, bhvThiHugeIslandTop),
 
         //OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 8760, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE0B0), // useless behavior
 

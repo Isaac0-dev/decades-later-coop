@@ -80,4 +80,4 @@ local function bhv_noteblock_loop(o)
 end
 
 -- Noteblock overrides this behavior
-hook_behavior(id_bhvExitPodiumWarp, OBJ_LIST_SURFACE, true, bhv_noteblock_init, bhv_noteblock_loop, "bhvTHIHugeIslandTop")
+hook_behavior(id_bhvExitPodiumWarp, OBJ_LIST_SURFACE, true, bhv_noteblock_init, bhv_noteblock_loop, "bhvThiHugeIslandTop")

@@ -86,7 +86,7 @@ const LevelScript level_bitfs_entry[] = {
         OBJECT(MODEL_RED_COIN, /* posX */ -5175, /* posY */ 4322, /* posZ */ 890, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ 2325, /* posY */ 5241, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ -3945, /* posY */ 49, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0xca170000, bhvGreenSwitchboard),
-        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 3600, /* posY */ 974, /* posZ */ 0, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00960000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 3600, /* posY */ 974, /* posZ */ 0, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00960000, bhvThiHugeIslandTop),
         OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ -1950, /* posY */ 3600, /* posZ */ -850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswap_Platform_MOP),
         OBJECT(MODEL_CHUCKYA, /* posX */ 1963, /* posY */ 3600, /* posZ */ -10, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvChuckya),
         OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ -150, /* posY */ 3649, /* posZ */ -866, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x610d0000, bhvGreenSwitchboard),

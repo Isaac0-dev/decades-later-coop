@@ -100,5 +100,5 @@ local function bhv_shrinkplatform_loop(o)
     end
 end
 
--- Shrink Plat originally overrides "bhvWFBreakableWallRight"
+-- Shrink Plat originally overrides "bhvWfBreakableWallRight"
 hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_shrinkplatform_init, bhv_shrinkplatform_loop, "bhvShrinkPlatform")

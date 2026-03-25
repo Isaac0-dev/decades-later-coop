@@ -43,7 +43,7 @@ const LevelScript level_hmc_entry[] = {
         OBJECT(MODEL_BOWSER_WAVE /* or MODEL_WATER_RING, MODEL_KOOPA_WITH_SHELL, ... (4 total) */, /* posX */ 7516, /* posY */ -1274, /* posZ */ 15375, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvDorrie),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -11997, /* posY */ 1985, /* posZ */ -9453, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvExclamationBox),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -10333, /* posY */ 1535, /* posZ */ -375, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvExclamationBox),
-        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 8845, /* posY */ -858, /* posZ */ 5100, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00b40000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 8845, /* posY */ -858, /* posZ */ 5100, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00b40000, bhvThiHugeIslandTop),
         OBJECT(MODEL_NONE, /* posX */ 8302, /* posY */ -339, /* posZ */ 16168, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00960000, bhvPoleGrabbing),
         OBJECT(MODEL_NONE, /* posX */ 6653, /* posY */ -339, /* posZ */ 16168, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00960000, bhvPoleGrabbing),
         OBJECT(MODEL_NONE, /* posX */ 6653, /* posY */ -339, /* posZ */ 14517, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00960000, bhvPoleGrabbing),

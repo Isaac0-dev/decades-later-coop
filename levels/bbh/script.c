@@ -87,7 +87,7 @@ const LevelScript level_bbh_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 282, /* posZ */ -610, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSpinAirborneWarp),
         OBJECT(MODEL_BBH_TUMBLING_PLATFORM, /* posX */ 6154, /* posY */ -25, /* posZ */ -3304, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBbhTumblingBridge),
         OBJECT(MODEL_BBH_TILTING_FLOOR_PLATFORM, /* posX */ 4800, /* posY */ 1477, /* posZ */ -150, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBbhTiltingTrapPlatform),
-        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ -3045, /* posY */ -2456, /* posZ */ 3308, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00820000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ -3045, /* posY */ -2456, /* posZ */ 3308, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00820000, bhvThiHugeIslandTop),
         OBJECT(MODEL_BBH_MERRY_GO_ROUND, /* posX */ 150, /* posY */ -2703, /* posZ */ -2790, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvMerryGoRound),
         OBJECT(MODEL_BOO, /* posX */ 150, /* posY */ -2570, /* posZ */ -2010, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000000, bhvGhostHuntBigBoo),
         OBJECT(MODEL_BOO, /* posX */ 184, /* posY */ -2618, /* posZ */ -3504, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGhostHuntBoo),
@@ -273,7 +273,7 @@ const LevelScript level_bbh_entry[] = {
         OBJECT(MODEL_STAR, /* posX */ 0, /* posY */ 4300, /* posZ */ 583, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x06000001, bhvStar),
         OBJECT(0xf1, /* posX */ -2250, /* posY */ -450, /* posZ */ 375, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),      // BLUE BLOCK
         OBJECT(0xf2, /* posX */ 600, /* posY */ 3000, /* posZ */ 125, /* angleX */ 0, /* angleY */ 45, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchBlockSwitch), // RED SWITCH
-        OBJECT(MODEL_THI_HUGE_ISLAND_TOP, /* posX */ -2250, /* posY */ -450, /* posZ */ 375, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00af0000, bhvTHIHugeIslandTop),
+        OBJECT(MODEL_THI_HUGE_ISLAND_TOP, /* posX */ -2250, /* posY */ -450, /* posZ */ 375, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00af0000, bhvThiHugeIslandTop),
         WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x14, /* destLevel */ LEVEL_BBH, /* destArea */ 0x01, /* destNode */ 0x14, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x15, /* destLevel */ LEVEL_BBH, /* destArea */ 0x01, /* destNode */ 0x15, /* flags */ 0x00),

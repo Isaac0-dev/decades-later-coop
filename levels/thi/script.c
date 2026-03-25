@@ -156,7 +156,7 @@ const LevelScript level_thi_entry[] = {
         OBJECT(MODEL_BLUE_COIN, /* posX */ 2395, /* posY */ -3494, /* posZ */ 550, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_BLUE_COIN, /* posX */ 2400, /* posY */ -3494, /* posZ */ 1150, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHiddenBlueCoin),
         OBJECT(MODEL_CHUCKYA, /* posX */ -2521, /* posY */ -1576, /* posZ */ 1765, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvChuckya),
-        OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ -2524, /* posY */ -2936, /* posZ */ -472, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00020000, bhvTTMBowlingBallSpawner, /* acts */ 0x3b),
+        OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ -2524, /* posY */ -2936, /* posZ */ -472, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00020000, bhvTtmBowlingBallSpawner, /* acts */ 0x3b),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -4217, /* posY */ -4612, /* posZ */ 936, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00050008, bhvExclamationBox),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 798, /* posY */ -3937, /* posZ */ 4131, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00050009, bhvExclamationBox),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -3102, /* posY */ -1987, /* posZ */ -931, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00170008, bhvExclamationBox),
