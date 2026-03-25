@@ -43,7 +43,7 @@ local function bhv_shrinkplat_border(o)
     o.header.gfx.skipInViewCheck = true
 end
 
-id_bhvShrinkPlatBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_shrinkplat_border, nil)
+local id_bhvShrinkPlatBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_shrinkplat_border, nil)
 
 ------------
 -- Shrink --
@@ -101,4 +101,4 @@ local function bhv_shrinkplatform_loop(o)
 end
 
 -- Shrink Plat originally overrides "bhvWfBreakableWallRight"
-hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_shrinkplatform_init, bhv_shrinkplatform_loop, "bhvShrinkPlatform")
+id_bhvShrinkPlatform = hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_shrinkplatform_init, bhv_shrinkplatform_loop, "bhvShrinkPlatform")

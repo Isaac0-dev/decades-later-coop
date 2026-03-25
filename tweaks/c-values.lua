@@ -21,14 +21,3 @@ gLevelValues.floorLowerLimitShadow = -32768
 gBehaviorValues.ToadStar1Requirement = 0 -- Overworld 2 Area 2 Brodute
 
 hook_event(HOOK_MARIO_UPDATE, function (m) m.numLives = 100 m.peakHeight = m.pos.y end)
-
-vec3f_set(gLevelValues.starPositions.KoopaBobStarPos, 4665, 4503, 11006)
-vec3f_set(gLevelValues.starPositions.PssSlideStarPos, 15118, -7303, 212)
-vec3f_set(gLevelValues.starPositions.TuxieMotherStarPos, 366, -5336, 9379)
-vec3f_set(gLevelValues.starPositions.WigglerStarPos, 0, 400, 0)
-vec3f_set(gLevelValues.starPositions.GhostHuntBooStarPos, 150, -2210, -4260)
-vec3f_set(gLevelValues.starPositions.BalconyBooStarPos, 4090, 5060, -2360)
-vec3f_set(gLevelValues.starPositions.KingWhompStarPos, 0, 500, -1200)
-vec3f_set(gLevelValues.starPositions.EyerockStarPos, -12600, -900, -8400)
-
-gBehaviorValues.trajectories.KoopaBobTrajectory = get_trajectory('KoopaBoB_path')

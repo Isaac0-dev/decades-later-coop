@@ -37,7 +37,7 @@ local function bhv_flipswap_border(o)
     o.header.gfx.skipInViewCheck = true
 end
 
-id_bhvFlipswapBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_flipswap_border, nil)
+local id_bhvFlipswapBorder = hook_behavior(nil, OBJ_LIST_DEFAULT, false, bhv_flipswap_border, nil)
 
 --------------
 -- FlipSwap --
@@ -83,4 +83,4 @@ local function bhv_flipswap_loop(o)
     end
 end
 
-hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_flipswap_init, bhv_flipswap_loop, "bhvFlipswap_Platform_MOP")
+id_bhvFlipswap_Platform_MOP = hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_flipswap_init, bhv_flipswap_loop, "bhvFlipswap_Platform_MOP")

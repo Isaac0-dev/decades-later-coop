@@ -3,3 +3,4 @@
 -- incompatible: romhack
 
 require("data/a-bhv-loader")
+require("tweaks/a-tweaks-loader")

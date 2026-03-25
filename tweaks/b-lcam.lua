@@ -1,6 +1,3 @@
--- name: L Trigger
--- description: L Button Triggers Camera Mode while Flying or Swimming
-
 local L_Cam = false
 
 ---@param m MarioState
