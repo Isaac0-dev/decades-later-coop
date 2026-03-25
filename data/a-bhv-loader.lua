@@ -8,7 +8,8 @@ local behavior_files = {
     "b-spring",
     "b-flipswitch",
     "c-bowser-cutscene",
-    "c-six-reds"
+    "c-six-reds",
+    "c-blue-star",
 }
 
 for _, file in ipairs(behavior_files) do
