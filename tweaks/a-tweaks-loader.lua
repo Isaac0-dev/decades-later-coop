@@ -1,6 +1,7 @@
 local tweaks_files = {
     "b-hud",
     "b-lcam",
+    "b-respawn",
     "c-box-contents",
     "c-star-pos",
     "c-trajectories",
