@@ -80,4 +80,4 @@ local function bhv_spring_loop(o)
     end
 end
 
-hook_behavior(nil, OBJ_LIST_LEVEL, true, bhv_spring_init, bhv_spring_loop, "bhvSpring")
+hook_behavior(nil, OBJ_LIST_LEVEL, true, bhv_spring_init, bhv_spring_loop, "bhvSpring_MOP")

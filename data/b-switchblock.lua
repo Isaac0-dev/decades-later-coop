@@ -62,7 +62,7 @@ local CURR_SWITCH_STATE         = 0 -- switch state -this updates on level init
 -- Helpers --
 -------------
 
-local id_bhvSwitchBlockSwitch
+local id_bhvSwitchblock_MOP_Switch_MOP
 
 ---@return boolean
 local function is_switch_locked()
@@ -71,7 +71,7 @@ local function is_switch_locked()
         if is_player_in_local_area(m) ~= 0 then
             if m and m.marioObj then
                 local platform = m.marioObj.platform
-                if platform ~= nil and obj_has_behavior_id(platform, id_bhvSwitchBlockSwitch) ~= 0 then
+                if platform ~= nil and obj_has_behavior_id(platform, id_bhvSwitchblock_MOP_Switch_MOP) ~= 0 then
                     if platform.oBehParams2ndByte == CURR_SWITCH_STATE then
                         return true
                     end
@@ -172,7 +172,7 @@ local function bhv_switchblock_sign_loop(o)
     end
 end
 
-local id_bhvSwitchBlockSign = hook_behavior(nil, OBJ_LIST_DEFAULT, true, bhv_switchblock_sign, bhv_switchblock_sign_loop)
+local id_bhvSwitchblock_MOPSign = hook_behavior(nil, OBJ_LIST_DEFAULT, true, bhv_switchblock_sign, bhv_switchblock_sign_loop)
 
 -----------------
 -- Switchblock --
@@ -183,7 +183,7 @@ local function bhv_Switchblock_init(o)
     o.collisionData = COL_SWITCHBLOCK_MOP
     o.header.gfx.skipInViewCheck = true
     obj_set_model_extended(o, E_MODEL_SWITCHBLOCK)
-    spawn_object(o, E_MODEL_SWITCHBLOCK_SIGN, id_bhvSwitchBlockSign)
+    spawn_object(o, E_MODEL_SWITCHBLOCK_SIGN, id_bhvSwitchblock_MOPSign)
 end
 
 ---@param o Object
@@ -208,7 +208,7 @@ local function bhv_Switchblock_loop(o)
     end
 end
 
-hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_Switchblock_init, bhv_Switchblock_loop, "bhvSwitchBlock")
+hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_Switchblock_init, bhv_Switchblock_loop, "bhvSwitchblock_MOP")
 
 ------------------------
 -- Switchblock Switch --
@@ -253,7 +253,7 @@ local function bhv_Switchblock_Switch_loop(o)
     o.header.gfx.scale.y = approach_f32_asymptotic(o.header.gfx.scale.y, target_scale, 0.09)
 end
 
-id_bhvSwitchBlockSwitch = hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_Switchblock_Switch_init, bhv_Switchblock_Switch_loop, "bhvSwitchBlockSwitch")
+id_bhvSwitchblock_MOP_Switch_MOP = hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_Switchblock_Switch_init, bhv_Switchblock_Switch_loop, "bhvSwitchblock_MOP_Switch_MOP")
 
 ----------------
 -- Level Init --
@@ -261,7 +261,7 @@ id_bhvSwitchBlockSwitch = hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_Switchb
 
 local function on_level_init()
 
-    local switchExists = obj_get_first_with_behavior_id(id_bhvSwitchBlockSwitch)
+    local switchExists = obj_get_first_with_behavior_id(id_bhvSwitchblock_MOP_Switch_MOP)
     if not switchExists then
         return
     end

@@ -761,7 +761,7 @@ const BehaviorScript bhvFishSpawner[] = {
     CALL_NATIVE(bhv_fish_spawner_loop),
     END_LOOP(),
 };
-const BehaviorScript bhvGreenboardSwitch[] = {
+const BehaviorScript bhvGreenboard_Switch_MOP[] = {
     CMD_NOP_1(0xA1),
 };
 const BehaviorScript bhvKlepto[] = {

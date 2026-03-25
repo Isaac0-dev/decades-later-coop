@@ -69,13 +69,13 @@ const LevelScript level_bitfs_entry[] = {
     AREA(1, bitfs_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ -6000, /* posY */ 500, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSpinAirborneWarp),
         OBJECT(MODEL_NONE, /* posX */ 450, /* posY */ 6425, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000000, bhvBowserCourseRedCoinStar),
-        OBJECT(0xf2, /* posX */ 450, /* posY */ 6001, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchBlockSwitch),       // RED SWITCH
+        OBJECT(0xf2, /* posX */ 450, /* posY */ 6001, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchblock_MOP_Switch_MOP),       // RED SWITCH
         OBJECT(MODEL_NONE, /* posX */ 1200, /* posY */ 28, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00140000, bhvFadingWarp),
-        OBJECT(0xf1, /* posX */ 1200, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),               // BLUE BLOCK
+        OBJECT(0xf1, /* posX */ 1200, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchblock_MOP),               // BLUE BLOCK
         OBJECT(MODEL_NONE, /* posX */ -150, /* posY */ 3628, /* posZ */ 600, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x001e0000, bhvFadingWarp),
-        OBJECT(0xf1, /* posX */ -150, /* posY */ 3600, /* posZ */ 600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),          // BLUE BLOCK
+        OBJECT(0xf1, /* posX */ -150, /* posY */ 3600, /* posZ */ 600, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchblock_MOP),          // BLUE BLOCK
         OBJECT(MODEL_NONE, /* posX */ 300, /* posY */ 6028, /* posZ */ -1575, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00280000, bhvFadingWarp),
-        OBJECT(0xf1, /* posX */ 300, /* posY */ 6000, /* posZ */ -1575, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),         // BLUE BLOCK
+        OBJECT(0xf1, /* posX */ 300, /* posY */ 6000, /* posZ */ -1575, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchblock_MOP),         // BLUE BLOCK
         OBJECT(MODEL_NONE, /* posX */ 4350, /* posY */ 6045, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x05450000, bhvWarp),
         OBJECT(MODEL_RED_COIN, /* posX */ 1200, /* posY */ 65, /* posZ */ -575, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ 1950, /* posY */ 375, /* posZ */ -3150, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
@@ -85,14 +85,14 @@ const LevelScript level_bitfs_entry[] = {
         OBJECT(MODEL_RED_COIN, /* posX */ -150, /* posY */ 4134, /* posZ */ 1450, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ -5175, /* posY */ 4322, /* posZ */ 890, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ 2325, /* posY */ 5241, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
-        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ -3945, /* posY */ 49, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0xca170000, bhvGreenSwitchboard),
+        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ -3945, /* posY */ 49, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0xca170000, bhvGreen_Switchboard_MOP),
         OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 3600, /* posY */ 974, /* posZ */ 0, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00960000, bhvThiHugeIslandTop),
         OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR, /* posX */ -1950, /* posY */ 3600, /* posZ */ -850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFlipswap_Platform_MOP),
         OBJECT(MODEL_CHUCKYA, /* posX */ 1963, /* posY */ 3600, /* posZ */ -10, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvChuckya),
-        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ -150, /* posY */ 3649, /* posZ */ -866, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x610d0000, bhvGreenSwitchboard),
+        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ -150, /* posY */ 3649, /* posZ */ -866, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x610d0000, bhvGreen_Switchboard_MOP),
         OBJECT(MODEL_AMP, /* posX */ -1192, /* posY */ 6097, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvCirclingAmp),
-        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ -3420, /* posY */ 6049, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0xca170000, bhvGreenSwitchboard),
-        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ -150, /* posY */ 3949, /* posZ */ -2221, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x5a0d0000, bhvGreenSwitchboard),
+        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ -3420, /* posY */ 6049, /* posZ */ 0, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0xca170000, bhvGreen_Switchboard_MOP),
+        OBJECT(MODEL_UNKNOWN_DOOR_2B, /* posX */ -150, /* posY */ 3949, /* posZ */ -2221, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x5a0d0000, bhvGreen_Switchboard_MOP),
         OBJECT(MODEL_AMP, /* posX */ 1200, /* posY */ 572, /* posZ */ -6, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHomingAmp),
         OBJECT(MODEL_AMP, /* posX */ 5993, /* posY */ 1250, /* posZ */ -230, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvHomingAmp),
         OBJECT(MODEL_AMP, /* posX */ -2538, /* posY */ 140, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvCirclingAmp),
@@ -144,8 +144,8 @@ const LevelScript level_bitfs_entry[] = {
         OBJECT(MODEL_STAR, /* posX */ 2480, /* posY */ 1151, /* posZ */ -3075, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ -1950, /* posY */ 4586, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x03000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 2325, /* posY */ 6880, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x04000001, bhvStar),
-        OBJECT(0xe3, /* posX */ 1350, /* posY */ 3602, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch),  //greenboard switch
-        OBJECT(0xe3, /* posX */ -5175, /* posY */ 6000, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboardSwitch), //greenboard switch
+        OBJECT(0xe3, /* posX */ 1350, /* posY */ 3602, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboard_Switch_MOP),  //greenboard switch
+        OBJECT(0xe3, /* posX */ -5175, /* posY */ 6000, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboard_Switch_MOP), //greenboard switch
         OBJECT(0x98, /* posX */ -1650, /* posY */ 3600, /* posZ */ 850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform), //shrink platform
         OBJECT(0x98, /* posX */ -1950, /* posY */ 3600, /* posZ */ 850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform),
         OBJECT(0x98, /* posX */ -2250, /* posY */ 3600, /* posZ */ 850, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvShrinkPlatform),

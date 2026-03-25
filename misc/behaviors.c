@@ -915,7 +915,7 @@ const BehaviorScript bhvFishSpawner[] = {
 };
 
 
-const BehaviorScript bhvGreenboardSwitch[] = {
+const BehaviorScript bhvGreenboard_Switch_MOP[] = {
     CMD_NOP_1(0xA1),
 };
 

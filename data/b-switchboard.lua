@@ -91,7 +91,7 @@ local function bhv_greenboard_switch_loop(o)
     o.header.gfx.scale.y = approach_f32_asymptotic(o.header.gfx.scale.y, target_scale, 0.18)
 end
 
-local id_bhvGreenboardSwitch = hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_greenboard_switch_init, bhv_greenboard_switch_loop, "bhvGreenboardSwitch")
+local id_bhvGreenboard_Switch_MOP = hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_greenboard_switch_init, bhv_greenboard_switch_loop, "bhvGreenboard_Switch_MOP")
 
 -----------------
 -- Green Board --
@@ -132,7 +132,7 @@ local function bhv_green_switchboard_loop(o)
         obj_copy_pos(child, o)
     end
 
-    local switch = obj_get_first_with_behavior_id(id_bhvGreenboardSwitch)
+    local switch = obj_get_first_with_behavior_id(id_bhvGreenboard_Switch_MOP)
     while switch ~= nil do
         if switch.oAction == ACT_SWITCH_PRESSED then
             cur_obj_set_pos_to_home_and_stop()
@@ -191,4 +191,4 @@ local function bhv_green_switchboard_loop(o)
     end
 end
 
-hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_green_switchboard_init, bhv_green_switchboard_loop, "bhvGreenSwitchboard")
+hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_green_switchboard_init, bhv_green_switchboard_loop, "bhvGreen_Switchboard_MOP")

@@ -261,18 +261,18 @@ const LevelScript level_bbh_entry[] = {
         OBJECT(MODEL_BOWLING_BALL, /* posX */ -12977, /* posY */ 921, /* posZ */ -7260, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFireSpitter),
         OBJECT(MODEL_BOWLING_BALL, /* posX */ -12071, /* posY */ 921, /* posZ */ -7863, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFireSpitter),
         OBJECT(MODEL_BOWLING_BALL, /* posX */ -9133, /* posY */ -728, /* posZ */ 4874, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvFireSpitter),
-        OBJECT(0x92, /* posX */ -7425, /* posY */ -90, /* posZ */ -4875, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00a00000, bhvSpring),
-        OBJECT(0x92, /* posX */ -7425, /* posY */ -90, /* posZ */ -225, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00a00000, bhvSpring),
-        OBJECT(0x92, /* posX */ 7425, /* posY */ -90, /* posZ */ -4875, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00a00000, bhvSpring),
-        OBJECT(0x92, /* posX */ 7425, /* posY */ -90, /* posZ */ -225, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00a00000, bhvSpring),
-        OBJECT(0x92, /* posX */ -2925, /* posY */ -90, /* posZ */ -7125, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00b40000, bhvSpring),
-        OBJECT(0x92, /* posX */ 2925, /* posY */ -90, /* posZ */ -7125, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00b40000, bhvSpring),
+        OBJECT(0x92, /* posX */ -7425, /* posY */ -90, /* posZ */ -4875, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00a00000, bhvSpring_MOP),
+        OBJECT(0x92, /* posX */ -7425, /* posY */ -90, /* posZ */ -225, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00a00000, bhvSpring_MOP),
+        OBJECT(0x92, /* posX */ 7425, /* posY */ -90, /* posZ */ -4875, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00a00000, bhvSpring_MOP),
+        OBJECT(0x92, /* posX */ 7425, /* posY */ -90, /* posZ */ -225, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00a00000, bhvSpring_MOP),
+        OBJECT(0x92, /* posX */ -2925, /* posY */ -90, /* posZ */ -7125, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00b40000, bhvSpring_MOP),
+        OBJECT(0x92, /* posX */ 2925, /* posY */ -90, /* posZ */ -7125, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x00b40000, bhvSpring_MOP),
         OBJECT(MODEL_NONE, /* posX */ -5876, /* posY */ 4470, /* posZ */ -314, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00070000, bhvExclamationBox),
         OBJECT(MODEL_STAR, /* posX */ -3, /* posY */ 714, /* posZ */ 5539, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 7425, /* posY */ 1200, /* posZ */ -5025, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ 0, /* posY */ 4300, /* posZ */ 583, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x06000001, bhvStar),
-        OBJECT(0xf1, /* posX */ -2250, /* posY */ -450, /* posZ */ 375, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchBlock),      // BLUE BLOCK
-        OBJECT(0xf2, /* posX */ 600, /* posY */ 3000, /* posZ */ 125, /* angleX */ 0, /* angleY */ 45, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchBlockSwitch), // RED SWITCH
+        OBJECT(0xf1, /* posX */ -2250, /* posY */ -450, /* posZ */ 375, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchblock_MOP),      // BLUE BLOCK
+        OBJECT(0xf2, /* posX */ 600, /* posY */ 3000, /* posZ */ 125, /* angleX */ 0, /* angleY */ 45, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchblock_MOP_Switch_MOP), // RED SWITCH
         OBJECT(MODEL_THI_HUGE_ISLAND_TOP, /* posX */ -2250, /* posY */ -450, /* posZ */ 375, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00af0000, bhvThiHugeIslandTop),
         WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         WARP_NODE(/* id */ 0x14, /* destLevel */ LEVEL_BBH, /* destArea */ 0x01, /* destNode */ 0x14, /* flags */ 0x00),

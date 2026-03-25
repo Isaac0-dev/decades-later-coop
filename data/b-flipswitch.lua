@@ -66,7 +66,7 @@ local function bhv_flipswitch_panel_loop(o)
     end
 end
 
-local id_bhvFlipswitchPanel = hook_behavior(nil, OBJ_LIST_SURFACE, false, bhv_flipswitch_panel_init, bhv_flipswitch_panel_loop, "bhvFlipSwitchPanel")
+local id_bhvFlipswitch_Panel_MOP = hook_behavior(nil, OBJ_LIST_SURFACE, false, bhv_flipswitch_panel_init, bhv_flipswitch_panel_loop, "bhvFlipswitch_Panel_MOP")
 
 --------------------------
 -- Flipswitch StarSpawn --
@@ -80,7 +80,7 @@ end
 
 ---@param o Object
 local function bhv_flipswitch_starspawn_loop(o)
-    local totalPanels = obj_count_objects_with_behavior_id(id_bhvFlipswitchPanel)
+    local totalPanels = obj_count_objects_with_behavior_id(id_bhvFlipswitch_Panel_MOP)
     if totalPanels <= 0 then
         return
     end
@@ -91,7 +91,7 @@ local function bhv_flipswitch_starspawn_loop(o)
     end
 
     local pressCount = 0
-    local panel = obj_get_first_with_behavior_id(id_bhvFlipswitchPanel)
+    local panel = obj_get_first_with_behavior_id(id_bhvFlipswitch_Panel_MOP)
 
     while panel do
         if panel.oAnimState == 2 then
@@ -106,7 +106,7 @@ local function bhv_flipswitch_starspawn_loop(o)
     end
 
     if pressCount == o.oHealth then
-        local p = obj_get_first_with_behavior_id(id_bhvFlipswitchPanel)
+        local p = obj_get_first_with_behavior_id(id_bhvFlipswitch_Panel_MOP)
 
         while p do
             p.oAnimState = 2
@@ -119,4 +119,4 @@ local function bhv_flipswitch_starspawn_loop(o)
     end
 end
 
-hook_behavior(nil, OBJ_LIST_GENACTOR, false, bhv_flipswitch_starspawn_init, bhv_flipswitch_starspawn_loop, "bhvFlipSwitchStarSpawn")
+hook_behavior(nil, OBJ_LIST_GENACTOR, false, bhv_flipswitch_starspawn_init, bhv_flipswitch_starspawn_loop, "bhvFlipswitch_Panel_StarSpawn_MOP")
