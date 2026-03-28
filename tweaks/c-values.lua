@@ -1,6 +1,8 @@
 gLevelValues.entryLevel = LEVEL_CASTLE_GROUNDS
 gLevelValues.exitCastleWarpNode = 10
 
+gServerSettings.skipIntro = 1
+
 gLevelValues.coinsRequiredForCoinStar = 80
 
 gLevelValues.pssSlideStarTime = 840

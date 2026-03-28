@@ -133,7 +133,7 @@ const LevelScript level_pss_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 16, /* posY */ 4, /* posZ */ 54, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000000b7, editor_Scroll_Texture),
         OBJECT(MODEL_NONE, /* posX */ 32, /* posY */ 5, /* posZ */ 64, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000000b8, editor_Scroll_Texture),
         TERRAIN(pss_area_1_collision_0x0E07CA10),
-        SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
+        // SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0041),
         TERRAIN_TYPE(/* terrainType */ 0x0006),
     END_AREA(),

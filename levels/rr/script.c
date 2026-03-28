@@ -256,7 +256,7 @@ const LevelScript level_rr_entry[] = {
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 9024, /* posY */ 8320, /* posZ */ 10240, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0xcaba0000, editor_Scroll_Texture, /* acts */ 0x00),
         OBJECT_WITH_ACTS(MODEL_NONE, /* posX */ 9088, /* posY */ 9984, /* posZ */ 8704, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x19da0000, editor_Scroll_Texture, /* acts */ 0x00),
         TERRAIN(rr_area_1_collision_0x0E10B1F0),
-        SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
+        // SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0036),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),

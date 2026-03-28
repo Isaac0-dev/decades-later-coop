@@ -142,7 +142,7 @@ const LevelScript level_bits_entry[] = {
         WARP_NODE(/* id */ 0x06, /* destLevel */ LEVEL_BOB, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
         OBJECT(MODEL_NONE, /* posX */ 16, /* posY */ 5, /* posZ */ 8, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000075, editor_Scroll_Texture),
         TERRAIN(bits_area_1_collision_0x0E0BEBB0),
-        SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
+        // SHOW_DIALOG(/* index */ 0x00, /* dialogId */ 0x00),
         SET_BACKGROUND_MUSIC(/* settingsPreset */ 0x0000, /* seq */ 0x0040),
         TERRAIN_TYPE(/* terrainType */ 0x0000),
     END_AREA(),
