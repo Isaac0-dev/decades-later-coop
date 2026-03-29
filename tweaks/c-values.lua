@@ -10,9 +10,10 @@ gBehaviorValues.starsNeededForDialog.dialog4 = 94
 gBehaviorValues.starsNeededForDialog.dialog5 = 141
 gBehaviorValues.starsNeededForDialog.dialog6 = 144
 
-gBehaviorValues.MipsStar1Requirement = 0
+gBehaviorValues.MipsStar1Requirement = 0 
 gBehaviorValues.MipsStar2Requirement = 141
-gBehaviorValues.ToadStar1Requirement = 0
+
+gBehaviorValues.ToadStar1Requirement = 0   -- Overworld 2 Area 2 Brodute
 gBehaviorValues.ToadStar2Requirement = 0
 gBehaviorValues.ToadStar3Requirement = 0
 
@@ -33,6 +34,10 @@ gLevelValues.floorLowerLimit = -32768
 gLevelValues.floorLowerLimitMisc = -32768
 gLevelValues.floorLowerLimitShadow = -32768
 
-gBehaviorValues.ToadStar1Requirement = 0 -- Overworld 2 Area 2 Brodute
+--Make pendulums move
+function pendulum_speed(o)
+    o.oTTCPendulumAngleAccel = 15
+end
 
 hook_event(HOOK_MARIO_UPDATE, function (m) m.numLives = 100 m.peakHeight = m.pos.y end)
+hook_event(HOOK_ON_OBJECT_LOAD, pendulum_speed)
