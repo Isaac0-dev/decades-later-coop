@@ -1,5 +1,7 @@
 vec3f_set(gLevelValues.starPositions.KoopaBobStarPos, 4665, 4503, 11006)
+vec3f_set(gLevelValues.starPositions.KoopaThiStarPos, 1500, -3275, -3030)
 vec3f_set(gLevelValues.starPositions.PssSlideStarPos, 15118, -7303, 212)
+vec3f_set(gLevelValues.starPositions.BigPiranhasStarPos, -4444, -4290, -575)
 vec3f_set(gLevelValues.starPositions.TuxieMotherStarPos, 366, -5336, 9379)
 vec3f_set(gLevelValues.starPositions.WigglerStarPos, 0, 400, 0)
 vec3f_set(gLevelValues.starPositions.GhostHuntBooStarPos, 150, -2210, -4260)

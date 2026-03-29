@@ -1,0 +1,12 @@
+const Trajectory KoopaTHI_path[] = {
+	TRAJECTORY_POS(0, /*pos*/ -3390, -4276, 2360),
+	TRAJECTORY_POS(1, /*pos*/ -3395, -4276, 2358),
+	TRAJECTORY_POS(2, /*pos*/ -3529, -3559, 915),
+	TRAJECTORY_POS(3, /*pos*/ -3867, -3451, 643),
+	TRAJECTORY_POS(4, /*pos*/ -3975, -3451, -652),
+	TRAJECTORY_POS(5, /*pos*/ -3212, -3750, -1392),
+	TRAJECTORY_POS(6, /*pos*/ -2303, -4126, -1427),
+	TRAJECTORY_POS(7, /*pos*/ -1130, -4126, -2533),
+	TRAJECTORY_POS(8, /*pos*/ 976, -3826, -2421),
+	TRAJECTORY_END(),
+};
