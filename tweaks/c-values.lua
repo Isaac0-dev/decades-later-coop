@@ -8,7 +8,7 @@ gBehaviorValues.starsNeededForDialog.dialog2 = 35
 gBehaviorValues.starsNeededForDialog.dialog3 = 80
 gBehaviorValues.starsNeededForDialog.dialog4 = 94
 gBehaviorValues.starsNeededForDialog.dialog5 = 141
--- gBehaviorValues.starsNeededForDialog.dialog6 = idk if theres a 6th one
+gBehaviorValues.starsNeededForDialog.dialog6 = 144
 
 gBehaviorValues.MipsStar1Requirement = 0
 gBehaviorValues.MipsStar2Requirement = 141
