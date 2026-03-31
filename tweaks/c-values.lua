@@ -27,6 +27,9 @@ gLevelValues.wingCapDurationTotwc = 1
 gLevelValues.vanishCapDurationVcutm = 1
 gLevelValues.metalCapDurationCotmc = 1
 
+gLevelValues.wingCapSequence = 0x3A
+gLevelValues.vanishCapSequence = 0x3B
+
 gLevelValues.mushroom1UpHeal = 1
 
 gLevelValues.cellHeightLimit = 32767
