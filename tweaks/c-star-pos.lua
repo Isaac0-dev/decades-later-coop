@@ -1,6 +1,6 @@
 vec3f_set(gLevelValues.starPositions.KoopaBobStarPos, 4665, 4503, 11006)
 vec3f_set(gLevelValues.starPositions.KoopaThiStarPos, 1500, -3275, -3030)
-vec3f_set(gLevelValues.starPositions.KingBobOmbStarPos, 0, 500, 0)
+vec3f_set(gLevelValues.starPositions.KingBobombStarPos, 0, 500, 0)
 vec3f_set(gLevelValues.starPositions.PssSlideStarPos, 15118, -7303, 212)
 vec3f_set(gLevelValues.starPositions.BigPiranhasStarPos, -4444, -4290, -575)
 vec3f_set(gLevelValues.starPositions.TuxieMotherStarPos, 366, -5336, 9379)
