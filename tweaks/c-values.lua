@@ -35,9 +35,10 @@ gLevelValues.floorLowerLimitMisc = -32768
 gLevelValues.floorLowerLimitShadow = -32768
 
 --Make pendulums move
-function pendulum_speed(o)
-    o.oTTCPendulumAngleAccel = 15
-end
+--apparently this breaks talking to npcs softlocking you and prolly other things
+-- function pendulum_speed(o)
+--     o.oTTCPendulumAngleAccel = 15
+-- end
 
 hook_event(HOOK_MARIO_UPDATE, function (m) m.numLives = 100 m.peakHeight = m.pos.y end)
-hook_event(HOOK_ON_OBJECT_LOAD, pendulum_speed)
+-- hook_event(HOOK_ON_OBJECT_LOAD, pendulum_speed)
