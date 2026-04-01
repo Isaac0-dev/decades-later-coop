@@ -37,6 +37,10 @@ gLevelValues.floorLowerLimit = -32768
 gLevelValues.floorLowerLimitMisc = -32768
 gLevelValues.floorLowerLimitShadow = -32768
 
+gLevelValues.fixCollisionBugs = 1
+gLevelValues.fixCollisionBugsRoundedCorners = 1
+gLevelValues.fixCollisionBugsGroundPoundBonks = 0
+
 --Make pendulums move
 --apparently this breaks talking to npcs softlocking you and prolly other things
 -- function pendulum_speed(o)

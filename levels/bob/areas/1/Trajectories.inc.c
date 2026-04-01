@@ -10,3 +10,14 @@ const Trajectory KoopaBoB_path[] = {
 	TRAJECTORY_POS(8, /*pos*/ 6387, 4155, 9175),
 	TRAJECTORY_END(),
 };
+
+const Trajectory metal_ball_bob_path1[] = {
+	TRAJECTORY_POS(0, /*pos*/ 8360, 1827, 9818),
+	TRAJECTORY_POS(1, /*pos*/ 8467, 1673, 12067),
+	TRAJECTORY_POS(2, /*pos*/ 6878, 1432, 14038),
+	TRAJECTORY_POS(3, /*pos*/ 3792, 1041, 15119),
+	TRAJECTORY_POS(4, /*pos*/ 758, 694, 14046),
+	TRAJECTORY_POS(5, /*pos*/ 542, 338, 11168),
+	TRAJECTORY_POS(6, /*pos*/ 2547, -1538, 6283),
+	TRAJECTORY_END(),
+};
