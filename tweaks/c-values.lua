@@ -33,7 +33,6 @@ gLevelValues.vanishCapSequence = 0x3B
 gLevelValues.mushroom1UpHeal = 1
 
 gLevelValues.previewBlueCoins = 1
-hook_behavior(id_bhvBlueCoinNumber, OBJ_LIST_UNIMPORTANT, true, obj_hide, obj_mark_for_deletion_on_sync)
 
 gLevelValues.cellHeightLimit = 32767
 gLevelValues.floorLowerLimit = -32768
@@ -52,3 +51,15 @@ gLevelValues.fixCollisionBugsGroundPoundBonks = 0
 
 hook_event(HOOK_MARIO_UPDATE, function (m) m.numLives = 100 m.peakHeight = m.pos.y end)
 -- hook_event(HOOK_ON_OBJECT_LOAD, pendulum_speed)
+
+--Hide Blue Coin Number (Behavior Deletetion)
+--- @param o Object
+local function hide_number(o)
+    o.header.gfx.node.flags = o.header.gfx.node.flags | GRAPH_RENDER_INVISIBLE
+end
+
+--- @param o Object
+local function sync_hide_number(o)
+    if gNetworkPlayers[0].currAreaSyncValid then obj_mark_for_deletion(o) end
+end
+hook_behavior(id_bhvBlueCoinNumber, OBJ_LIST_UNIMPORTANT, false, hide_number, sync_hide_number)
