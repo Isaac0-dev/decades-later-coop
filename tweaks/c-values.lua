@@ -32,6 +32,9 @@ gLevelValues.vanishCapSequence = 0x3B
 
 gLevelValues.mushroom1UpHeal = 1
 
+gLevelValues.previewBlueCoins = 1
+hook_behavior(id_bhvBlueCoinNumber, OBJ_LIST_UNIMPORTANT, true, obj_hide, obj_mark_for_deletion_on_sync)
+
 gLevelValues.cellHeightLimit = 32767
 gLevelValues.floorLowerLimit = -32768
 gLevelValues.floorLowerLimitMisc = -32768
