@@ -13,14 +13,88 @@ smlua_text_utils_course_acts_replace(COURSE_TTM, " 12 SEASONAL MOUNTAIN", ("SCAL
 smlua_text_utils_course_acts_replace(COURSE_THI, " 13 SWEET SWEET ISLAND", ("PLUCK THE PIRANHAS"), ("OPEN THE CHOCO DOG HOUSE"), ("REMATCH WITH KOOPA THE QUICK"), ("MINTY PANEL DEMISE"), ("RED, BLUE AND GREEN SWITCHES"), ("REDS IN THE HOLLOW CAKE"))
 smlua_text_utils_course_acts_replace(COURSE_TTC, " 14 TICK TOCK CORE", ("F1 CUBES TO THE CLOCK ARM"), ("F2 HEXAGON MADNESS"), ("F3 SIMPLE MOTION DELAY"), ("F4 AGAINST THE CLOCKWORK"), ("F5 THE ELEVATOR'S TOP"), ("F6 BLOCKY SPIRAL CLIMB"))
 smlua_text_utils_course_acts_replace(COURSE_RR, " 15 TRANQUIL MOON", ("B- TILTED PLATFORMING"), ("R- MOVING SPONGE GARDENS"), ("B- WATER-LIFTED CRUISER"), ("R- ATOP THE RAINBOW SPIRE"), ("B- COINS AMASSED IN A MAZE"), ("R- CANNON TO THE LAVA PILLARS -MC-"))
-smlua_text_utils_secret_star_replace(15, "MARIO IN THE DARK WORLD")
-smlua_text_utils_secret_star_replace(16, "PANDORA PALACE")
-smlua_text_utils_secret_star_replace(17, "DARK STAR DOMAIN")
-smlua_text_utils_secret_star_replace(18, "SLIDE METROPOLIS")
-smlua_text_utils_secret_star_replace(19, "DEATH WIND")
-smlua_text_utils_secret_star_replace(20, "SWITCH PALACE")
-smlua_text_utils_secret_star_replace(21, "SILENCE")
-smlua_text_utils_secret_star_replace(22, "FAREWELL")
-smlua_text_utils_secret_star_replace(23, "WET-DRY CITY BIG RUN")
-smlua_text_utils_secret_star_replace(24, "FIRE FIELD")
+smlua_text_utils_secret_star_replace(16, "MARIO IN THE DARK WORLD")
+smlua_text_utils_secret_star_replace(17, "PANDORA PALACE")
+smlua_text_utils_secret_star_replace(18, "DARK STAR DOMAIN")
+smlua_text_utils_secret_star_replace(20, "DEATH WIND")
+smlua_text_utils_secret_star_replace(21, "SWITCH PALACE")
+smlua_text_utils_secret_star_replace(22, "SILENCE")
+smlua_text_utils_secret_star_replace(23, "FAREWELL")
+smlua_text_utils_secret_star_replace(24, "WET-DRY CITY BIG RUN")
+smlua_text_utils_secret_star_replace(25, "FIRE FIELD")
 smlua_text_utils_castle_secret_stars_replace("CASTLE SECRET STARS")
+
+--Area Names
+local names = {
+     [LEVEL_CASTLE_GROUNDS] = {
+        [1] = {name = "Castle Grounds"},
+        [2] = {name = "2nd Basement"},
+        [3] = {name = "2nd Basement"}
+     },
+     [LEVEL_CASTLE] = {
+        [1] = {name = "1st Floor"},
+        [2] = {name = "Castle Grounds"}
+     },
+     [LEVEL_CASTLE_COURTYARD] = {
+        [1] = {name = "1st Basement"},
+        [2] = {name = "2nd Floor"},
+        [3] = {name = "2nd Floor"}
+     },
+     [LEVEL_BITDW] = {
+         [1] = {name = "Mario In The Dark World"},
+         [2] = {name = "The End #1"},
+         [3] = {name = "The End #2"}
+     },
+     [LEVEL_BITFS] = {
+         [1] = {name = "Pandora Palace"},
+         [2] = {name = "Pandora Palace"},
+     },
+     [LEVEL_BITS] = {
+         [1] = {name = "Dark Star Domain"},
+     },
+     [LEVEL_COTMC] = {
+         [1] = {name = "Death Wind"},
+         [2] = {name = "Death Wind"},
+         [3] = {name = "Death Wind"},
+         [4] = {name = "Death Wind"}
+     },
+    [LEVEL_VCUTM] = {
+         [1] = {name = "Silence"},
+         [2] = {name = "Silence"},
+         [3] = {name = "Silence"},
+         [4] = {name = "Silence"}
+     },
+     [LEVEL_SA] = {
+         [1] = {name = "Wet-Dry City Big Run"},
+     },
+     [LEVEL_WMOTR] = {
+         [1] = {name = "Farewell"},
+         [2] = {name = "Farewell"},
+         [4] = {name = "Farewell"},
+         [5] = {name = "Farewell"},
+         [6] = {name = "Farewell"}
+     },
+     [LEVEL_ENDING] = {
+        [1] = {name = "Fire Field"},
+        [2] = {name = "Fire Field"},
+        [3] = {name = "Fire Field"},
+        [4] = {name = "Fire Field"},
+        [5] = {name = "The End #3"}
+     }
+}
+
+local function area_names()
+    for i = 0, MAX_PLAYERS - 1 do
+        local np = gNetworkPlayers[i]
+        local m = gMarioStates[i]
+        local defaultAreaName = get_level_name(gNetworkPlayers[m.playerIndex].currCourseNum, gNetworkPlayers[m.playerIndex].currLevelNum, gNetworkPlayers[m.playerIndex].currAreaIndex)
+            if names[gNetworkPlayers[m.playerIndex].currLevelNum] ~= nil then
+                gPlayerSyncTable[m.playerIndex].location = names[gNetworkPlayers[m.playerIndex].currLevelNum][gNetworkPlayers[m.playerIndex].currAreaIndex].name
+            else
+                gPlayerSyncTable[m.playerIndex].location = defaultAreaName
+            end
+            network_player_set_override_location(np, gPlayerSyncTable[m.playerIndex].location)
+        end
+    end
+    
+hook_event(HOOK_UPDATE, area_names)
