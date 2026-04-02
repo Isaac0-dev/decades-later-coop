@@ -16,6 +16,7 @@ smlua_text_utils_course_acts_replace(COURSE_RR, " 15 TRANQUIL MOON", ("B- TILTED
 smlua_text_utils_secret_star_replace(16, "MARIO IN THE DARK WORLD")
 smlua_text_utils_secret_star_replace(17, "PANDORA PALACE")
 smlua_text_utils_secret_star_replace(18, "DARK STAR DOMAIN")
+smlua_text_utils_secret_star_replace(19, "SLIDE METROPOLIS")
 smlua_text_utils_secret_star_replace(20, "DEATH WIND")
 smlua_text_utils_secret_star_replace(21, "SWITCH PALACE")
 smlua_text_utils_secret_star_replace(22, "SILENCE")
