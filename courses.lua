@@ -45,35 +45,6 @@ local names = {
          [2] = {name = "The End #1"},
          [3] = {name = "The End #2"}
      },
-     [LEVEL_BITFS] = {
-         [1] = {name = "Pandora Palace"},
-         [2] = {name = "Pandora Palace"},
-     },
-     [LEVEL_BITS] = {
-         [1] = {name = "Dark Star Domain"},
-     },
-     [LEVEL_COTMC] = {
-         [1] = {name = "Death Wind"},
-         [2] = {name = "Death Wind"},
-         [3] = {name = "Death Wind"},
-         [4] = {name = "Death Wind"}
-     },
-    [LEVEL_VCUTM] = {
-         [1] = {name = "Silence"},
-         [2] = {name = "Silence"},
-         [3] = {name = "Silence"},
-         [4] = {name = "Silence"}
-     },
-     [LEVEL_SA] = {
-         [1] = {name = "Wet-Dry City Big Run"},
-     },
-     [LEVEL_WMOTR] = {
-         [1] = {name = "Farewell"},
-         [2] = {name = "Farewell"},
-         [4] = {name = "Farewell"},
-         [5] = {name = "Farewell"},
-         [6] = {name = "Farewell"}
-     },
      [LEVEL_ENDING] = {
         [1] = {name = "Fire Field"},
         [2] = {name = "Fire Field"},
