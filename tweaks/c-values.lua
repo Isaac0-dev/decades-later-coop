@@ -63,3 +63,15 @@ local function sync_hide_number(o)
     if gNetworkPlayers[0].currAreaSyncValid then obj_mark_for_deletion(o) end
 end
 hook_behavior(id_bhvBlueCoinNumber, OBJ_LIST_UNIMPORTANT, false, hide_number, sync_hide_number)
+
+--Fixes the horrible slide collision just for CCM
+--(placeholder since theres custom collision in DL)
+function slide()
+ if gNetworkPlayers[0].currLevelNum ~= LEVEL_CCM then    
+	gLevelValues.fixCollisionBugs = true
+    else
+    gLevelValues.fixCollisionBugs = false
+ end
+end
+
+hook_event(HOOK_ON_LEVEL_INIT, slide)
