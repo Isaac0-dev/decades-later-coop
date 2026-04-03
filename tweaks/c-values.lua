@@ -43,32 +43,12 @@ gLevelValues.fixCollisionBugs = 1
 gLevelValues.fixCollisionBugsRoundedCorners = 1
 gLevelValues.fixCollisionBugsGroundPoundBonks = 0
 
---Make pendulums move on the ttc slow speed setting
-function pendulum(o)
-    o.oTTCPendulumAngleAccel = 15
-end
-
-hook_behavior(id_bhvTTCPendulum, OBJ_LIST_GENACTOR, false, pendulum, nil)
-
 hook_event(HOOK_MARIO_UPDATE, function (m) m.numLives = 100 m.peakHeight = m.pos.y end)
-
---Hide Blue Coin Number (Behavior Deletetion)
---- @param o Object
-local function hide_number(o)
-    o.header.gfx.node.flags = o.header.gfx.node.flags | GRAPH_RENDER_INVISIBLE
-end
-
---- @param o Object
-local function sync_hide_number(o)
-    if gNetworkPlayers[0].currAreaSyncValid then obj_mark_for_deletion(o) end
-end
-
-hook_behavior(id_bhvBlueCoinNumber, OBJ_LIST_UNIMPORTANT, false, hide_number, sync_hide_number)
 
 --Fixes the horrible slide collision just for CCM
 --(placeholder since theres custom collision in DL)
-function slide()
- if gNetworkPlayers[0].currLevelNum ~= LEVEL_CCM then    
+local function slide()
+ if gNetworkPlayers[0].currLevelNum ~= LEVEL_CCM then
 	gLevelValues.fixCollisionBugs = true
     else
     gLevelValues.fixCollisionBugs = false

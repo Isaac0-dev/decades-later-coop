@@ -255,12 +255,14 @@ end
 
 id_bhvSwitchblock_MOP_Switch_MOP = hook_behavior(nil, OBJ_LIST_SURFACE, true, bhv_Switchblock_Switch_init, bhv_Switchblock_Switch_loop, "bhvSwitchblock_MOP_Switch_MOP")
 
-----------------
--- Level Init --
-----------------
+----------------------
+-- Block State Init --
+----------------------
 
-local function on_level_init()
+local previousLevel = -1
+local previousArea = -1
 
+local function init_area_switch_state()
     local switchExists = obj_get_first_with_behavior_id(id_bhvSwitchblock_MOP_Switch_MOP)
     if not switchExists then
         return
@@ -289,4 +291,15 @@ local function on_level_init()
     end
 end
 
-hook_event(HOOK_ON_LEVEL_INIT, on_level_init)
+local function track_area_transitions()
+    ---@type NetworkPlayer
+    local np = gNetworkPlayers[0]
+
+    if np.currLevelNum ~= previousLevel or np.currAreaIndex ~= previousArea then
+        previousLevel = np.currLevelNum
+        previousArea = np.currAreaIndex
+        init_area_switch_state()
+    end
+end
+
+hook_event(HOOK_MARIO_UPDATE, track_area_transitions)
