@@ -125,9 +125,9 @@ local function on_death(m)
     return false
 end
 
----@param m MarioState
-local function handle_respawn(m)
-    if m.playerIndex ~= 0 then return end
+local function handle_respawn()
+    ---@type MarioState
+    local m = gMarioStates[0]
 
     if not isRespawning then
         update_safe_position(m)
@@ -160,4 +160,4 @@ local function handle_respawn(m)
 end
 
 hook_event(HOOK_ON_DEATH, on_death)
-hook_event(HOOK_MARIO_UPDATE, handle_respawn)
+hook_event(HOOK_UPDATE, handle_respawn)
