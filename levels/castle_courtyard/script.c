@@ -66,6 +66,7 @@ const LevelScript level_castle_courtyard_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_3_STARS, castle_staff_door_geo),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_KEY_DOOR, key_door_geo),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, castle_door_geo),
+    LOAD_MODEL_FROM_GEO(15, brodute_geo)
     AREA(1, castle_courtyard_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 433, /* posZ */ 580, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSpinAirborneWarp),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -4351, /* posY */ 2350, /* posZ */ 4647, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00040006, bhvExclamationBox),
@@ -210,7 +211,7 @@ const LevelScript level_castle_courtyard_entry[] = {
         OBJECT(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, /* posX */ 3075, /* posY */ 1349, /* posZ */ -1353, /* angleX */ 0, /* angleY */ -90, /* angleZ */ 0, /* behParam */ 0x3c000000, bhvDoor),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, /* posX */ -3075, /* posY */ 1349, /* posZ */ -1347, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x46000000, bhvDoor),
         OBJECT(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, /* posX */ -3, /* posY */ 2099, /* posZ */ 1875, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x50000000, bhvDoor),
-        OBJECT(MODEL_LEVEL_GEOMETRY_0F, /* posX */ -389, /* posY */ 2099, /* posZ */ 1662, /* angleX */ 0, /* angleY */ 142, /* angleZ */ 0, /* behParam */ 0x005f0000, bhvBobombBuddy),
+        OBJECT(15, /* posX */ -389, /* posY */ 2099, /* posZ */ 1662, /* angleX */ 0, /* angleY */ 142, /* angleZ */ 0, /* behParam */ 0x005f0000, bhvBobombBuddy),
         OBJECT(MODEL_TOAD, /* posX */ 447, /* posY */ 150, /* posZ */ -1728, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x60000000, bhvToadMessage),
         OBJECT(MODEL_TOAD, /* posX */ 4121, /* posY */ 300, /* posZ */ 1434, /* angleX */ 0, /* angleY */ 246, /* angleZ */ 0, /* behParam */ 0x61000000, bhvToadMessage),
         OBJECT(MODEL_TOAD, /* posX */ -2504, /* posY */ 450, /* posZ */ 3104, /* angleX */ 0, /* angleY */ 324, /* angleZ */ 0, /* behParam */ 0x67000000, bhvToadMessage),

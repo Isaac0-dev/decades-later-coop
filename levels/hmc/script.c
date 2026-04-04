@@ -31,7 +31,7 @@ const LevelScript level_hmc_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_COURTYARD_SPIKY_TREE, bbh_geo_16001000),
     LOAD_MODEL_FROM_GEO(MODEL_CCM_SNOW_TREE /* or MODEL_SL_SNOW_TREE */, bbh_geo_16001018),
     LOAD_MODEL_FROM_GEO(MODEL_SSL_PALM_TREE, bbh_geo_16001048),
-    LOAD_MODEL_FROM_GEO(MODEL_HMC_METAL_DOOR, bbh_geo_160005F8),
+    LOAD_MODEL_FROM_GEO(MODEL_HMC_METAL_DOOR, metal_door_geo),
     LOAD_MODEL_FROM_GEO(MODEL_HMC_HAZY_MAZE_DOOR, bbh_geo_1600068C),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_0_STARS, bbh_geo_160007B4),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_1_STAR, bbh_geo_16000868),
@@ -94,7 +94,7 @@ const LevelScript level_hmc_entry[] = {
         OBJECT(MODEL_RED_COIN, /* posX */ -5981, /* posY */ 660, /* posZ */ -6859, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ -8878, /* posY */ 774, /* posZ */ 2149, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
         OBJECT(MODEL_RED_COIN, /* posX */ -12583, /* posY */ 805, /* posZ */ -2471, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvRedCoin),
-        OBJECT(0x99, /* posX */ -12583, /* posY */ 73, /* posZ */ -2471, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_1300064C), // SandBlock
+        //OBJECT(0x99, /* posX */ -12583, /* posY */ 73, /* posZ */ -2471, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_1300064C), // SandBlock
         OBJECT(MODEL_NONE, /* posX */ 8318, /* posY */ 2453, /* posZ */ -15321, /* angleX */ 0, /* angleY */ 118, /* angleZ */ 0, /* behParam */ 0x00000000, bhvScuttlebugSpawn),
         OBJECT(MODEL_NONE, /* posX */ 5912, /* posY */ 2453, /* posZ */ -12225, /* angleX */ 0, /* angleY */ 156, /* angleZ */ 0, /* behParam */ 0x00000000, bhvScuttlebugSpawn),
         OBJECT(MODEL_NONE, /* posX */ 12093, /* posY */ 1518, /* posZ */ -577, /* angleX */ 0, /* angleY */ 181, /* angleZ */ 0, /* behParam */ 0x00000000, bhvScuttlebugSpawn),

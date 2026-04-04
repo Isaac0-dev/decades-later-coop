@@ -66,6 +66,8 @@ const LevelScript level_sa_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_3_STARS, bbh_geo_1600091C),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_KEY_DOOR, bbh_geo_160009D0),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, bbh_geo_160003A8),
+    LOAD_MODEL_FROM_GEO(15, brodute_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_DL_CANNON_LID, cannon_lid_geo)
     // SKIP_NOP(),
     // SKIP_NOP(),
     AREA(1, sa_area_1_geo_19001700),
@@ -104,7 +106,7 @@ const LevelScript level_sa_entry[] = {
         OBJECT(MODEL_CHUCKYA, /* posX */ -7339, /* posY */ 4800, /* posZ */ 2251, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvChuckya),
         OBJECT(MODEL_CHUCKYA, /* posX */ -7235, /* posY */ 4800, /* posZ */ 3372, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvChuckya),
         OBJECT(MODEL_CHUCKYA, /* posX */ -6745, /* posY */ 4800, /* posZ */ 2770, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvChuckya),
-        OBJECT(MODEL_LEVEL_GEOMETRY_0F, /* posX */ -3750, /* posY */ 1200, /* posZ */ 2250, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00590000, bhvBobombBuddy),
+        OBJECT(15, /* posX */ -3750, /* posY */ 1200, /* posZ */ 2250, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00590000, bhvBobombBuddy),
         OBJECT(MODEL_HEAVE_HO /* or MODEL_EYEROK_RIGHT_HAND, MODEL_BOOKEND, ... (4 total) */, /* posX */ -545, /* posY */ 1364, /* posZ */ 2889, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBubba),
         OBJECT(MODEL_HEAVE_HO /* or MODEL_EYEROK_RIGHT_HAND, MODEL_BOOKEND, ... (4 total) */, /* posX */ -554, /* posY */ 1364, /* posZ */ 1063, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBubba),
         OBJECT(MODEL_HEAVE_HO /* or MODEL_EYEROK_RIGHT_HAND, MODEL_BOOKEND, ... (4 total) */, /* posX */ -512, /* posY */ 1364, /* posZ */ -723, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvBubba),

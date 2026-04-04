@@ -66,6 +66,7 @@ const LevelScript level_vcutm_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_DOOR_3_STARS, bbh_geo_1600091C),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_KEY_DOOR, bbh_geo_160009D0),
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_CASTLE_DOOR /* or MODEL_CASTLE_GROUNDS_CASTLE_DOOR */, bbh_geo_160003A8),
+    LOAD_MODEL_FROM_GEO(15, brodute_geo)
     AREA(1, vcutm_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ -6123, /* posY */ 300, /* posZ */ -636, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvAirborneWarp),
         OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ -1037, /* posY */ -3050, /* posZ */ -12577, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00780000, bhvThiHugeIslandTop),
@@ -174,7 +175,7 @@ const LevelScript level_vcutm_entry[] = {
     END_AREA(),
     AREA(2, vcutm_area_2_geo_190000B0),
         OBJECT(MODEL_NONE, /* posX */ 16800, /* posY */ 6077, /* posZ */ 10655, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvAirborneWarp),
-        OBJECT(MODEL_LEVEL_GEOMETRY_0F, /* posX */ 17106, /* posY */ 6049, /* posZ */ 10353, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x004e0000, bhvBobombBuddy),
+        OBJECT(15, /* posX */ 17106, /* posY */ 6049, /* posZ */ 10353, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x004e0000, bhvBobombBuddy),
         OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 16755, /* posY */ 767, /* posZ */ -8255, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00780000, bhvThiHugeIslandTop),
         OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 16755, /* posY */ 767, /* posZ */ -8540, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00780000, bhvThiHugeIslandTop),
         OBJECT(MODEL_TTM_SLIDE_EXIT_PODIUM, /* posX */ 1830, /* posY */ -702, /* posZ */ -1960, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00820000, bhvThiHugeIslandTop),

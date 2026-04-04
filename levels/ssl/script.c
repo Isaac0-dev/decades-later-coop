@@ -44,6 +44,7 @@ const LevelScript level_ssl_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_TWEESTER, tweester_geo),
     LOAD_MODEL_FROM_GEO(MODEL_EYEROK_LEFT_HAND, eyerok_left_hand_geo),
     LOAD_MODEL_FROM_GEO(MODEL_EYEROK_RIGHT_HAND, eyerok_right_hand_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_DL_CANNON_LID, cannon_lid_geo)
     AREA(1, ssl_area_1_geo_19000000),
         OBJECT(MODEL_NONE, /* posX */ 1385, /* posY */ -952, /* posZ */ 10588, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSpinAirborneWarp),
         OBJECT_WITH_ACTS(MODEL_YOSHI_EGG /* or MODEL_BULLY_BOSS, MODEL_DL_WHIRLPOOL, ... (8 total) */, /* posX */ -6113, /* posY */ 913, /* posZ */ -5388, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvKlepto, /* acts */ 0x01),
@@ -159,7 +160,7 @@ const LevelScript level_ssl_entry[] = {
         OBJECT(MODEL_NONE, /* posX */ 260, /* posY */ -359, /* posZ */ 3883, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvPokey),
         OBJECT(MODEL_NONE, /* posX */ -4335, /* posY */ -600, /* posZ */ -6861, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvPokey),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -3594, /* posY */ 244, /* posZ */ -3060, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0009000b, bhvExclamationBox),
-        OBJECT(0x99, /* posX */ -5100, /* posY */ -1290, /* posZ */ -6950, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_1300064C), //blue star, keeping
+        //OBJECT(0x99, /* posX */ -5100, /* posY */ -1290, /* posZ */ -6950, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_1300064C),
         OBJECT(MODEL_GOOMBA, /* posX */ -1665, /* posY */ -39, /* posZ */ 5216, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGoomba),
         OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 0, /* posZ */ 441, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x00000000, bhvCoinFormation),
         OBJECT(MODEL_STAR, /* posX */ -5100, /* posY */ -1182, /* posZ */ -6950, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x03000001, bhvStar),
@@ -212,7 +213,7 @@ const LevelScript level_ssl_entry[] = {
         OBJECT(0xf1, /* posX */ 225, /* posY */ 4500, /* posZ */ -3825, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchblock_MOP),
         OBJECT(0xf1, /* posX */ -225, /* posY */ 4500, /* posZ */ -3825, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSwitchblock_MOP),
         OBJECT(0xf2, /* posX */ 3, /* posY */ 5251, /* posZ */ -4353, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvSwitchblock_MOP_Switch_MOP),
-        OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_UNUSED, /* posX */ 0, /* posY */ 4950, /* posZ */ -2845, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_13000D50), //checkpoint, keeping
+        //OBJECT(MODEL_WF_TOWER_SQUARE_PLATORM_UNUSED, /* posX */ 0, /* posY */ 4950, /* posZ */ -2845, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_13000D50), //checkpoint, keeping
         OBJECT(MODEL_WOODEN_SIGNPOST, /* posX */ -486, /* posY */ 4949, /* posZ */ -2851, /* angleX */ 0, /* angleY */ 45, /* angleZ */ 0, /* behParam */ 0x004b0000, bhvMessagePanel),
         OBJECT(MODEL_SSL_GRINDEL, /* posX */ 3225, /* posY */ 0, /* posZ */ -6825, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x001c0000, bhvGrindel),
         OBJECT(MODEL_SSL_GRINDEL, /* posX */ 2550, /* posY */ 1200, /* posZ */ -3600, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x001c0000, bhvGrindel),
