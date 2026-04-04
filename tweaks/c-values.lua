@@ -45,7 +45,7 @@ hook_event(HOOK_MARIO_UPDATE, function (m) m.numLives = 100 m.peakHeight = m.pos
 local courses = {
 [LEVEL_BBH] = true,
 [LEVEL_CCM] = false,
-[LEVEL_CASTLE] = true,
+[LEVEL_CASTLE] = false,
 [LEVEL_HMC] = true,
 [LEVEL_SSL] = true,
 [LEVEL_BOB] = true,
