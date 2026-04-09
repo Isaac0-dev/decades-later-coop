@@ -19,7 +19,15 @@ gBehaviorValues.ToadStar3Requirement = 0
 
 gLevelValues.coinsRequiredForCoinStar = 80
 
-gLevelValues.pssSlideStarTime = 840
+--Prevents CCM Slide to spawn the slide star
+function fix_timer()
+    if gNetworkPlayers[0].currLevelNum == LEVEL_PSS then
+    gLevelValues.pssSlideStarTime = 840
+    elseif gNetworkPlayers[0].currLevelNum == LEVEL_CCM then
+    gLevelValues.pssSlideStarTime = 1
+    end
+end
+hook_event(HOOK_MARIO_UPDATE, fix_timer)
 
 gLevelValues.metalCapDuration = 750
 
