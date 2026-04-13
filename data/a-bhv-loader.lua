@@ -7,6 +7,7 @@ local behavior_files = {
     "b-switchblock",
     "b-spring",
     "b-flipswitch",
+    "b-sl-jukebox",
     "c-bowser-cutscene",
     "c-six-reds",
     "c-blue-star",

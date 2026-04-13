@@ -142,7 +142,7 @@ const LevelScript level_sl_entry[] = {
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ 1931, /* posY */ 1206, /* posZ */ -14400, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00060009, bhvExclamationBox),
         OBJECT(MODEL_EXCLAMATION_BOX, /* posX */ -4454, /* posY */ 560, /* posZ */ 2359, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00050008, bhvExclamationBox),
         OBJECT(0xe3, /* posX */ 4659, /* posY */ 152, /* posZ */ -8701, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvGreenboard_Switch_MOP),
-        //OBJECT(MODEL_NONE, /* posX */ 4376, /* posY */ 159, /* posZ */ 1511, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhv_unknown_001CE040), jukebox
+        OBJECT(MODEL_NONE, /* posX */ 4376, /* posY */ 159, /* posZ */ 1511, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvSLJukebox),
         OBJECT(MODEL_STAR, /* posX */ 6642, /* posY */ -172, /* posZ */ -1119, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ -2172, /* posY */ 76, /* posZ */ -10938, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x01000001, bhvStar),
         OBJECT(MODEL_STAR, /* posX */ -2929, /* posY */ 2046, /* posZ */ -3702, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x02000001, bhvStar),
