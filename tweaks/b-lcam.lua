@@ -1,7 +1,11 @@
+-------------------
+-- L Cam Trigger --
+-------------------
+
 local L_Cam = false
 
 ---@param m MarioState
-local function mario_update(m)
+local function l_cam_trigger(m)
     if m.playerIndex ~= 0 then return end
     if camera_config_is_free_cam_enabled() then return end
 
@@ -21,4 +25,4 @@ local function mario_update(m)
     end
 end
 
-hook_event(HOOK_MARIO_UPDATE, mario_update)
+hook_event(HOOK_MARIO_UPDATE, l_cam_trigger)

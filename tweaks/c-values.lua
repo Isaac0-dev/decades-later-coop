@@ -19,16 +19,6 @@ gBehaviorValues.ToadStar3Requirement = 0
 
 gLevelValues.coinsRequiredForCoinStar = 80
 
---Prevents CCM Slide to spawn the slide star
-function fix_timer()
-    if gNetworkPlayers[0].currLevelNum == LEVEL_PSS then
-    gLevelValues.pssSlideStarTime = 840
-    elseif gNetworkPlayers[0].currLevelNum == LEVEL_CCM then
-    gLevelValues.pssSlideStarTime = 1
-    end
-end
-hook_event(HOOK_MARIO_UPDATE, fix_timer)
-
 gLevelValues.metalCapDuration = 750
 
 gLevelValues.wingCapDurationTotwc = 1
@@ -46,48 +36,3 @@ gLevelValues.cellHeightLimit = 32767
 gLevelValues.floorLowerLimit = -32768
 gLevelValues.floorLowerLimitMisc = -32768
 gLevelValues.floorLowerLimitShadow = -32768
-
-hook_event(HOOK_MARIO_UPDATE, function (m) m.numLives = 100 m.peakHeight = m.pos.y end)
-
---useful list for choosing levels giving fixed collision
-local courses = {
-[LEVEL_BBH] = true,
-[LEVEL_CCM] = false,
-[LEVEL_CASTLE] = false,
-[LEVEL_HMC] = true,
-[LEVEL_SSL] = true,
-[LEVEL_BOB] = true,
-[LEVEL_SL] = true,
-[LEVEL_WDW] = true,
-[LEVEL_JRB] = true,
-[LEVEL_THI] = true,
-[LEVEL_TTC] = true,
-[LEVEL_RR] = true,
-[LEVEL_CASTLE_GROUNDS] = true,
-[LEVEL_BITDW] = true,
-[LEVEL_VCUTM] = false,
-[LEVEL_BITFS] = true,
-[LEVEL_SA] = true,
-[LEVEL_BITS] = true,
-[LEVEL_LLL] = true,
-[LEVEL_DDD] = false,
-[LEVEL_WF] = true,
-[LEVEL_ENDING] = true,
-[LEVEL_CASTLE_COURTYARD] = true,
-[LEVEL_PSS] = true,
-[LEVEL_COTMC] = false,
-[LEVEL_TOTWC] = true,
-[LEVEL_BOWSER_1] = true,
-[LEVEL_WMOTR] = true,
-[LEVEL_BOWSER_2] = true,
-[LEVEL_BOWSER_3] = true,
-[LEVEL_TTM] = true
-}
-
-local function fix_collision()
-    gLevelValues.fixCollisionBugs = courses[gNetworkPlayers[0].currLevelNum] or false
-end
-gLevelValues.fixCollisionBugsRoundedCorners = 1
-gLevelValues.fixCollisionBugsGroundPoundBonks = 0
-
-hook_event(HOOK_ON_LEVEL_INIT, fix_collision)
