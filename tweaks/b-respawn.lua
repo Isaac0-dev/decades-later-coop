@@ -159,5 +159,13 @@ local function handle_respawn()
     end
 end
 
+--Prevents Mario respawning by getting eaten
+function bubba_death(m)
+    if m.action == ACT_EATEN_BY_BUBBA then
+       m.health = 0
+    end
+end
+
+hook_event(HOOK_MARIO_UPDATE, bubba_death)
 hook_event(HOOK_ON_DEATH, on_death)
 hook_event(HOOK_UPDATE, handle_respawn)
