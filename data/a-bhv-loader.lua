@@ -13,6 +13,7 @@ local behavior_files = {
     "c-blue-star",
     "c-pendulum",
     "c-blue-coin-number",
+    "c-exclamation-box",
 }
 
 for _, file in ipairs(behavior_files) do
