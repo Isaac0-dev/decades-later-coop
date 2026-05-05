@@ -10,7 +10,8 @@ local tweaks_files = {
     "c-values",
     "c-nfd",
     "c-inf-lives",
-    "c-fix-ccm-slide"
+    "c-fix-ccm-slide",
+    "c-star-tex",
 }
 
 for _, file in ipairs(tweaks_files) do
