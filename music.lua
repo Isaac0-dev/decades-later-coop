@@ -1,7 +1,7 @@
 
 -- These sequences crash on older versions of coop
 -- get the latest update to prevent crashes
-if SM64COOPDX_VERSION < "v1.4.2" then
+if SM64COOPDX_VERSION < "v1.5" then
     return
 end
 --I think we might have all finale levels but hard to tell if this goes on for both sections or just one
