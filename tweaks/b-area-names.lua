@@ -1,5 +1,5 @@
 -- Area Names
-local names = {
+local sAreaNames = {
     [LEVEL_CASTLE_GROUNDS] = {
         [2] = { name = "2nd Basement" },
         [3] = { name = "2nd Basement" }
@@ -26,6 +26,8 @@ local names = {
     }
 }
 
+local sOverriding = false
+
 ---@param m MarioState
 local function area_names(m)
     local np = gNetworkPlayers[m.playerIndex]
@@ -34,11 +36,16 @@ local function area_names(m)
     local level = np.currLevelNum
     local area = np.currAreaIndex
 
-    if not names[level] or not names[level][area] then
+    if not sAreaNames[level] or not sAreaNames[level][area] then
+        if sOverriding then
+            sOverriding = false
+            network_player_set_override_location(np, "")
+        end
         return
     end
 
-    network_player_set_override_location(np, names[level][area].name)
+    network_player_set_override_location(np, sAreaNames[level][area].name)
+    sOverriding = true
 end
 
 hook_event(HOOK_MARIO_UPDATE, area_names)

@@ -12,7 +12,6 @@ local behavior_files = {
     "c-six-reds",
     "c-blue-star",
     "c-pendulum",
-    "c-blue-coin-number",
     "c-exclamation-box",
 }
 
